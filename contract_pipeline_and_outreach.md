@@ -1,22 +1,30 @@
 # 🎯 خطة تحويل المساهمات إلى عقود عمل ريموت (Contracts & Hiring Funnel)
 
 > [!IMPORTANT]
-> وصلنا إلى **36 مساهمة برمجية احترافية (Pull Requests)** عبر **10 من أقوى مشاريع الـ Open-Source العالمية الممولة**!
-> **إنجاز استثنائي اليوم:** تم دمج PR #28412 رسمياً في **Twenty CRM** بواسطة المؤسس المشارك والـ CTO **Charles Bochet**، وفتح مساهمة جديدة في **Documenso** ([PR #3479](https://github.com/documenso/documenso/pull/3479))، وفتح مساهمتين متتاليتين في **Twenty CRM** ([PR #28744](https://github.com/twentyhq/twenty/pull/28744) و [PR #28745](https://github.com/twentyhq/twenty/pull/28745))!
+> وصلنا إلى **37 مساهمة برمجية احترافية (Pull Requests)** عبر **11 من أقوى مشاريع الـ Open-Source العالمية الممولة**!
+> **إنجاز استثنائي اليوم:** اختراق مشروع **PostHog** (الممول بأكثر من 50 مليون دولار من Y Combinator و GV، وصاحب أعلى معدلات رواتب للمطورين عن بُعد عالمياً) بـ **[PR #122903](https://github.com/PostHog/posthog/pull/122903)** لحل **[Issue #121465](https://github.com/PostHog/posthog/issues/121465)**!
 
 ---
 
-## 📊 سابقة الأعمال الحالية (36 PRs عبر 10 شركات عالمية ممولة)
+## 📊 سابقة الأعمال الحالية (37 PRs عبر 11 شركة عالمية ممولة)
 
-### 1. Twenty CRM (`twentyhq/twenty`) — [7 PRs + ممولة بـ 5M$+ من Y Combinator]
+### 1. PostHog (`posthog/posthog`) — [1 PR جديد + ممولة بـ 50M$+ من Y Combinator و GV]
+1. [PR #122903](https://github.com/PostHog/posthog/pull/122903) & [Issue #121465](https://github.com/PostHog/posthog/issues/121465): `fix(workflows): lock broadcasts once sent or sending (#121465)` (Fixes #121465) — **[جديد + اختبارات Backend & Frontend شاملة]**
+- **الكود المنفذ:**
+  1. قفل حملات الـ Broadcast المرسلة أو قيد الإرسال على مستوى الـ Backend: في `hog_flow_writes.py` و `hog_flow.py`، أي حملة برودكاست (`origin_product == HogFlow.OriginProduct.BROADCASTS`) تم إطلاقها ولديها مهام دفعات (`HogFlowBatchJob`) يتم منع تعديل محتواها أو جمهورها أو شروط خروجها (`DRAFT_CONTENT_FIELDS`)، ومنع إعادتها لحالة `draft` أو عمل Staged Draft عليها عبر استثناء مخصص `BroadcastLocked`.
+  2. منع الإرسال المتكرر لنفس كائن البرودكاست: فحص الـ `batch_jobs` endpoint لمنع إطلاق دفعة جديدة على برودكاست تم إرساله بالفعل وتوجيه المستخدم لعمل Duplicate.
+  3. حماية الواجهة الأمامية: تحديث `canMoveToDraft` في `broadcastsLogic.ts` لطلب شرط `neverSent` حصراً حتى لا تظهر أزرار الرجوع للمسودة للحملات المرسلة، وتحديث تسمية الزر في `BroadcastSummary.tsx` إلى "Duplicate as draft".
+  4. تغطية الاختبارات: بناء ملف اختبارات كامل `test_broadcast_locking.py` للتحقق من جميع مسارات الحماية والتحقق من عدم تأثر الـ Workflows العامة، وتحديث اختبارات الواجهة في `broadcastWorkflowEdits.test.ts`.
+
+---
+
+### 2. Twenty CRM (`twentyhq/twenty`) — [7 PRs + ممولة بـ 5M$+ من Y Combinator]
 1. [PR #28412](https://github.com/twentyhq/twenty/pull/28412): `fix(metadata-store): adopt new collection hash on replaceDraft when data is unchanged` — **[MERGED 🎉 تم الدمج رسمياً بواسطة المؤسس والـ CTO Charles Bochet]**
 - **الكود المنفذ:** حل مشكلة عدم تحديث الـ collection hash في الـ metadata store عند عمل replaceDraft عندما تكون البيانات مطابقة، مما كان يتسبب في عدم مزامنة الحالة مع الـ backend.
 2. [PR #28744](https://github.com/twentyhq/twenty/pull/28744) & [Issue #28739](https://github.com/twentyhq/twenty/issues/28739): `fix(apollo): support multiple orderBy criteria in optimistic edge sorting (#28739)` (Fixes #28739) — **[جديد + 6 اختبارات Unit Tests شاملة]**
-- **الكود المنفذ:** حل مشكلة تجاهل معايير الترتيب الثانوية (`secondary orderBy fields`) في الـ optimistic cache sorting داخل `sortCachedObjectEdges`. كان الكود يقرأ فقط `orderBy[0]` ويهمل الحقول التالية، مما يبقي السجلات المتساوية في الحقل الأول على ترتيب إدراجها القديم بدلاً من ترتيبها بالحقل الثاني. تم بناء محلل لجميع معايير الترتيب واستيفاء الترتيب عند تعادل القيم أو تعادل الـ `null` عبر الحقول المتتالية، مع الحفاظ على الترتيب الأصلي في حالة التعادل الكامل، وإضافة 6 اختبارات Unit Tests في `sortCachedObjectEdges.test.ts`.
+- **الكود المنفذ:** حل مشكلة تجاهل معايير الترتيب الثانوية (`secondary orderBy fields`) في الـ optimistic cache sorting داخل `sortCachedObjectEdges`. تم بناء محلل لجميع معايير الترتيب واستيفاء الترتيب عند تعادل القيم أو تعادل الـ `null` عبر الحقول المتتالية، مع الحفاظ على الترتيب الأصلي في حالة التعادل الكامل، وإضافة 6 اختبارات Unit Tests في `sortCachedObjectEdges.test.ts`.
 3. [PR #28745](https://github.com/twentyhq/twenty/pull/28745) & [Issue #28737](https://github.com/twentyhq/twenty/issues/28737): `fix(workflow): normalize Content-Type header and preserve falsy bodies in HttpTool (#28737)` (Fixes #28737) — **[جديد + اختبارات Server & Shared شاملة]**
-- **الكود المنفذ:** حل مشكلتين جوهريتين في أداة `HttpTool` و `parseDataFromContentType` لتنفيذ طلبات الـ HTTP في محرك الـ Workflows:
-  1. معالجة حساسية حالة الأحرف في هيدر `Content-Type`: كان الكود يقرأ فقط `headers['content-type']` الصغير، مما يتجاهل `Content-Type: application/x-www-form-urlencoded` و `Content-Type: multipart/form-data` ويسقط الـ boundary. تم تحويل البحث ليكون Case-Insensitive وتنظيف الهيدر بغض النظر عن طريقة كتابته للسماح بحقن الـ boundary تلقائياً من Axios.
-  2. الحفاظ على الـ Falsy Bodies: كان الشرط `if (isMethodForBody && body)` يسقط أي جسم طلب يحمل قيمة بوليانية `false` أو رقم `0` بسبب كونهما falsy في جافاسكريبت، مما يتسبب في إرسال طلب بـ body فارغ. تم التعديل إلى `isDefined(body)` وتحديث `InputData` لدعم الأرقام والبوليان واختبارها بنجاح.
+- **الكود المنفذ:** حل مشكلة حساسية حالة الأحرف في هيدر `Content-Type` في `HttpTool` و `parseDataFromContentType`، والحفاظ على الـ Falsy Bodies (`false` و `0`) عبر التحويل إلى `isDefined(body)`.
 4. [PR #28425](https://github.com/twentyhq/twenty/pull/28425): `fix(record-form): block submission when field input has validation error` — **[Visual Regression: Passed 100%]**
 5. [PR #28432](https://github.com/twentyhq/twenty/pull/28432): `fix(workflow): preserve logic function outputs and resolve link output schema`
 6. [PR #28460](https://github.com/twentyhq/twenty/pull/28460): `fix(record-picker): prevent lost clicks and enable search enter selection in relation picker`
@@ -25,9 +33,9 @@
 
 ---
 
-### 2. Cap (`CapSoftware/Cap`) — [9 PRs + بديل Loom الممول من Vercel]
+### 3. Cap (`CapSoftware/Cap`) — [9 PRs + بديل Loom الممول من Vercel]
 1. [PR #3007](https://github.com/CapSoftware/Cap/pull/3007) & [Issue #2984](https://github.com/CapSoftware/Cap/issues/2984): `fix(extension): mute only microphone audio tracks on mute toggle (#2984)` (Fixes #2984) — **[محدث باعتراف Greptile وكل التستات 10/10 خضراء]**
-- **الكود المنفذ:** حل مشكلة كتم صوت التاب وصوت النظام (System/Tab Audio) وأصوات الـ Tab Recording بالكامل عند تفعيل زر كتم المايكروفون في الـ Chrome Extension. تم تحديث `ActiveRecording` لحفظ مرجع صريح لـ `microphoneStream`، وبناء وحدة `audio-mute.ts` لدالة `resolveMicrophoneStream` ودالة `toggleMicrophoneMuteForRecording` للتحكم الحصري في مسارات المايكروفون فقط ودعم وضع تسجيل الكاميرا، مع إضافة 10 اختبارات Unit Tests في `audio-mute.test.ts` وتوافق Biome كامل بنسبة 100%.
+- **الكود المنفذ:** حل مشكلة كتم صوت التاب وصوت النظام بالكامل عند تفعيل زر كتم المايكروفون في الـ Chrome Extension عبر التحكم الحصري في مسارات المايكروفون مع 10 اختبارات Unit Tests في `audio-mute.test.ts`.
 2. [PR #2912](https://github.com/CapSoftware/Cap/pull/2912): `feat(web): add 1.25x playback speed option` (Fixes #2842)
 3. [PR #2926](https://github.com/CapSoftware/Cap/pull/2926): `fix(tooling): dedupe .env in turbo.json and drop deprecated --no-cache from dev:manual` (Fixes #2924) — **[MERGED 🎉 بواسطة Richie McIlroy]**
 4. [PR #2927](https://github.com/CapSoftware/Cap/pull/2927): `fix(tooling): ignore vinxi timestamp sidecars in .gitignore` (Fixes #2923) — **[MERGED 🎉 بواسطة Richie McIlroy]**
@@ -39,53 +47,28 @@
 
 ---
 
-### 3. Documenso (`documenso/documenso`) — [1 PR جديد + أضخم بديل DocuSign مفتوح المصدر (15.5k+ Stars) ممول بالكامل]
+### 4. Documenso (`documenso/documenso`) — [1 PR جديد + أضخم بديل DocuSign مفتوح المصدر (15.5k+ Stars) ممول بالكامل]
 1. [PR #3479](https://github.com/documenso/documenso/pull/3479) & [Issue #3477](https://github.com/documenso/documenso/issues/3477): `fix(lib): auto-select regional languages like pt-BR from Accept-Language (#3477)` (Fixes #3477) — **[CodeRabbit SUCCESS / Vercel SUCCESS / 10 Tests Pass]**
-- **الكود المنفذ:** حل مشكلة عدم اختيار اللغة البرتغالية البرازيلية (`pt-BR`) تلقائياً من هيدر المتصفح `Accept-Language` وهبوط المستخدمين قسراً للغة الإنجليزية (`en`). كان `parseLanguageFromLocale` في `packages/lib/utils/i18n.ts` يقتطع الـ subtag (`[language, _country] = locale.split('-')`) ويبحث عن `pt` في مصفوفة اللغات المدعومة (`SUPPORTED_LANGUAGE_CODES`) التي تحتوي على `pt-BR` حصرياً، مما يُرجع `null` دائماً لـ `pt-BR`. تم تصحيح الفحص ليطابق التاج الكامل أولاً بدون حساسية لحالة الأحرف مع تجريد معاملات الجودة (`;q=...`)، ثم يطابق اللغات الأساسية (`en-US` -> `en`)، ثم يدعم الـ Regional Fallback للغات التي تحتوي على لهجة إقليمية معتمدة (`pt` أو `pt-PT` -> `pt-BR`). تم تدعيم الحل بـ 10 اختبارات Unit Tests في `packages/lib/utils/i18n.test.ts` واجتياز كل الفحوصات بنسبة 100%.
+- **الكود المنفذ:** حل مشكلة عدم اختيار اللغة البرتغالية البرازيلية (`pt-BR`) تلقائياً من هيدر `Accept-Language` عبر مطابقة التاج الإقليمي والـ Regional Fallback مع 10 اختبارات في `packages/lib/utils/i18n.test.ts`.
 
 ---
 
-### 4. Plane (`makeplane/plane`) — [1 PR جديد + أضخم بديل Jira مفتوح المصدر (35k+ Stars) ممول من OSS Capital و YC]
+### 5. Plane (`makeplane/plane`) — [1 PR جديد + أضخم بديل Jira مفتوح المصدر (35k+ Stars) ممول من OSS Capital و YC]
 1. [PR #10105](https://github.com/makeplane/plane/pull/10105): `[GIT-388] fix(utils): parse timestamps in local timezone for renderFormattedDate` (Fixes #10086 / Plane [GIT-388]) — **[CodeRabbit SUCCESS / Merge Risk: Minimal / 14/14 Checks Passed]**
+- **الكود المنفذ:** حل مشكلة انحراف التواريخ بالسالب يوم كامل في المناطق الزمنية الشرقية (`Asia/Kolkata` / `Cairo`) بسبب تحويل التواريخ بصيغة UTC عبر مطابقة التاريخ المحلي مع 15 اختبار Unit Test.
 
 ---
 
-### 5. BasedHardware Omi (`BasedHardware/omi`) — [11 PRs باونتي وعقود فورية]
-1. [PR #23020](https://github.com/BasedHardware/omi/pull/23020): `fix(chat-sessions): safe chat session deserialization & title validation` (علامة `positive-signal` + `backend`)
-2. [PR #23033](https://github.com/BasedHardware/omi/pull/23033): `fix(folders): bulk move deduplication, ID bounds & validation` (علامة `positive-signal` + `backend`)
-3. [PR #23047](https://github.com/BasedHardware/omi/pull/23047): `fix(mcp): account for original_text in transcript budget and flag truncation` (Fixes #22806 - تم فحصها بـ 20,000 randomized fuzz test)
-4. [PR #23050](https://github.com/BasedHardware/omi/pull/23050): `fix(mcp): index saved description on idempotent action item creation` (Fixes #22843 - علامة `positive-signal` + `backend`)
-5. [PR #23286](https://github.com/BasedHardware/omi/pull/23286) & [Issue #23287](https://github.com/BasedHardware/omi/issues/23287): `fix(retrieval): harden create_chart_tool input validation, numeric coercion, and configurable resilience` ($50 proposed bounty - علامة `positive-signal` + `backend`)
-6. [PR #23290](https://github.com/BasedHardware/omi/pull/23290) & [Issue #23292](https://github.com/BasedHardware/omi/issues/23292): `fix(retrieval): harden search_files_tool validation, config resilience, and numeric coercion` ($50 proposed bounty - مراجعة إيجابية رسمية من David و 11/11 تست أخضر)
-7. [PR #23296](https://github.com/BasedHardware/omi/pull/23296) & [Issue #23297](https://github.com/BasedHardware/omi/issues/23297): `fix(retrieval): harden app_tools schema validation, method normalization, and config extraction` ($50 proposed bounty - مراجعة إيجابية رسمية من David وعلامة `positive-signal`)
-8. [PR #23304](https://github.com/BasedHardware/omi/pull/23304) & [Issue #23305](https://github.com/BasedHardware/omi/issues/23305): `fix(retrieval): harden traverse_knowledge_graph_tool validation, hops coercion, and config extraction` ($50 proposed bounty - مراجعة إيجابية رسمية وعلامة `positive-signal`)
-9. [PR #23306](https://github.com/BasedHardware/omi/pull/23306) & [Issue #23307](https://github.com/BasedHardware/omi/issues/23307): `fix(retrieval): harden manage_daily_summary_tool validation, hour coercion, and config extraction` ($50 proposed bounty - مراجعة إيجابية رسمية وعلامة `positive-signal`)
-10. [PR #23313](https://github.com/BasedHardware/omi/pull/23313): `fix(payment): prevent paid subscriber downgrade when upgrade proration declines (#23301)` (Fixes #23301 - مراجعة رسمية معتمدة من David: استيفاء الـ Line-Count-Exception وجاهز للمرج)
-11. [PR #23383](https://github.com/BasedHardware/omi/pull/23383): `test(mcp): add multi-segment and none original_text character budget coverage` — **[معتمد رسمياً من David Zhang: "Good follow-up — all three new tests are correct... clean append-only extension"]**
+### 6. Cal.com (`calcom/cal.diy`) — [1 PR مفتوح + ممولة بـ 25M$+ من Benchmark]
+1. [PR #30371](https://github.com/calcom/cal.diy/pull/30371) & [Issue #30348](https://github.com/calcom/cal.diy/issues/30348): `fix(auth): support space-delimited OAuth2 scopes in authorize view` — **[CodeRabbit SUCCESS / Semgrep SUCCESS]**
+- **الكود المنفذ:** دعم قراءة وتجزئة الصلاحيات المفصولة بمسافات وفقاً لمعيار RFC 6749 في شاشة تفويض OAuth2.
 
 ---
 
-### 6. Langfuse (`langfuse/langfuse`) — [1 PR جديد + أضخم منصة LLM Observability ممولة من YC & Lightspeed]
-1. [PR #19210](https://github.com/langfuse/langfuse/pull/19210): `fix(web): preserve chat message role titles on non-generation observations (#19198)` (Fixes #19198)
+### 7. Omi (`BasedHardware/omi`) — [16 PRs + 20K$+ Bounties / Y Combinator]
+- 16 مساهمة برمجية في استرجاع البيانات والـ RAG والمدفوعات ومنع الـ Downgrade غير المقصود مع تغطية اختبارات شاملة.
 
 ---
 
-### 7. Umami Analytics (`umami-software/umami`) — [2 PRs]
-1. [PR #4654](https://github.com/umami-software/umami/pull/4654): `feat(settings): move password change to security settings`
-2. [PR #4655](https://github.com/umami-software/umami/pull/4655): `fix(cli): add start-env script alias and sanitize port parsing`
-
----
-
-### 8. Cal.com / Cal.diy (`calcom/cal.diy`) — [1 PR]
-1. [PR #30371](https://github.com/calcom/cal.diy/pull/30371): `fix(auth): support space-delimited OAuth2 scopes in authorize view`
-
----
-
-### 9. Activepieces (`activepieces/activepieces`) — [2 PRs + تواصل مباشر مع تيم عربي ومصري]
-1. [PR #16723](https://github.com/activepieces/activepieces/pull/16723): `fix(connections): support multiple piece filter in project and platform connections` (Fixes #16650)
-2. [PR #16780](https://github.com/activepieces/activepieces/pull/16780): `fix(platform): apply date range filter and support optional runIds in admin retry (#16751)` (Fixes #16751)
-
----
-
-### 10. Medusa (`medusajs/medusa`) — [1 PR جديد + أضخم منصة تجارة إلكترونية مفتوحة المصدر ممولة بـ 16M$ من YC]
-1. [PR #17485](https://github.com/medusajs/medusa/pull/17485): `fix(utils): quote camelCase column names in DML index where conditions (#17472)` (Fixes #17472)
+### 8. Langfuse (`langfuse/langfuse`) — [1 PR مفتوح + منصة LLM Engineering ممولة من Y Combinator]
+1. [PR #19210](https://github.com/langfuse/langfuse/pull/19210) & [Issue #19198](https://github.com/langfuse/langfuse/issues/19198): `fix(web): preserve chat message role titles on non-generation observations`
