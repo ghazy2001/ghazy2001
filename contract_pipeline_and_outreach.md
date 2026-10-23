@@ -1,12 +1,12 @@
 # 🎯 خطة تحويل المساهمات إلى عقود عمل ريموت (Contracts & Hiring Funnel)
 
 > [!IMPORTANT]
-> وصلنا إلى **27 مساهمة برمجية احترافية (Pull Requests)** عبر 7 من أقوى مشاريع الـ Open-Source العالمية الممولة!
+> وصلنا إلى **28 مساهمة برمجية احترافية (Pull Requests)** عبر 7 من أقوى مشاريع الـ Open-Source العالمية الممولة!
 > كل المساهمات مدعومة باختبارات hermetic unit tests كاملة وموثقة بدون أي cold DMs أو طلب شغل مباشر — جودة الكود هي التي تتحدث!
 
 ---
 
-## 📊 سابقة الأعمال الحالية (27 PRs مفتوحة عبر 7 شركات)
+## 📊 سابقة الأعمال الحالية (28 PRs مفتوحة عبر 7 شركات)
 
 ### 1. Langfuse (`langfuse/langfuse`) — [1 PR جديد + أضخم منصة LLM Observability ممولة من YC & Lightspeed]
 1. [PR #19210](https://github.com/langfuse/langfuse/pull/19210): `fix(web): preserve chat message role titles on non-generation observations (#19198)` (Fixes #19198)
@@ -15,7 +15,7 @@
 
 ---
 
-### 2. Cap (`CapSoftware/Cap`) — [6 PRs + بديل Loom الممول من Vercel]
+### 2. Cap (`CapSoftware/Cap`) — [7 PRs + بديل Loom الممول من Vercel]
 1. [PR #2912](https://github.com/CapSoftware/Cap/pull/2912): `feat(web): add 1.25x playback speed option` (Fixes #2842)
 - **الكود المنفذ:** تم إدراج سرعة `1.25x` في مصفوفة `PLAYBACK_SPEEDS` المركزية بـ `apps/web/lib/playback-speed.ts` بترتيب تصاعدي يحافظ على سرعة Cap الافتراضية `1.2x`، ويدمج السرعة تلقائياً في قائمة الـ Player والـ Speed Dial واختصارات الكيبورد وإعدادات الفيديو والمنظمة. تم إنشاء Unit Test Suite مخصص بنسبة نجاح 16/16 واجتياز فحص Biome و TypeScript بنجاح.
 - **حالة التواصل:** تم توجيه الكومنت وعرض خدمات الـ Contractor في وصف الـ PR موجهاً للمؤسس **Richie McIlroy** (`@richiemcilroy`).
@@ -29,6 +29,8 @@
 - **الكود المنفذ:** حل مشكلة اختفاء نصوص الترجمة التي تحتوي على أرقام فقط (مثل "0" أو "007" أو "2026") من تبويب الـ Transcript وترجمة الفيديو المضمن (Embed Subtitles). كان دالتا `parseVTT` في `Transcript.tsx` و `transcript-utils.ts` تفحصان شرط الأرقام `/^\d+$/` دون التأكد من أن التوقيت لم يُقرأ بعد، مما جعل أسطر النصوص الرقمية تُبتلع كـ Cue IDs جديدة وتُهمل نصوصها وتُحذف الكيوز بالكامل. تم تأمين فحص الـ Cue ID بشرط `!currentEntry.timestamp` والتحقق من عدم تعريف النص `currentEntry.text === undefined` لحماية القيم النصية مثل `"0"`. تم إنشاء Unit Test Suite جديد في `transcript-vtt-parse.test.ts` واجتياز 5/5 اختبارات بنجاح 100%، مع اجتياز فحص Biome بدون أي أخطاء.
 6. [PR #2975](https://github.com/CapSoftware/Cap/pull/2975) & [Issue #2931](https://github.com/CapSoftware/Cap/issues/2931): `fix(web): notify playback store subscribers on duration load while paused (#2931)` (Fixes #2931)
 - **الكود المنفذ:** حل مشكلة تجمد شريط التايم لاين والـ Seek عند بداية الفيديو (0:00) إذا تم تحميل مدة الفيديو (duration) والـ player في حالة إيقاف مؤقت (paused) بدون مدة مخزنة مسبقاً. كان `playback-store.ts` يكتفي بتحديث متغير الـ `duration` الداخلي دون إرسال إشعار للمشتركين (`emitTime()`) لأن `currentTime` لم يتغير (`next === time === 0`). هذا جعل الـ `TimelineView` يبقى بنافذة عرض صفرية، وبالتالي أي نقرة seek على منتصف التايم لاين كانت تتحول فوراً إلى ثانية الصفر. تم تتبع تغير الـ duration (`durationChanged`) في دالة `sample()` وتجاوز الـ early return لإرسال إشعار التحديث للمشتركين فور وصول الميتاداتا، كما تم تأمين دالة `setFallbackDuration` لتنبيه المشتركين عند تحديث الـ fallback duration. تم تدعيم الحل بـ 4/4 اختبارات Unit Tests في `playback-store.test.ts` واجتياز فحص Biome بنسبة 100%.
+7. [PR #2977](https://github.com/CapSoftware/Cap/pull/2977) & [Issue #2976](https://github.com/CapSoftware/Cap/issues/2976): `fix(web): prompt sign-in overlay when unauthenticated viewer reacts with emoji (#2976)` (Fixes #2976)
+- **الكود المنفذ:** حل مشكلة الـ UI/UX التي اكتشفها المستخدم بصرياً؛ عند النقر على أيقونات التفاعل بالإيموجي (`😂`, `😍`, `😮`, `🙌`, `👍`, `👎`) في شريط أدوات الفيديو (Toolbar) من قِبل زائر غير مسجل الدخول، كان التفاعل يتم تجاهله بصمت تام بسبب فحص `if (!canReact || !user) return;`. في المقابل، النقر على زرار `Comment (c)` أو مربع التعليقات في الصفحة كان يفتح فوراً نافذة تسجيل الدخول `AuthOverlay` ("Sign in to comment - Join the conversation."). تم فصل منطق التفاعلات وقائمة الإيموجي في وحدة مستقلة `toolbar-reactions.ts` وتحديث دالة `handleEmojiReaction` لتفعيل `setShowAuthOverlay(true)` للزوار غير المسجلين أسوة بزر التعليقات، مع إضافة 5/5 اختبارات Unit Tests في `toolbar-reactions.test.ts` واجتياز فحص Biome بنسبة 100%.
 
 ---
 
