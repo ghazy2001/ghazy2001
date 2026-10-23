@@ -1,20 +1,22 @@
 # 🎯 خطة تحويل المساهمات إلى عقود عمل ريموت (Contracts & Hiring Funnel)
 
 > [!IMPORTANT]
-> وصلنا إلى **34 مساهمة برمجية احترافية (Pull Requests)** عبر **10 من أقوى مشاريع الـ Open-Source العالمية الممولة**!
-> **إنجاز استثنائي اليوم:** تم دمج PR #28412 رسمياً في **Twenty CRM** بواسطة المؤسس المشارك والـ CTO **Charles Bochet**، وفتح مساهمة جديدة في **Documenso** ([PR #3479](https://github.com/documenso/documenso/pull/3479))!
+> وصلنا إلى **35 مساهمة برمجية احترافية (Pull Requests)** عبر **10 من أقوى مشاريع الـ Open-Source العالمية الممولة**!
+> **إنجاز استثنائي اليوم:** تم دمج PR #28412 رسمياً في **Twenty CRM** بواسطة المؤسس المشارك والـ CTO **Charles Bochet**، وفتح مساهمة جديدة في **Documenso** ([PR #3479](https://github.com/documenso/documenso/pull/3479))، وفتح مساهمة سادسة في **Twenty CRM** ([PR #28744](https://github.com/twentyhq/twenty/pull/28744))!
 
 ---
 
-## 📊 سابقة الأعمال الحالية (34 PRs عبر 10 شركات عالمية ممولة)
+## 📊 سابقة الأعمال الحالية (35 PRs عبر 10 شركات عالمية ممولة)
 
-### 1. Twenty CRM (`twentyhq/twenty`) — [5 PRs + ممولة بـ 5M$+ من Y Combinator]
+### 1. Twenty CRM (`twentyhq/twenty`) — [6 PRs + ممولة بـ 5M$+ من Y Combinator]
 1. [PR #28412](https://github.com/twentyhq/twenty/pull/28412): `fix(metadata-store): adopt new collection hash on replaceDraft when data is unchanged` — **[MERGED 🎉 تم الدمج رسمياً بواسطة المؤسس والـ CTO Charles Bochet]**
 - **الكود المنفذ:** حل مشكلة عدم تحديث الـ collection hash في الـ metadata store عند عمل replaceDraft عندما تكون البيانات مطابقة، مما كان يتسبب في عدم مزامنة الحالة مع الـ backend.
-2. [PR #28425](https://github.com/twentyhq/twenty/pull/28425): `fix(record-form): block submission when field input has validation error` — **[Visual Regression: Passed 100%]**
-3. [PR #28432](https://github.com/twentyhq/twenty/pull/28432): `fix(workflow): preserve logic function outputs and resolve link output schema`
-4. [PR #28460](https://github.com/twentyhq/twenty/pull/28460): `fix(record-picker): prevent lost clicks and enable search enter selection in relation picker`
-5. [PR #28513](https://github.com/twentyhq/twenty/pull/28513): `fix(record-picker): use ExtraLarge width for one-to-many relation pickers`
+2. [PR #28744](https://github.com/twentyhq/twenty/pull/28744) & [Issue #28739](https://github.com/twentyhq/twenty/issues/28739): `fix(apollo): support multiple orderBy criteria in optimistic edge sorting (#28739)` (Fixes #28739) — **[جديد + 6 اختبارات Unit Tests شاملة]**
+- **الكود المنفذ:** حل مشكلة تجاهل معايير الترتيب الثانوية (`secondary orderBy fields`) في الـ optimistic cache sorting داخل `sortCachedObjectEdges`. كان الكود يقرأ فقط `orderBy[0]` ويهمل الحقول التالية، مما يبقي السجلات المتساوية في الحقل الأول على ترتيب إدراجها القديم بدلاً من ترتيبها بالحقل الثاني. تم بناء محلل لجميع معايير الترتيب واستيفاء الترتيب عند تعادل القيم أو تعادل الـ `null` عبر الحقول المتتالية، مع الحفاظ على الترتيب الأصلي في حالة التعادل الكامل، وإضافة 6 اختبارات Unit Tests في `sortCachedObjectEdges.test.ts`.
+3. [PR #28425](https://github.com/twentyhq/twenty/pull/28425): `fix(record-form): block submission when field input has validation error` — **[Visual Regression: Passed 100%]**
+4. [PR #28432](https://github.com/twentyhq/twenty/pull/28432): `fix(workflow): preserve logic function outputs and resolve link output schema`
+5. [PR #28460](https://github.com/twentyhq/twenty/pull/28460): `fix(record-picker): prevent lost clicks and enable search enter selection in relation picker`
+6. [PR #28513](https://github.com/twentyhq/twenty/pull/28513): `fix(record-picker): use ExtraLarge width for one-to-many relation pickers`
 - **حالة التواصل:** تم نشر كومنت طلب الكونتراكت الرسمي على [PR #28513](https://github.com/twentyhq/twenty/pull/28513#issuecomment-6317988402) موجهاً لـ Félix Malfait و Charles Bochet.
 
 ---
