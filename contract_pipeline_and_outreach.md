@@ -1,12 +1,12 @@
 # 🎯 خطة تحويل المساهمات إلى عقود عمل ريموت (Contracts & Hiring Funnel)
 
 > [!IMPORTANT]
-> وصلنا إلى **25 مساهمة برمجية احترافية (Pull Requests)** عبر 7 من أقوى مشاريع الـ Open-Source العالمية الممولة!
+> وصلنا إلى **26 مساهمة برمجية احترافية (Pull Requests)** عبر 7 من أقوى مشاريع الـ Open-Source العالمية الممولة!
 > كل المساهمات مدعومة باختبارات hermetic unit tests كاملة وموثقة بدون أي cold DMs أو طلب شغل مباشر — جودة الكود هي التي تتحدث!
 
 ---
 
-## 📊 سابقة الأعمال الحالية (25 PRs مفتوحة عبر 7 شركات)
+## 📊 سابقة الأعمال الحالية (26 PRs مفتوحة عبر 7 شركات)
 
 ### 1. Langfuse (`langfuse/langfuse`) — [1 PR جديد + أضخم منصة LLM Observability ممولة من YC & Lightspeed]
 1. [PR #19210](https://github.com/langfuse/langfuse/pull/19210): `fix(web): preserve chat message role titles on non-generation observations (#19198)` (Fixes #19198)
@@ -30,7 +30,7 @@
 
 ---
 
-### 3. BasedHardware Omi (`BasedHardware/omi`) — [10 PRs باونتي وعقود فورية]
+### 3. BasedHardware Omi (`BasedHardware/omi`) — [11 PRs باونتي وعقود فورية]
 1. [PR #23020](https://github.com/BasedHardware/omi/pull/23020): `fix(chat-sessions): safe chat session deserialization & title validation` (علامة `positive-signal` + `backend`)
 2. [PR #23033](https://github.com/BasedHardware/omi/pull/23033): `fix(folders): bulk move deduplication, ID bounds & validation` (علامة `positive-signal` + `backend`)
 3. [PR #23047](https://github.com/BasedHardware/omi/pull/23047): `fix(mcp): account for original_text in transcript budget and flag truncation` (Fixes #22806 - تم فحصها بـ 20,000 randomized fuzz test ونجحت؛ أغلقت كـ superseded لسبق دمج حل موازي وأشاد المراجع David بجودة التستات ودعانا لفتح PR للتستات التكميلية)
@@ -41,6 +41,7 @@
 8. [PR #23304](https://github.com/BasedHardware/omi/pull/23304) & [Issue #23305](https://github.com/BasedHardware/omi/issues/23305): `fix(retrieval): harden traverse_knowledge_graph_tool validation, hops coercion, and config extraction` ($50 proposed bounty - مراجعة إيجابية رسمية وعلامة `positive-signal`)
 9. [PR #23306](https://github.com/BasedHardware/omi/pull/23306) & [Issue #23307](https://github.com/BasedHardware/omi/issues/23307): `fix(retrieval): harden manage_daily_summary_tool validation, hour coercion, and config extraction` ($50 proposed bounty - مراجعة إيجابية رسمية وعلامة `positive-signal`)
 10. [PR #23313](https://github.com/BasedHardware/omi/pull/23313): `fix(payment): prevent paid subscriber downgrade when upgrade proration declines (#23301)` (Fixes #23301 - مراجعة رسمية معتمدة من David: "The production fix here is correct and well-tested; 5/5 new and 54/54 existing pass"، وتم استيفاء gate الـ Failure-Class والـ docstrings بنجاح)
+11. [PR #23383](https://github.com/BasedHardware/omi/pull/23383): `test(mcp): add multi-segment and none original_text character budget coverage` (Follow-up to #23047 بدعوة مباشرة من مهندس التيم David Zhang لتغطية حالات multi-segment boundary و original_text=None؛ 5/5 اختبارات Unit Tests خضراء بنجاح 100%)
 - **الكود المنفذ في PR #23313:** حل مشكلة هبوط المشتركين المدفوعين تلقائياً لخطة مجانية ("Free Plan") في الـ UI عند رفض بطاقة البنك أثناء ترقية الخطة (Cross-plan upgrade). تم إلزام Stripe باستخدام `payment_behavior='error_if_incomplete'` لعمل rollback فوري بدلاً من تحويل الاشتراك إلى `past_due` وحرمان المستخدم من اشتراكه السنوي المدفوع، مع إضافة فحص حالة Subscription دفاعي يمنع المساس بقاعدة البيانات إن لم تكن الحالة نشطة، وتوجيه أخطاء `CardError` برسالة واضحة للمستخدم: "Upgrade payment failed... Your current plan remains active." بدلاً من كراش 500 أو تسريب IDs سرية. تم تدعيم الحل بـ 5 اختبارات Unit Tests في `test_payment_proration_decline_protection.py` واجتياز 13/13 اختبارات بنسبة 100%.
 
 ---
