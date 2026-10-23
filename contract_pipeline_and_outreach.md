@@ -1,22 +1,26 @@
 # 🎯 خطة تحويل المساهمات إلى عقود عمل ريموت (Contracts & Hiring Funnel)
 
 > [!IMPORTANT]
-> وصلنا إلى **35 مساهمة برمجية احترافية (Pull Requests)** عبر **10 من أقوى مشاريع الـ Open-Source العالمية الممولة**!
-> **إنجاز استثنائي اليوم:** تم دمج PR #28412 رسمياً في **Twenty CRM** بواسطة المؤسس المشارك والـ CTO **Charles Bochet**، وفتح مساهمة جديدة في **Documenso** ([PR #3479](https://github.com/documenso/documenso/pull/3479))، وفتح مساهمة سادسة في **Twenty CRM** ([PR #28744](https://github.com/twentyhq/twenty/pull/28744))!
+> وصلنا إلى **36 مساهمة برمجية احترافية (Pull Requests)** عبر **10 من أقوى مشاريع الـ Open-Source العالمية الممولة**!
+> **إنجاز استثنائي اليوم:** تم دمج PR #28412 رسمياً في **Twenty CRM** بواسطة المؤسس المشارك والـ CTO **Charles Bochet**، وفتح مساهمة جديدة في **Documenso** ([PR #3479](https://github.com/documenso/documenso/pull/3479))، وفتح مساهمتين متتاليتين في **Twenty CRM** ([PR #28744](https://github.com/twentyhq/twenty/pull/28744) و [PR #28745](https://github.com/twentyhq/twenty/pull/28745))!
 
 ---
 
-## 📊 سابقة الأعمال الحالية (35 PRs عبر 10 شركات عالمية ممولة)
+## 📊 سابقة الأعمال الحالية (36 PRs عبر 10 شركات عالمية ممولة)
 
-### 1. Twenty CRM (`twentyhq/twenty`) — [6 PRs + ممولة بـ 5M$+ من Y Combinator]
+### 1. Twenty CRM (`twentyhq/twenty`) — [7 PRs + ممولة بـ 5M$+ من Y Combinator]
 1. [PR #28412](https://github.com/twentyhq/twenty/pull/28412): `fix(metadata-store): adopt new collection hash on replaceDraft when data is unchanged` — **[MERGED 🎉 تم الدمج رسمياً بواسطة المؤسس والـ CTO Charles Bochet]**
 - **الكود المنفذ:** حل مشكلة عدم تحديث الـ collection hash في الـ metadata store عند عمل replaceDraft عندما تكون البيانات مطابقة، مما كان يتسبب في عدم مزامنة الحالة مع الـ backend.
 2. [PR #28744](https://github.com/twentyhq/twenty/pull/28744) & [Issue #28739](https://github.com/twentyhq/twenty/issues/28739): `fix(apollo): support multiple orderBy criteria in optimistic edge sorting (#28739)` (Fixes #28739) — **[جديد + 6 اختبارات Unit Tests شاملة]**
 - **الكود المنفذ:** حل مشكلة تجاهل معايير الترتيب الثانوية (`secondary orderBy fields`) في الـ optimistic cache sorting داخل `sortCachedObjectEdges`. كان الكود يقرأ فقط `orderBy[0]` ويهمل الحقول التالية، مما يبقي السجلات المتساوية في الحقل الأول على ترتيب إدراجها القديم بدلاً من ترتيبها بالحقل الثاني. تم بناء محلل لجميع معايير الترتيب واستيفاء الترتيب عند تعادل القيم أو تعادل الـ `null` عبر الحقول المتتالية، مع الحفاظ على الترتيب الأصلي في حالة التعادل الكامل، وإضافة 6 اختبارات Unit Tests في `sortCachedObjectEdges.test.ts`.
-3. [PR #28425](https://github.com/twentyhq/twenty/pull/28425): `fix(record-form): block submission when field input has validation error` — **[Visual Regression: Passed 100%]**
-4. [PR #28432](https://github.com/twentyhq/twenty/pull/28432): `fix(workflow): preserve logic function outputs and resolve link output schema`
-5. [PR #28460](https://github.com/twentyhq/twenty/pull/28460): `fix(record-picker): prevent lost clicks and enable search enter selection in relation picker`
-6. [PR #28513](https://github.com/twentyhq/twenty/pull/28513): `fix(record-picker): use ExtraLarge width for one-to-many relation pickers`
+3. [PR #28745](https://github.com/twentyhq/twenty/pull/28745) & [Issue #28737](https://github.com/twentyhq/twenty/issues/28737): `fix(workflow): normalize Content-Type header and preserve falsy bodies in HttpTool (#28737)` (Fixes #28737) — **[جديد + اختبارات Server & Shared شاملة]**
+- **الكود المنفذ:** حل مشكلتين جوهريتين في أداة `HttpTool` و `parseDataFromContentType` لتنفيذ طلبات الـ HTTP في محرك الـ Workflows:
+  1. معالجة حساسية حالة الأحرف في هيدر `Content-Type`: كان الكود يقرأ فقط `headers['content-type']` الصغير، مما يتجاهل `Content-Type: application/x-www-form-urlencoded` و `Content-Type: multipart/form-data` ويسقط الـ boundary. تم تحويل البحث ليكون Case-Insensitive وتنظيف الهيدر بغض النظر عن طريقة كتابته للسماح بحقن الـ boundary تلقائياً من Axios.
+  2. الحفاظ على الـ Falsy Bodies: كان الشرط `if (isMethodForBody && body)` يسقط أي جسم طلب يحمل قيمة بوليانية `false` أو رقم `0` بسبب كونهما falsy في جافاسكريبت، مما يتسبب في إرسال طلب بـ body فارغ. تم التعديل إلى `isDefined(body)` وتحديث `InputData` لدعم الأرقام والبوليان واختبارها بنجاح.
+4. [PR #28425](https://github.com/twentyhq/twenty/pull/28425): `fix(record-form): block submission when field input has validation error` — **[Visual Regression: Passed 100%]**
+5. [PR #28432](https://github.com/twentyhq/twenty/pull/28432): `fix(workflow): preserve logic function outputs and resolve link output schema`
+6. [PR #28460](https://github.com/twentyhq/twenty/pull/28460): `fix(record-picker): prevent lost clicks and enable search enter selection in relation picker`
+7. [PR #28513](https://github.com/twentyhq/twenty/pull/28513): `fix(record-picker): use ExtraLarge width for one-to-many relation pickers`
 - **حالة التواصل:** تم نشر كومنت طلب الكونتراكت الرسمي على [PR #28513](https://github.com/twentyhq/twenty/pull/28513#issuecomment-6317988402) موجهاً لـ Félix Malfait و Charles Bochet.
 
 ---
