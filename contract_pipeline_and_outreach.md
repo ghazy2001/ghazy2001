@@ -1,12 +1,12 @@
 # 🎯 خطة تحويل المساهمات إلى عقود عمل ريموت (Contracts & Hiring Funnel)
 
 > [!IMPORTANT]
-> وصلنا إلى **30 مساهمة برمجية احترافية (Pull Requests)** عبر 8 من أقوى مشاريع الـ Open-Source العالمية الممولة!
+> وصلنا إلى **32 مساهمة برمجية احترافية (Pull Requests)** عبر 9 من أقوى مشاريع الـ Open-Source العالمية الممولة!
 > كل المساهمات مدعومة باختبارات hermetic unit tests كاملة وموثقة بدون أي cold DMs أو طلب شغل مباشر — جودة الكود هي التي تتحدث!
 
 ---
 
-## 📊 سابقة الأعمال الحالية (30 PRs مفتوحة عبر 8 شركات)
+## 📊 سابقة الأعمال الحالية (32 PRs مفتوحة عبر 9 شركات)
 
 ### 1. Langfuse (`langfuse/langfuse`) — [1 PR جديد + أضخم منصة LLM Observability ممولة من YC & Lightspeed]
 1. [PR #19210](https://github.com/langfuse/langfuse/pull/19210): `fix(web): preserve chat message role titles on non-generation observations (#19198)` (Fixes #19198)
@@ -15,7 +15,7 @@
 
 ---
 
-### 2. Cap (`CapSoftware/Cap`) — [7 PRs + بديل Loom الممول من Vercel]
+### 2. Cap (`CapSoftware/Cap`) — [8 PRs + بديل Loom الممول من Vercel]
 1. [PR #2912](https://github.com/CapSoftware/Cap/pull/2912): `feat(web): add 1.25x playback speed option` (Fixes #2842)
 - **الكود المنفذ:** تم إدراج سرعة `1.25x` في مصفوفة `PLAYBACK_SPEEDS` المركزية بـ `apps/web/lib/playback-speed.ts` بترتيب تصاعدي يحافظ على سرعة Cap الافتراضية `1.2x`، ويدمج السرعة تلقائياً في قائمة الـ Player والـ Speed Dial واختصارات الكيبورد وإعدادات الفيديو والمنظمة. تم إنشاء Unit Test Suite مخصص بنسبة نجاح 16/16 واجتياز فحص Biome و TypeScript بنجاح.
 - **حالة التواصل:** تم توجيه الكومنت وعرض خدمات الـ Contractor في وصف الـ PR موجهاً للمؤسس **Richie McIlroy** (`@richiemcilroy`).
@@ -31,6 +31,8 @@
 - **الكود المنفذ:** حل مشكلة تجمد شريط التايم لاين والـ Seek عند بداية الفيديو (0:00) إذا تم تحميل مدة الفيديو (duration) والـ player في حالة إيقاف مؤقت (paused) بدون مدة مخزنة مسبقاً. كان `playback-store.ts` يكتفي بتحديث متغير الـ `duration` الداخلي دون إرسال إشعار للمشتركين (`emitTime()`) لأن `currentTime` لم يتغير (`next === time === 0`). هذا جعل الـ `TimelineView` يبقى بنافذة عرض صفرية، وبالتالي أي نقرة seek على منتصف التايم لاين كانت تتحول فوراً إلى ثانية الصفر. تم تتبع تغير الـ duration (`durationChanged`) في دالة `sample()` وتجاوز الـ early return لإرسال إشعار التحديث للمشتركين فور وصول الميتاداتا، كما تم تأمين دالة `setFallbackDuration` لتنبيه المشتركين عند تحديث الـ fallback duration. تم تدعيم الحل بـ 4/4 اختبارات Unit Tests في `playback-store.test.ts` واجتياز فحص Biome بنسبة 100%.
 7. [PR #2977](https://github.com/CapSoftware/Cap/pull/2977) & [Issue #2976](https://github.com/CapSoftware/Cap/issues/2976): `fix(web): prompt sign-in overlay when unauthenticated viewer reacts with emoji (#2976)` (Fixes #2976) — **[مراجعة واعتماد Richie McIlroy — جاهز للمرج]**
 - **الكود المنفذ:** حل مشكلة الـ UI/UX التي اكتشفها المستخدم بصرياً؛ عند النقر على أيقونات التفاعل بالإيموجي في شريط الأدوات من قِبل زائر غير مسجل، كان التفاعل يتم تجاهله بصمت. تم فصل منطق التفاعلات وقائمة الإيموجي في وحدة مستقلة `toolbar-reactions.ts` وتحديث دالة `handleEmojiReaction` لتفعيل `setShowAuthOverlay(true)` للزوار غير المسجلين أسوة بزر التعليقات، مع تمرير كائن الـ `user` المؤكد للدالة وإلغاء الـ fallbacks بناءً على مراجعة ريتشي المباشرة، مع إضافة 5/5 اختبارات Unit Tests واجتياز فحص Biome بنسبة 100%.
+8. [PR #2988](https://github.com/CapSoftware/Cap/pull/2988): `fix(web): notify subscribers when late fallbackDuration updates playback store` — **[متابعة بطلب ودعوة مباشرة من Richie McIlroy]**
+- **الكود المنفذ:** حل مشكلة تجمد مدة التايم لاين عند `0` إذا تم تحديث الـ `fallbackDuration` بشكل متأخر أو غير متزامن قبل تحميل بيانات الفيديو من المتصفح. كان `setFallbackDuration` يحدث المتغيرات داخلياً دون تنبيه المشتركين (`emitTime()`) مما يبقي الـ `TimelineView` معلقاً في `[0, 0]`. تم فحص تغير الـ `getDuration()` قبل وبعد ضبط الـ fallback وإرسال إشعار فوري للمشتركين فقط عند تغير القيمة الإجمالية، مع تدعيم الحل باختباري Unit Tests في `playback-store.test.ts`.
 
 ---
 
@@ -85,3 +87,9 @@
 ### 8. Medusa (`medusajs/medusa`) — [1 PR جديد + أضخم منصة تجارة إلكترونية مفتوحة المصدر ممولة بـ 16M$ من YC]
 1. [PR #17485](https://github.com/medusajs/medusa/pull/17485): `fix(utils): quote camelCase column names in DML index where conditions (#17472)` (Fixes #17472)
 - **الكود المنفذ:** حل مشكلة فشل وكراش الـ Migrations عند بناء DML Indexes تحتوي على شروط `where` بأعمدة camelCase. كان `buildCondition` في `packages/core/utils/src/dml/helpers/entity-builder/query-builder.ts` يطبع اسم العمود مباشرة بدون علامات اقتباس، مما يجعل PostgreSQL يقلب الحروف تلقائياً إلى lowercase (`externalcode`) ويفشل الاستعلام لعدم وجود هذا العمود في الجدول (`"externalCode"`). تم بناء دالة `quoteKey` الذكية التي تقتبس الأعمدة ذات الحروف الكبيرة (camelCase) وتُبقي على الأعمدة الـ snake_case كما هي بدون تغيير لمنع أي migration drift على الموديولات القائمة والحفاظ على نمط `deleted_at IS NULL` المعتمد في كل المشاريع. تم تدعيم الحل بـ 9 اختبارات Unit Tests في `query-builder.spec.ts` واختبارات تكاملية في `entity-builder.spec.ts` وإضافة ملف changeset رسمي لـ `@medusajs/utils: patch`.
+
+---
+
+### 9. Plane (`makeplane/plane`) — [1 PR جديد + أضخم بديل Jira مفتوح المصدر (35k+ Stars) ممول من OSS Capital و YC]
+1. [PR #10105](https://github.com/makeplane/plane/pull/10105): `[GIT-388] fix(utils): parse timestamps in local timezone for renderFormattedDate` (Fixes #10086 / Plane [GIT-388])
+- **الكود المنفذ:** حل مشكلة انحراف التواريخ في الـ Tooltips والعناوين التي تعرض توقيتات كاملة (مثل نشاطات الـ work items، وتعليقات التذاكر، وتاريخ إصدارات الصفحات، وتأجيل الإشعارات، وانتهاء صلاحية مفاتيح الـ API). كان `renderFormattedDate` يستخرج أول 10 حروف فقط من التاريخ عبر `getDate()` (أي تاريخ الـ UTC المجرد)، بينما يستخرج `renderFormattedTime` الوقت بالتوقيت المحلي لمتصفح المستخدم عبر `new Date()`. أدى هذا إلى ظهور تاريخ متأخر أو متقدم يوماً كاملاً عن الوقت الفعلي عند منتصف الليل للمستخدمين خارج نطاق غرينتش (مثل ظهور `Oct 18, 2026, 02:42` بدلاً من `Oct 19, 2026, 02:42` في الهند والشرق الأوسط). تم تحديث `renderFormattedDate` و `renderFormattedDateWithoutYear` في `@plane/utils` و `apps/space` للتمييز بذكاء بين السلاسل التاريخية المجردة (`yyyy-mm-dd` التي تحافظ على `getDate()` لمنع الـ timezone drift لتواريخ البداية والنهاية) وبين الـ Timestamps الكاملة التي تُعالج بـ `new Date()` لتتطابق تاريخاً ووقتاً مع التوقيت المحلي للمستخدم. تم فحص الكود بـ `oxlint` (0 أخطاء) و `oxfmt` (100% تطابق مع معايير المشروع) مع اختبارات Hermetic Unit Tests عبر المناطق الزمنية المختلفة.
