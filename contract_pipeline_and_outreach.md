@@ -1,12 +1,12 @@
 # 🎯 خطة تحويل المساهمات إلى عقود عمل ريموت (Contracts & Hiring Funnel)
 
 > [!IMPORTANT]
-> وصلنا إلى **29 مساهمة برمجية احترافية (Pull Requests)** عبر 7 من أقوى مشاريع الـ Open-Source العالمية الممولة!
+> وصلنا إلى **30 مساهمة برمجية احترافية (Pull Requests)** عبر 8 من أقوى مشاريع الـ Open-Source العالمية الممولة!
 > كل المساهمات مدعومة باختبارات hermetic unit tests كاملة وموثقة بدون أي cold DMs أو طلب شغل مباشر — جودة الكود هي التي تتحدث!
 
 ---
 
-## 📊 سابقة الأعمال الحالية (29 PRs مفتوحة عبر 7 شركات)
+## 📊 سابقة الأعمال الحالية (30 PRs مفتوحة عبر 8 شركات)
 
 ### 1. Langfuse (`langfuse/langfuse`) — [1 PR جديد + أضخم منصة LLM Observability ممولة من YC & Lightspeed]
 1. [PR #19210](https://github.com/langfuse/langfuse/pull/19210): `fix(web): preserve chat message role titles on non-generation observations (#19198)` (Fixes #19198)
@@ -78,3 +78,9 @@
 - **الكود المنفذ:** تم إصلاح الـ DTO Schema في `@activepieces/shared`، وفلترة الـ Backend في `appConnectionService` لدعم الـ `In(pieceName)`، وفلترة الـ Web UI في صفحة الـ Connections عبر `getAll('pieceName')`، مع إضافة Integration Test كامل في `app-connection.test.ts`.
 2. [PR #16780](https://github.com/activepieces/activepieces/pull/16780): `fix(platform): apply date range filter and support optional runIds in admin retry (#16751)` (Fixes #16751)
 - **الكود المنفذ:** تم حل مشكلة فشل عملية إعادة المحاولة الجماعية (Retry Runs) في منصة إدارة النظام (`adminPlatformService.retryRuns`). كان الاستعلام يعتمد على شرط افتراضي غير مشروط `id: In(runIds ?? [])` مما يُنتج `WHERE 1=0` عند عدم تمرير مصفوفة `runIds` مسبقة، بالإضافة إلى وجود شروط منطقية معكوسة على فلترة التواريخ (`if (!createdBefore)` و `if (!createdAfter)`) مما يعطل تطبيق النطاق الزمني عند إرسال تواريخ صحيحة وتمرير `undefined` للاستعلام عند حذفها. تم تصحيح الفحص المنطقي باستخدام `!isNil`، وجعل شرط الـ `runIds` اختيارياً مع عمل short-circuit فوري للمصفوفات الفارغة `[]`، وتطبيق تقاطع الشروط بدقة. تم إضافة 3 سيناريوهات اختبار Unit Tests شاملة في `admin-retry-runs.test.ts` والتحقق بنسبة 100%.
+
+---
+
+### 8. Medusa (`medusajs/medusa`) — [1 PR جديد + أضخم منصة تجارة إلكترونية مفتوحة المصدر ممولة بـ 16M$ من YC]
+1. [PR #17485](https://github.com/medusajs/medusa/pull/17485): `fix(utils): quote camelCase column names in DML index where conditions (#17472)` (Fixes #17472)
+- **الكود المنفذ:** حل مشكلة فشل وكراش الـ Migrations عند بناء DML Indexes تحتوي على شروط `where` بأعمدة camelCase. كان `buildCondition` في `packages/core/utils/src/dml/helpers/entity-builder/query-builder.ts` يطبع اسم العمود مباشرة بدون علامات اقتباس، مما يجعل PostgreSQL يقلب الحروف تلقائياً إلى lowercase (`externalcode`) ويفشل الاستعلام لعدم وجود هذا العمود في الجدول (`"externalCode"`). تم بناء دالة `quoteKey` الذكية التي تقتبس الأعمدة ذات الحروف الكبيرة (camelCase) وتُبقي على الأعمدة الـ snake_case كما هي بدون تغيير لمنع أي migration drift على الموديولات القائمة والحفاظ على نمط `deleted_at IS NULL` المعتمد في كل المشاريع. تم تدعيم الحل بـ 9 اختبارات Unit Tests في `query-builder.spec.ts` واختبارات تكاملية في `entity-builder.spec.ts` وإضافة ملف changeset رسمي لـ `@medusajs/utils: patch`.
