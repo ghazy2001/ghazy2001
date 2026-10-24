@@ -80,11 +80,22 @@ Alongside client and enterprise projects, I actively contribute to modern open-s
 - **[PostHog](https://github.com/PostHog/posthog)** *(YC / GV funded, $50M+)*: Fixed workflow broadcast locking to preserve metrics and prevent accidental dispatches ([PR #122903](https://github.com/PostHog/posthog/pull/122903)); aligned self-driving AI repo routing rules cap to 50 across model, prompt renderers, and API ([PR #122907](https://github.com/PostHog/posthog/pull/122907)).
 - **[Langfuse](https://github.com/langfuse/langfuse)** *(YC / Lightspeed)*: Preserved chat message role titles on non-generation observations; added independent per-side role detection for mixed I/O guardrail traces with 50/50 passing unit tests ([PR #19210](https://github.com/langfuse/langfuse/pull/19210)).
 - **[BasedHardware / Omi](https://github.com/BasedHardware/omi)** *(AI Wearable & Agent System)*: Prevented paid subscriber downgrade on upgrade card decline ([PR #23313](https://github.com/BasedHardware/omi/pull/23313)); hardened MCP and chat retrieval tools against model hallucination, memory bounds, and input variations; verified with 20,000 randomized fuzz test runs and 100% hermetic unit tests ([PR #23047](https://github.com/BasedHardware/omi/pull/23047) - `positive-signal`, [PR #23306](https://github.com/BasedHardware/omi/pull/23306), [PR #23304](https://github.com/BasedHardware/omi/pull/23304), [PR #23296](https://github.com/BasedHardware/omi/pull/23296), [PR #23290](https://github.com/BasedHardware/omi/pull/23290), [PR #23286](https://github.com/BasedHardware/omi/pull/23286)).
-- **[Cap](https://github.com/CapSoftware/Cap)** *(Open-source Loom alternative)*: Integrated unauthenticated viewer sign-in prompt for reactions ([PR #2977](https://github.com/CapSoftware/Cap/pull/2977) - **MERGED**); hardened monorepo Turborepo configs and build sidecar gitignore ([PR #2926](https://github.com/CapSoftware/Cap/pull/2926), [PR #2927](https://github.com/CapSoftware/Cap/pull/2927) - **MERGED**); added 1.25x playback speed ([PR #2912](https://github.com/CapSoftware/Cap/pull/2912)).
-- **[Twenty CRM](https://github.com/twentyhq/twenty)** *(YC funded)*: Prevented invalid record-form submission on field validation errors ([PR #28425](https://github.com/twentyhq/twenty/pull/28425) - **MERGED** by CTO Charles Bochet); adopted collection hash sync on replaceDraft ([PR #28412](https://github.com/twentyhq/twenty/pull/28412) - **MERGED** by CEO Félix Malfait); added multi-criteria secondary orderBy optimistic cache sorting ([PR #28744](https://github.com/twentyhq/twenty/pull/28744)); normalized workflow Content-Type and falsy bodies ([PR #28745](https://github.com/twentyhq/twenty/pull/28745)).
+- **[Cap](https://github.com/CapSoftware/Cap)** *(Open-source Loom alternative)*: Integrated unauthenticated viewer sign-in prompt for reactions ([PR #2977](https://github.com/CapSoftware/Cap/pull/2977) - **MERGED** by founder Richie McIlroy); hardened monorepo Turborepo configs and build sidecar gitignore ([PR #2926](https://github.com/CapSoftware/Cap/pull/2926), [PR #2927](https://github.com/CapSoftware/Cap/pull/2927) - **MERGED**); added 1.25x playback speed ([PR #2912](https://github.com/CapSoftware/Cap/pull/2912)).
+- **[Twenty CRM](https://github.com/twentyhq/twenty)** *(YC funded)*: Prevented invalid record-form submission on field validation errors ([PR #28425](https://github.com/twentyhq/twenty/pull/28425) - **MERGED** by CTO Charles Bochet); adopted collection hash sync on replaceDraft ([PR #28412](https://github.com/twentyhq/twenty/pull/28412) - **MERGED** by CEO Félix Malfait); enforced database connectivity verification in `/healthz` ([PR #28768](https://github.com/twentyhq/twenty/pull/28768)); strictly validated currency composite fields against standard ISO codes ([PR #28771](https://github.com/twentyhq/twenty/pull/28771)); added multi-criteria secondary orderBy optimistic cache sorting ([PR #28744](https://github.com/twentyhq/twenty/pull/28744)); normalized workflow Content-Type and falsy bodies ([PR #28745](https://github.com/twentyhq/twenty/pull/28745)).
+- **[ElizaOS](https://github.com/elizaOS/eliza)** *(AI Agent Framework)*: Resolved JSON storage serialization conflict on message edits across all database adapters ([PR #37533](https://github.com/elizaOS/eliza/pull/37533)).
 - **[Cal.com](https://github.com/calcom/cal.diy)** *(Benchmark funded, $25M+)*: Surfaced 409 conflict for concurrent bookings and eliminated millisecond UID collisions ([PR #30399](https://github.com/calcom/cal.diy/pull/30399)); supported RFC-compliant space-delimited OAuth2 scopes ([PR #30371](https://github.com/calcom/cal.diy/pull/30371)).
 - **[Documenso](https://github.com/documenso/documenso)** & **[Plane](https://github.com/makeplane/plane)** *(OSS Capital / YC)*: Fixed date-only cross-timezone shift ([Issue #3463 Solution](https://github.com/documenso/documenso/issues/3463#issuecomment-6383277022)); auto-selected regional language tags ([PR #3479](https://github.com/documenso/documenso/pull/3479)); localized date rendering ([PR #10105](https://github.com/makeplane/plane/pull/10105)).
 - **[Umami Analytics](https://github.com/umami-software/umami)**: Contributed authentication and CLI enhancements ([PR #4654](https://github.com/umami-software/umami/pull/4654)).
+
+---
+
+## 🪙 Bounties, Grants & Crypto Payouts
+
+For bug bounties, open-source sponsorship, or direct grant disbursements:
+
+| Asset | Network | Payout / Deposit Address |
+|:---:|:---:|---|
+| **USDT** | **TRON (TRC20)** | `TLXtXNgUQx2mbV2rBRVPrWfgXKLMxvfxYS` |
 
 ---
 
@@ -102,6 +113,7 @@ Alongside client and enterprise projects, I actively contribute to modern open-s
 - 📧 **Email**: [mahmoudghazy2001@gmail.com](mailto:mahmoudghazy2001@gmail.com)
 - 💼 **LinkedIn**: [Mahmoud Ghazy](https://linkedin.com)
 - 🐙 **GitHub**: [@ghazy2001](https://github.com/ghazy2001)
+- 🪙 **USDT (TRC20)**: `TLXtXNgUQx2mbV2rBRVPrWfgXKLMxvfxYS`
 
 <div align="center">
   <sub>Crafted with passion for clean code, high performance, and exceptional user experiences.</sub>
