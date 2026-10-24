@@ -95,6 +95,7 @@ For bug bounties, open-source sponsorship, or direct grant disbursements:
 
 | Asset | Network | Payout / Deposit Address |
 |:---:|:---:|---|
+| **USDC** | **Solana (SOL)** | `BaCN1xstTz6ikNi6spW72dHTicDbjZvg82iCpEd2RkSN` |
 | **USDT** | **TRON (TRC20)** | `TLXtXNgUQx2mbV2rBRVPrWfgXKLMxvfxYS` |
 
 ---
@@ -102,7 +103,7 @@ For bug bounties, open-source sponsorship, or direct grant disbursements:
 ## 📈 GitHub Stats
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=ghazy2001&show_icons=true&theme=tokyonight&count_private=true&hide_border=true&hide_rank=true&include_all_commits=true" alt="Mahmoud Ghazy's GitHub stats" height="165" />
+  <img src="https://github-readme-stats.vercel.app/api?username=ghazy2001&show_icons=true&theme=tokyonight&count_private=true&hide_border=true" alt="Mahmoud Ghazy's GitHub stats" height="165" />
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ghazy2001&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" height="165" />
 </div>
 
