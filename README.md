@@ -30,21 +30,6 @@
 | **Quality & DevOps** | ![Vitest](https://img.shields.io/badge/Vitest-6E9F18?logo=vitest&logoColor=white) ![Jest](https://img.shields.io/badge/Jest-C21325?logo=jest&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?logo=githubactions&logoColor=white) ![Core Web Vitals](https://img.shields.io/badge/Core%20Web%20Vitals%20(LCP%2FCLS)-4285F4?logo=googlechrome&logoColor=white) ![Git](https://img.shields.io/badge/Git%20%26%20GitHub-F05032?logo=git&logoColor=white) |
 </div>
 
-## 🛠️ Technical Skills
-
-<div align="center">
-
-| Area | Technologies & Frameworks |
-|---|---|
-| **Core & Languages** | ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black) ![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white) |
-| **Frontend & 3D** | ![React 19](https://img.shields.io/badge/React%2019-61DAFB?logo=react&logoColor=black) ![Next.js](https://img.shields.io/badge/Next.js%20(App%20Router)-000000?logo=next.js&logoColor=white) ![Three.js](https://img.shields.io/badge/Three.js%20%2F%20R3F-000000?logo=three.js&logoColor=white) ![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white) |
-| **State & Data Fetching** | ![TanStack Query](https://img.shields.io/badge/TanStack%20Query-FF4154?logo=react-query&logoColor=white) ![Zustand](https://img.shields.io/badge/Zustand-443e38?logo=react&logoColor=white) ![Redux Toolkit](https://img.shields.io/badge/Redux%20Toolkit-764ABC?logo=redux&logoColor=white) ![Axios](https://img.shields.io/badge/Axios-5A29E4?logo=axios&logoColor=white) |
-| **UI, Motion & Styling** | ![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-06B6D4?logo=tailwindcss&logoColor=white) ![shadcn/ui](https://img.shields.io/badge/shadcn%2Fui-000000?logo=shadcnui&logoColor=white) ![Radix UI](https://img.shields.io/badge/Radix%20UI-161618?logo=radixui&logoColor=white) ![Framer Motion](https://img.shields.io/badge/Framer%20Motion-0055FF?logo=framer&logoColor=white) ![GSAP](https://img.shields.io/badge/GSAP-88CE02?logo=greensock&logoColor=black) |
-| **Backend & APIs** | ![Node.js](https://img.shields.io/badge/Node.js-339933?logo=node.js&logoColor=white) ![Express](https://img.shields.io/badge/Express-000000?logo=express&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?logo=mongodb&logoColor=white) ![REST APIs](https://img.shields.io/badge/REST%20APIs-005571?logo=postman&logoColor=white) ![JSON-RPC](https://img.shields.io/badge/JSON--RPC-222222?logoColor=white) |
-| **Quality & Performance** | ![Vitest](https://img.shields.io/badge/Vitest-6E9F18?logo=vitest&logoColor=white) ![Jest](https://img.shields.io/badge/Jest-C21325?logo=jest&logoColor=white) ![Core Web Vitals](https://img.shields.io/badge/Core%20Web%20Vitals%20(LCP%2FCLS)-4285F4?logo=googlechrome&logoColor=white) ![Git](https://img.shields.io/badge/Git%20%26%20GitHub-F05032?logo=git&logoColor=white) |
-
-</div>
-
 ---
 
 ## 💼 Featured Engineering Projects
