@@ -74,19 +74,71 @@
 
 ## 🌐 Open-Source Contributions (Active Side Work)
 
-Alongside client and enterprise projects, I actively contribute to modern open-source developer tools and venture-backed repositories, solving real-world frontend, full-stack, and performance issues:
+Alongside client and enterprise projects, I actively contribute to modern open-source developer tools, enterprise platforms, and venture-backed repositories, solving real-world frontend, full-stack, and performance issues:
 
-- **[PostHog](https://github.com/PostHog/posthog)** *(YC / GV funded, $50M+)*: Added dotted-path incremental cursor resolution for Data Warehouse sources ([PR #124910](https://github.com/PostHog/posthog/pull/124910)); added dependency guard preventing accidental integration disconnections used by active warehouse sources ([PR #124866](https://github.com/PostHog/posthog/pull/124866)); fixed workflow broadcast locking ([PR #122903](https://github.com/PostHog/posthog/pull/122903)); aligned AI repo routing rules cap ([PR #122907](https://github.com/PostHog/posthog/pull/122907)).
-- **[Langfuse](https://github.com/langfuse/langfuse)** *(YC / Lightspeed)*: Normalized Bedrock / LangChain ephemeral cache-write tokens into canonical TTL pricing, preventing 20-40% underreported LLM trace costs ([PR #19447](https://github.com/langfuse/langfuse/pull/19447)); preserved chat message role titles on non-generation observations with 50/50 passing unit tests ([PR #19210](https://github.com/langfuse/langfuse/pull/19210)).
-- **[Twenty CRM](https://github.com/twentyhq/twenty)** *(YC funded)*: Exposed `unfurlLinks` and `unfurlMedia` options in Slack logic function schema for clean workflow message delivery ([PR #29168](https://github.com/twentyhq/twenty/pull/29168)); sanitized trailing whitespace across frontend/backend connection schemas and DNS resolution ([PR #29163](https://github.com/twentyhq/twenty/pull/29163)); prevented invalid record-form submission on field validation errors ([PR #28425](https://github.com/twentyhq/twenty/pull/28425) - **MERGED** by CTO Charles Bochet); adopted collection hash sync on replaceDraft ([PR #28412](https://github.com/twentyhq/twenty/pull/28412) - **MERGED** by CEO Félix Malfait); enforced database connectivity verification in `/healthz` ([PR #28768](https://github.com/twentyhq/twenty/pull/28768)); strictly validated currency composite fields ([PR #28771](https://github.com/twentyhq/twenty/pull/28771)); added multi-criteria secondary orderBy optimistic cache sorting ([PR #28744](https://github.com/twentyhq/twenty/pull/28744)).
-- **[Makeplane / Plane](https://github.com/makeplane/plane)** *(OSS Capital / YC)*: Bypassed restricted-guest visibility gate for active workspace admins across issues, intake deletion, and search ([PR #10134](https://github.com/makeplane/plane/pull/10134)); localized date rendering ([PR #10105](https://github.com/makeplane/plane/pull/10105)).
-- **[Chatwoot](https://github.com/chatwoot/chatwoot)**: Prevented alternating error re-send loop and webhook storm on failed API inboxes ([PR #16449](https://github.com/chatwoot/chatwoot/pull/16449)); resolved voice announcement draft toggle ([PR #16428](https://github.com/chatwoot/chatwoot/pull/16428) - **MERGED**).
-- **[BasedHardware / Omi](https://github.com/BasedHardware/omi)** *(AI Wearable & Agent System)*: Prevented paid subscriber downgrade on upgrade card decline ([PR #23313](https://github.com/BasedHardware/omi/pull/23313)); hardened MCP and chat retrieval tools against model hallucination, memory bounds, and input variations; verified with 20,000 randomized fuzz test runs and 100% hermetic unit tests ([PR #23047](https://github.com/BasedHardware/omi/pull/23047) - `positive-signal`, [PR #23306](https://github.com/BasedHardware/omi/pull/23306), [PR #23304](https://github.com/BasedHardware/omi/pull/23304), [PR #23296](https://github.com/BasedHardware/omi/pull/23296), [PR #23290](https://github.com/BasedHardware/omi/pull/23290), [PR #23286](https://github.com/BasedHardware/omi/pull/23286)).
-- **[Cap](https://github.com/CapSoftware/Cap)** *(Open-source Loom alternative)*: Integrated unauthenticated viewer sign-in prompt for reactions ([PR #2977](https://github.com/CapSoftware/Cap/pull/2977) - **MERGED** by founder Richie McIlroy); hardened monorepo Turborepo configs and build sidecar gitignore ([PR #2926](https://github.com/CapSoftware/Cap/pull/2926), [PR #2927](https://github.com/CapSoftware/Cap/pull/2927) - **MERGED**); added 1.25x playback speed ([PR #2912](https://github.com/CapSoftware/Cap/pull/2912)).
-- **[ElizaOS](https://github.com/elizaOS/eliza)** *(AI Agent Framework)*: Resolved JSON storage serialization conflict on message edits across all database adapters ([PR #37533](https://github.com/elizaOS/eliza/pull/37533)).
-- **[Cal.com](https://github.com/calcom/cal.diy)** *(Benchmark funded, $25M+)*: Surfaced 409 conflict for concurrent bookings and eliminated millisecond UID collisions ([PR #30399](https://github.com/calcom/cal.diy/pull/30399)); supported RFC-compliant space-delimited OAuth2 scopes ([PR #30371](https://github.com/calcom/cal.diy/pull/30371)).
-- **[Documenso](https://github.com/documenso/documenso)**: Fixed date-only cross-timezone shift ([Issue #3463 Solution](https://github.com/documenso/documenso/issues/3463#issuecomment-6383277022)); auto-selected regional language tags ([PR #3479](https://github.com/documenso/documenso/pull/3479)).
-- **[Umami Analytics](https://github.com/umami-software/umami)**: Prevented `RangeError` crashes on unselected or invalid custom date ranges across analytics reports ([PR #4692](https://github.com/umami-software/umami/pull/4692) - **MERGED**); contributed authentication and CLI enhancements ([PR #4654](https://github.com/umami-software/umami/pull/4654)).
+- **[Twenty CRM](https://github.com/twentyhq/twenty)** *(YC funded, 25k ⭐)*:
+  - Sanitized trailing whitespace across IMAP/SMTP/CalDAV credentials and server DNS resolution ([PR #29163](https://github.com/twentyhq/twenty/pull/29163) — **MERGED**).
+  - Preserved workflow code step outputs and schema synchronization ([PR #28432](https://github.com/twentyhq/twenty/pull/28432) — **MERGED**).
+  - Prevented invalid record-form submission on field validation errors ([PR #28425](https://github.com/twentyhq/twenty/pull/28425) — **MERGED** by CTO Charles Bochet).
+  - Adopted collection hash synchronization on `replaceDraft` ([PR #28412](https://github.com/twentyhq/twenty/pull/28412) — **MERGED** by CEO Félix Malfait).
+  - Enabled tooltips and full string inspectability on truncated timeline diff items ([PR #29198](https://github.com/twentyhq/twenty/pull/29198)).
+  - Exposed `unfurlLinks` and `unfurlMedia` options in Slack logic function schema for clean message delivery ([PR #29168](https://github.com/twentyhq/twenty/pull/29168)).
+  - Added multi-criteria secondary `orderBy` optimistic cache sorting ([PR #28744](https://github.com/twentyhq/twenty/pull/28744)).
+
+- **[Umami Analytics](https://github.com/umami-software/umami)** *(Privacy Analytics, 23k ⭐)*:
+  - Migrated user password changes to secure dedicated security settings ([PR #4654](https://github.com/umami-software/umami/pull/4654) — **MERGED**).
+  - Resolved retention cohort date timezone drift via `parseBackendDate` ([PR #4690](https://github.com/umami-software/umami/pull/4690) — **MERGED**).
+  - Sorted user journey step entries by total visitor count ([PR #4687](https://github.com/umami-software/umami/pull/4687) — **MERGED**).
+  - Controlled ComboBox values in `LookupField` preventing accidental wildcard path wipes ([PR #4696](https://github.com/umami-software/umami/pull/4696) — **MERGED**).
+  - Prevented `RangeError` crashes on unselected or invalid custom date ranges across reports ([PR #4692](https://github.com/umami-software/umami/pull/4692) — **MERGED**).
+
+- **[Cap](https://github.com/CapSoftware/Cap)** *(Open-source Loom alternative, 7.5k ⭐)*:
+  - Integrated unauthenticated viewer sign-in prompt for reactions ([PR #2977](https://github.com/CapSoftware/Cap/pull/2977) — **MERGED** by founder Richie McIlroy).
+  - Hardened monorepo Turborepo configs and build sidecar gitignore ([PR #2926](https://github.com/CapSoftware/Cap/pull/2926), [PR #2927](https://github.com/CapSoftware/Cap/pull/2927) — **MERGED**).
+  - Prevented video thumbnails displaying "60 secs" on near-minute fractional durations ([PR #3572](https://github.com/CapSoftware/Cap/pull/3572) — Linear CAP-953).
+  - Prevented comments and activity items showing "0y ago" on 360–364 day old records ([PR #3573](https://github.com/CapSoftware/Cap/pull/3573) — Linear CAP-952).
+  - Validated dashboard query parameters against negative/fractional inputs preventing SQL OFFSET crashes ([PR #3574](https://github.com/CapSoftware/Cap/pull/3574) — Linear CAP-957).
+  - Built complete responsive pagination linking the last page and immediate neighbours ([PR #3575](https://github.com/CapSoftware/Cap/pull/3575) — Linear CAP-956).
+  - Locked transcript editor state during in-flight saves to eliminate keystroke loss and race conditions ([PR #3542](https://github.com/CapSoftware/Cap/pull/3542) — Linear CAP-949).
+
+- **[PostHog](https://github.com/PostHog/posthog)** *(YC / GV funded, $50M+, 26k ⭐)*:
+  - Core maintainer approved Python type fixes across data warehouse sources with 125k+ green tests in Trunk ([PR #124884](https://github.com/PostHog/posthog/pull/124884)).
+  - Built Kea `localStorage` persistence for Scout roster filter states across visits ([PR #125511](https://github.com/PostHog/posthog/pull/125511)).
+  - Added dotted-path incremental cursor resolution for Data Warehouse sources ([PR #124910](https://github.com/PostHog/posthog/pull/124910)).
+  - Guarded against accidental disconnection of integrations actively relied upon by warehouse sources ([PR #124866](https://github.com/PostHog/posthog/pull/124866)).
+  - Fixed workflow broadcast locking ([PR #122903](https://github.com/PostHog/posthog/pull/122903)).
+
+- **[Infisical](https://github.com/Infisical/infisical)** *(Secret Management, 34k ⭐)*:
+  - Dynamically toggled input type in Agent Vault `SecretInput` for cross-browser masking ([PR #8976](https://github.com/Infisical/infisical/pull/8976) — **APPROVED**).
+  - Clarified webhook secret path hint for wildcard glob matching ([PR #8971](https://github.com/Infisical/infisical/pull/8971) — **APPROVED**).
+  - Implemented Machines API secrets version for automated Fly.io deployments ([PR #8991](https://github.com/Infisical/infisical/pull/8991)).
+
+- **[Makeplane / Plane](https://github.com/makeplane/plane)** *(Project Management, 32k ⭐)*:
+  - Added optional chaining safeguards on `actor_details` and `reaction_items` preventing space crashes ([PR #10148](https://github.com/makeplane/plane/pull/10148)).
+  - Bypassed restricted-guest visibility gate for active workspace admins across intake deletion and search ([PR #10134](https://github.com/makeplane/plane/pull/10134)).
+  - Added fallback to file extension and MIME type for signature-less text attachments ([PR #10132](https://github.com/makeplane/plane/pull/10132)).
+
+- **[Chatwoot](https://github.com/chatwoot/chatwoot)** *(Customer Engagement, 23k ⭐)*:
+  - Resolved voice announcement draft toggle overwrite on unsaved forms ([PR #16428](https://github.com/chatwoot/chatwoot/pull/16428) — **MERGED**).
+  - Distinguished same-name inboxes with custom identifiers in dashboard selectors ([PR #16462](https://github.com/chatwoot/chatwoot/pull/16462)).
+  - Prevented alternating error re-send loop and webhook storm on failed API inboxes ([PR #16449](https://github.com/chatwoot/chatwoot/pull/16449)).
+  - Cleared cookies with `baseDomain` on SDK reset and auth errors ([PR #16445](https://github.com/chatwoot/chatwoot/pull/16445)).
+
+- **[Langfuse](https://github.com/langfuse/langfuse)** *(LLM Observability, YC / Lightspeed)*:
+  - Normalized Bedrock / LangChain ephemeral cache-write tokens into canonical TTL pricing, preventing 20-40% underreported LLM trace costs ([PR #19447](https://github.com/langfuse/langfuse/pull/19447)).
+  - Preserved chat message role titles on non-generation observations with 50/50 passing unit tests ([PR #19210](https://github.com/langfuse/langfuse/pull/19210)).
+
+- **[BasedHardware / Omi](https://github.com/BasedHardware/omi)** *(AI Wearable & Agent System)*:
+  - Prevented paid subscriber downgrade on upgrade card decline ([PR #23313](https://github.com/BasedHardware/omi/pull/23313)).
+  - Hardened MCP and chat retrieval tools against model hallucination, memory bounds, and input variations; verified with 20,000 randomized fuzz test runs and 100% hermetic unit tests ([PR #23047](https://github.com/BasedHardware/omi/pull/23047), [PR #23306](https://github.com/BasedHardware/omi/pull/23306), [PR #23304](https://github.com/BasedHardware/omi/pull/23304), [PR #23296](https://github.com/BasedHardware/omi/pull/23296), [PR #23290](https://github.com/BasedHardware/omi/pull/23290), [PR #23286](https://github.com/BasedHardware/omi/pull/23286)).
+
+- **[Cal.com](https://github.com/calcom/cal.diy)** *(Scheduling Infrastructure, $25M+)*:
+  - Surfaced 409 conflict for concurrent bookings and eliminated millisecond UID collisions ([PR #30399](https://github.com/calcom/cal.diy/pull/30399)).
+  - Supported RFC-compliant space-delimited OAuth2 scopes ([PR #30371](https://github.com/calcom/cal.diy/pull/30371)).
+
+- **[Documenso](https://github.com/documenso/documenso)** *(Digital Signatures, 10k ⭐)*:
+  - Fixed date-only cross-timezone shift ([Issue #3463 Solution](https://github.com/documenso/documenso/issues/3463#issuecomment-6383277022)).
+  - Auto-selected regional language tags like `pt-BR` from `Accept-Language` headers ([PR #3479](https://github.com/documenso/documenso/pull/3479)).
 ---
 
 ## 🪙 Bounties, Grants & Crypto Payouts
