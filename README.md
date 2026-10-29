@@ -98,6 +98,7 @@ Alongside client and enterprise projects, I actively contribute to modern open-s
   - Prevented video thumbnails displaying "60 secs" on near-minute fractional durations ([PR #3572](https://github.com/CapSoftware/Cap/pull/3572) — Linear CAP-953).
   - Prevented comments and activity items showing "0y ago" on 360–364 day old records ([PR #3573](https://github.com/CapSoftware/Cap/pull/3573) — Linear CAP-952).
   - Validated dashboard query parameters against negative/fractional inputs preventing SQL OFFSET crashes ([PR #3574](https://github.com/CapSoftware/Cap/pull/3574) — Linear CAP-957).
+  - Enforced integer coercion and bounds on Developer API video list pagination preventing MySQL 500 syntax errors ([PR #3576](https://github.com/CapSoftware/Cap/pull/3576) — Linear CAP-958).
   - Built complete responsive pagination linking the last page and immediate neighbours ([PR #3575](https://github.com/CapSoftware/Cap/pull/3575) — Linear CAP-956).
   - Locked transcript editor state during in-flight saves to eliminate keystroke loss and race conditions ([PR #3542](https://github.com/CapSoftware/Cap/pull/3542) — Linear CAP-949).
 
