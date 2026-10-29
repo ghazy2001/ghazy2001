@@ -86,7 +86,7 @@ Alongside client and enterprise projects, I actively contribute to modern open-s
 - **[ElizaOS](https://github.com/elizaOS/eliza)** *(AI Agent Framework)*: Resolved JSON storage serialization conflict on message edits across all database adapters ([PR #37533](https://github.com/elizaOS/eliza/pull/37533)).
 - **[Cal.com](https://github.com/calcom/cal.diy)** *(Benchmark funded, $25M+)*: Surfaced 409 conflict for concurrent bookings and eliminated millisecond UID collisions ([PR #30399](https://github.com/calcom/cal.diy/pull/30399)); supported RFC-compliant space-delimited OAuth2 scopes ([PR #30371](https://github.com/calcom/cal.diy/pull/30371)).
 - **[Documenso](https://github.com/documenso/documenso)**: Fixed date-only cross-timezone shift ([Issue #3463 Solution](https://github.com/documenso/documenso/issues/3463#issuecomment-6383277022)); auto-selected regional language tags ([PR #3479](https://github.com/documenso/documenso/pull/3479)).
-- **[Umami Analytics](https://github.com/umami-software/umami)**: Contributed authentication and CLI enhancements ([PR #4654](https://github.com/umami-software/umami/pull/4654)).
+- **[Umami Analytics](https://github.com/umami-software/umami)**: Prevented `RangeError` crashes on unselected or invalid custom date ranges across analytics reports ([PR #4692](https://github.com/umami-software/umami/pull/4692) - **MERGED**); contributed authentication and CLI enhancements ([PR #4654](https://github.com/umami-software/umami/pull/4654)).
 ---
 
 ## 🪙 Bounties, Grants & Crypto Payouts
