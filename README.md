@@ -82,6 +82,7 @@ Alongside client and enterprise projects, I actively contribute to modern open-s
   - Prevented invalid record-form submission on field validation errors ([PR #28425](https://github.com/twentyhq/twenty/pull/28425) — **MERGED** by CTO Charles Bochet).
   - Adopted collection hash synchronization on `replaceDraft` ([PR #28412](https://github.com/twentyhq/twenty/pull/28412) — **MERGED** by CEO Félix Malfait).
   - Enabled tooltips and full string inspectability on truncated timeline diff items ([PR #29198](https://github.com/twentyhq/twenty/pull/29198)).
+  - Prevented RangeError crashes on deeply nested email HTML imports via sanitize-html nesting limits and fallback boundaries ([PR #29262](https://github.com/twentyhq/twenty/pull/29262) — High Priority).
   - Exposed `unfurlLinks` and `unfurlMedia` options in Slack logic function schema for clean message delivery ([PR #29168](https://github.com/twentyhq/twenty/pull/29168)).
   - Added multi-criteria secondary `orderBy` optimistic cache sorting ([PR #28744](https://github.com/twentyhq/twenty/pull/28744)).
 
