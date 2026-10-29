@@ -141,6 +141,9 @@ Alongside client and enterprise projects, I actively contribute to modern open-s
 - **[Documenso](https://github.com/documenso/documenso)** *(Digital Signatures, 10k ⭐)*:
   - Fixed date-only cross-timezone shift ([Issue #3463 Solution](https://github.com/documenso/documenso/issues/3463#issuecomment-6383277022)).
   - Auto-selected regional language tags like `pt-BR` from `Accept-Language` headers ([PR #3479](https://github.com/documenso/documenso/pull/3479)).
+
+- **[Trigger.dev](https://github.com/triggerdotdev/trigger.dev)** *(Background Jobs & Workflows, 12k ⭐)*:
+  - Normalized default UTC timezone on declarative schedule sync preventing redundant database updates and job re-registrations ([PR #5087](https://github.com/triggerdotdev/trigger.dev/pull/5087)).
 ---
 
 ## 🪙 Bounties, Grants & Crypto Payouts
