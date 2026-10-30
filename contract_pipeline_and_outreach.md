@@ -72,3 +72,36 @@
 
 ### 8. Langfuse (`langfuse/langfuse`) — [1 PR مفتوح + منصة LLM Engineering ممولة من Y Combinator]
 1. [PR #19210](https://github.com/langfuse/langfuse/pull/19210) & [Issue #19198](https://github.com/langfuse/langfuse/issues/19198): `fix(web): preserve chat message role titles on non-generation observations`
+
+---
+
+## 💬 قنوات التواصل المباشر ومجتمعات Discord (Direct Outreach & Community Visibility)
+
+> [!TIP]
+> التواصل الفعّال مع المؤسسين ومسؤولي التوظيف في قنوات الديسكورد الرسمية للمشاريع يُعد أقصر طريق لتحويل الـ PRs إلى عقود عمل مدفوعة وتعيينات رسمية.
+
+### 1. Chatwoot (`#contribute` + ثريد `Microsoft email setup · PR #13985`)
+- **المخاطبون:** المؤسس الشريك والـ CTO **Sojan Jose** (`@sojan`) والمهندس **Jay** (`@Jay`).
+- **تفاصيل التحرك:**
+  - تم رصد مشكلة توقف ميزة ربط إيميل مايكروسوفت (Microsoft Graph API) المعطلة منذ فترة بسبب تضارب الـ scopes (`AADSTS28000 multi-resource error`).
+  - تم تقديم عرض رسمي لمساعدة الكور تيم والتكفل بإعادة بناء التعديل بالكامل (`rebase on latest develop`) وتطبيق حل الـ scope isolation وكتابة كافة الـ Test specs.
+  - تم فتح **[PR #16466](https://github.com/chatwoot/chatwoot/pull/16466)** ونشره في الثريد مع الحفاظ على الـ co-authorship واجتياز جميع الاختبارات، مما وضع مساهمتنا تحت الرادار المباشر لقيادة الشركة التقنية.
+
+### 2. Twenty CRM (`#contributors`)
+- **المخاطبون:** فريق Twenty Core (`@Félix`, `@charles`, `@nitin`).
+- **تفاصيل التحرك:**
+  - نشر تقديم رسمي للمساهمات المنجزة والمدمجة في النظام (#28425, #28412) والـ PRs النشطة (#29198, #29168).
+  - لفت انتباه الفريق بذكاء إلى أن الـ 2-PR limit تسبب في إيقاف PR #29262 لحل مشكلة الـ HTML nesting RangeError (#29200)، مما حفز المهندس الأساسي **Tanguy Magnaudet** على التدخل ونقل الحل فوراً ودمجه رسميًا في الكور عبر #29269!
+
+### 3. Cap (`#development`)
+- **المخاطبون:** المؤسس **Richie McIlroy** (`@Richie - Cap.so`) ومطورو المجتمع.
+- **تفاصيل التحرك:**
+  - الانضمام لقناة التطوير ومشاركة باقة الـ 5 PRs المفتوحة دفعة واحدة لتغطية معالجة المدد الزمنية وعدادات الأنشطة والـ pagination bounds (#3572, #3573, #3574, #3575, #3576).
+  - إظهار الحماس لمستقبل المشروع وبناء تواصل إيجابي مباشر مع الفريق.
+
+### 4. Umami Analytics (`#dev-chat`)
+- **المخاطبون:** المبتكر والمينتينر **Mike** (`@mike`) ومطورو المنصة.
+- **تفاصيل التحرك:**
+  - التعريف بالنفس كـ Active Contributor وتوثيق المساهمات المدمجة في الـ duration formatters وحلول الـ UI وضبط الـ metrics mapping (#4690, #4715).
+  - تثبيت التواجد الاحترافي في نقاشات الكور تيم لتعزيز فرص الرعاية والعمل عن بُعد.
+

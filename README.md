@@ -4,6 +4,7 @@
 ### Frontend & Product Engineer | AI-Augmented Developer
 
 [![GitHub followers](https://img.shields.io/github/followers/ghazy2001?label=Follow&style=social)](https://github.com/ghazy2001)
+[![GitHub Sponsors](https://img.shields.io/badge/Sponsor-%E2%9D%A4-ea4aaa?logo=githubsponsors&logoColor=white)](https://github.com/sponsors/ghazy2001)
 [![Email](https://img.shields.io/badge/Email-mahmoudghazy2001%40gmail.com-0078D4?logo=gmail&logoColor=white)](mailto:mahmoudghazy2001@gmail.com)
 [![Status](https://img.shields.io/badge/Status-Available%20for%20Opportunities-2ea44f?style=flat-square)](#-contact--connect)
 
@@ -147,12 +148,13 @@ Alongside client and enterprise projects, I actively contribute to modern open-s
   - Normalized default UTC timezone on declarative schedule sync preventing redundant database updates and job re-registrations ([PR #5087](https://github.com/triggerdotdev/trigger.dev/pull/5087)).
 ---
 
-## 🪙 Bounties, Grants & Crypto Payouts
+## 🪙 Bounties, Grants & GitHub Sponsors
 
 For bug bounties, open-source sponsorship, or direct grant disbursements:
 
-| Asset | Network | Payout / Deposit Address |
+| Platform / Asset | Network | Link / Address |
 |:---:|:---:|---|
+| **GitHub Sponsors** | **Official** | [sponsor/@ghazy2001](https://github.com/sponsors/ghazy2001) |
 | **USDC** | **Solana (SOL)** | `BaCN1xstTz6ikNi6spW72dHTicDbjZvg82iCpEd2RkSN` |
 | **USDT** | **TRON (TRC20)** | `TLXtXNgUQx2mbV2rBRVPrWfgXKLMxvfxYS` |
 
