@@ -98,6 +98,15 @@
 
 ---
 
+### 12. Payload CMS (payloadcms/payload) — [2 PRs جديدة + أضخم Headless CMS في Next.js]
+1. [PR #19230](https://github.com/payloadcms/payload/pull/19230) & [Issue #19227](https://github.com/payloadcms/payload/issues/19227): fix(richtext-lexical): treat empty headings and linebreaks as empty in hasText (#19227) — **[11 اختبارات Unit خضراء بالكامل + حل ثغرة Required RichText]**
+   - **الكود المنفذ:** إضافة دالة فحص isBlockEmpty لمعالجة الـ Empty Headings وفقرات الـ Linebreaks الناتجة عن Shift+Enter في محرر Lexical، لمنع تجاوز شرط 
+equired: true وحفظ مستندات فارغة، مع الحفاظ على الـ Decorator Nodes (كالـ Uploads والـ Blocks).
+2. [PR #19226](https://github.com/payloadcms/payload/pull/19226) & [Issue #19215](https://github.com/payloadcms/payload/issues/19215): fix(ui): prevent resetting form state on effect re-runs in strict mode (#19215) — **[CodeRabbit & Socket Security Approved]**
+   - **الكود المنفذ:** عزل الـ initialState snapshot في Form Reducer لمنع فقدان بيانات النماذج عند فتح الـ Drawers في React Strict Mode.
+
+---
+
 ## 💬 قنوات التواصل المباشر ومجتمعات Discord (Direct Outreach & Community Visibility)
 
 > [!TIP]

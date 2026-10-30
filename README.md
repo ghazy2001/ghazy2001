@@ -100,6 +100,10 @@ Alongside client and enterprise projects, I actively contribute to modern open-s
   - Implemented canonical RFC 9728 Section 3.1 protected resource metadata endpoint /.well-known/oauth-protected-resource with `resource` query resolution and earer_methods_supported, fixing MCP OAuth discovery for AI clients like Claude Code, Cursor, and Copilot ([PR #17053](https://github.com/activepieces/activepieces/pull/17053) — fixes #16588, GIT-2009).
   - Prevented false-positive success toasts when clipboard write rejects in builder ([PR #17033](https://github.com/activepieces/activepieces/pull/17033) — fixes #16943).
 
+- **[Payload CMS](https://github.com/payloadcms/payload)** *(Code-first Next.js Headless CMS, 35k+ ⭐)*:
+  - Treated empty headings and linebreaks as empty in hasText, preventing empty state bypass on required richText fields ([PR #19230](https://github.com/payloadcms/payload/pull/19230) — fixes #19227).
+  - Prevented form state resets on effect re-runs in React Strict Mode ([PR #19226](https://github.com/payloadcms/payload/pull/19226) — fixes #19215).
+
 - **[Umami Analytics](https://github.com/umami-software/umami)** *(Privacy Analytics, 23k ⭐)*:
   - Migrated user password changes to secure dedicated security settings ([PR #4654](https://github.com/umami-software/umami/pull/4654) — **MERGED**).
   - Resolved retention cohort date timezone drift via `parseBackendDate` ([PR #4690](https://github.com/umami-software/umami/pull/4690) — **MERGED**).
