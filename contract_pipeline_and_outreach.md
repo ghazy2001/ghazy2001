@@ -75,6 +75,24 @@
 
 ---
 
+### 9. Better Auth (etter-auth/better-auth) — [3 PRs جديدة + أضخم محرك Auth في TypeScript]
+1. [PR #12143](https://github.com/better-auth/better-auth/pull/12143) & [Issue #8655](https://github.com/better-auth/better-auth/issues/8655): ix(drizzle): enable supportsJSON and supportsArrays by default to prevent double stringify (#8655) — **[طلب مراجعة المؤسس Bekacru + تغطية اختبارات شاملة]**
+   - **الكود المنفذ:** تفعيل supportsJSON و supportsArrays افتراضياً عبر drizzle-adapter و 
+elations-v2 لمنع الـ Double Stringify في SQLite و MySQL لأن Drizzle ORM يعالج الـ Serialization ذاتياً، مع إتاحة Overrides للمستخدم واختبارات لجميع المحركات.
+2. [PR #12137](https://github.com/better-auth/better-auth/pull/12137) & [Issue #12134](https://github.com/better-auth/better-auth/issues/12134): ix(cli): avoid duplicate back-relations in prisma generator when relation exists (#12134) — **[طلب مراجعة الكور مينتينر Gustavo Valverde]**
+   - **الكود المنفذ:** تمييز العلاقات العكسية غير المسماة القائمة بالفعل لمنع تكرار الحقول في الـ Prisma Schema عند استخدام تسميات مخصصة.
+3. [PR #12136](https://github.com/better-auth/better-auth/pull/12136) & [Issue #12132](https://github.com/better-auth/better-auth/issues/12132): ix(core): expire session cookies when deleting user with token (#12132) — **[Greptile Score: 5/5]**
+   - **الكود المنفذ:** إنهاء وإبطال كوكيز الجلسات عند حذف الحساب بواسطة التوكن لضمان الأمان والخصوصية.
+
+---
+
+### 10. Inbox Zero (elie222/inbox-zero) — [2 PRs جديدة + تطبيق AI Email]
+1. [PR #4402](https://github.com/elie222/inbox-zero/pull/4402) & [Issue #4372](https://github.com/elie222/inbox-zero/issues/4372): outlook: Stop non-advancing pagination loops during mailbox enumeration (#4372) — **[CLA موقّع ومعتمد أخضر + مراجعة CodeRabbit جاهزة]**
+   - **الكود المنفذ:** منع اللوب اللانهائي أثناء تصفح إيميلات Outlook وتمرير تواريخ المزامنة وضبط MAIL_INITIAL_SYNC_DAYS.
+2. [PR #4395](https://github.com/elie222/inbox-zero/pull/4395) & [Issue #4129](https://github.com/elie222/inbox-zero/issues/4129): ix(assistant): demand mail engine when expanding inline email preview
+
+---
+
 ## 💬 قنوات التواصل المباشر ومجتمعات Discord (Direct Outreach & Community Visibility)
 
 > [!TIP]
