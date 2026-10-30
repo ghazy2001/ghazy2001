@@ -107,6 +107,12 @@ equired: true وحفظ مستندات فارغة، مع الحفاظ على ال
 
 ---
 
+### 13. Cal.com (calcom/cal.diy) — [حل ثغرة تحصيل الرسوم Stripe No-Show Fee #30454]
+1. [Issue #30454 Solution](https://github.com/calcom/cal.diy/issues/30454#issuecomment-6531746891): fix(payments): remount payments router and wire chargeCard mutation in ChargeCardDialog (#30454) — **[مخاطبة المؤسسين Peer Richelsen و Alex van Andel + 5 اختبارات Unit شاملة]**
+   - **الكود المنفذ:** إعادة بناء وتفعيل paymentsRouter وتثبيته في iewerRouter، وإنشاء Next.js API route handler في pps/web/pages/api/trpc/payments/[trpc].ts، واستبدال الـ Mock dummy object بالـ mutation الحقيقي trpc.viewer.payments.chargeCard.useMutation مع إضافة حالة الـ loading لمنع الدفع المزدوج ومعالجة الأخطاء في واجهة الـ Dialog.
+
+---
+
 ## 💬 قنوات التواصل المباشر ومجتمعات Discord (Direct Outreach & Community Visibility)
 
 > [!TIP]

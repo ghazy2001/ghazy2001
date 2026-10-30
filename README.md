@@ -154,6 +154,7 @@ Alongside client and enterprise projects, I actively contribute to modern open-s
   - Hardened MCP and chat retrieval tools against model hallucination, memory bounds, and input variations; verified with 20,000 randomized fuzz test runs and 100% hermetic unit tests ([PR #23047](https://github.com/BasedHardware/omi/pull/23047), [PR #23306](https://github.com/BasedHardware/omi/pull/23306), [PR #23304](https://github.com/BasedHardware/omi/pull/23304), [PR #23296](https://github.com/BasedHardware/omi/pull/23296), [PR #23290](https://github.com/BasedHardware/omi/pull/23290), [PR #23286](https://github.com/BasedHardware/omi/pull/23286)).
 
 - **[Cal.com](https://github.com/calcom/cal.diy)** *(Scheduling Infrastructure, $25M+)*:
+  - Remounted payments router, API handler, and wired chargeCard mutation in ChargeCardDialog, resolving broken Stripe no-show fee collection ([Issue #30454 Solution](https://github.com/calcom/cal.diy/issues/30454#issuecomment-6531746891)).
   - Surfaced 409 conflict for concurrent bookings and eliminated millisecond UID collisions ([PR #30399](https://github.com/calcom/cal.diy/pull/30399)).
   - Supported RFC-compliant space-delimited OAuth2 scopes ([PR #30371](https://github.com/calcom/cal.diy/pull/30371)).
 
