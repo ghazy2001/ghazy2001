@@ -87,6 +87,15 @@ Alongside client and enterprise projects, I actively contribute to modern open-s
   - Exposed `unfurlLinks` and `unfurlMedia` options in Slack logic function schema for clean message delivery ([PR #29168](https://github.com/twentyhq/twenty/pull/29168)).
   - Added multi-criteria secondary `orderBy` optimistic cache sorting ([PR #28744](https://github.com/twentyhq/twenty/pull/28744)).
 
+- **[Better Auth](https://github.com/better-auth/better-auth)** *(The most comprehensive TypeScript auth framework, 15k+ ⭐)*:
+  - Enabled supportsJSON and supportsArrays by default in Drizzle adapter, eliminating SQLite/MySQL double JSON stringify ([PR #12143](https://github.com/better-auth/better-auth/pull/12143) — fixes #8655).
+  - Prevented duplicate back-relations in Prisma generator for existing custom relation names ([PR #12137](https://github.com/better-auth/better-auth/pull/12137) — fixes #12134).
+  - Expired session cookies on token-based account deletion ([PR #12136](https://github.com/better-auth/better-auth/pull/12136) — fixes #12132).
+
+- **[Inbox Zero](https://github.com/elie222/inbox-zero)** *(AI Personal Email Assistant, 5k+ ⭐)*:
+  - Prevented infinite non-advancing pagination loops and out-of-order date processing during Outlook mailbox enumeration ([PR #4402](https://github.com/elie222/inbox-zero/pull/4402) — fixes #4372).
+  - Demanded active mail engine when expanding inline email previews in chat assistant ([PR #4395](https://github.com/elie222/inbox-zero/pull/4395) — fixes #4129).
+
 - **[Umami Analytics](https://github.com/umami-software/umami)** *(Privacy Analytics, 23k ⭐)*:
   - Migrated user password changes to secure dedicated security settings ([PR #4654](https://github.com/umami-software/umami/pull/4654) — **MERGED**).
   - Resolved retention cohort date timezone drift via `parseBackendDate` ([PR #4690](https://github.com/umami-software/umami/pull/4690) — **MERGED**).
