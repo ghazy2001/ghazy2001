@@ -111,6 +111,7 @@ Alongside client and enterprise projects, I actively contribute to modern open-s
   - Fixed workflow broadcast locking ([PR #122903](https://github.com/PostHog/posthog/pull/122903)).
 
 - **[Infisical](https://github.com/Infisical/infisical)** *(Secret Management, 34k ⭐)*:
+  - Displayed sync plaintext and JSON variables in Cloudflare Workers sync details ([PR #8885](https://github.com/Infisical/infisical/pull/8885) — **MERGED**).
   - Dynamically toggled input type in Agent Vault `SecretInput` for cross-browser masking ([PR #8976](https://github.com/Infisical/infisical/pull/8976) — **APPROVED**).
   - Clarified webhook secret path hint for wildcard glob matching ([PR #8971](https://github.com/Infisical/infisical/pull/8971) — **APPROVED**).
   - Implemented Machines API secrets version for automated Fly.io deployments ([PR #8991](https://github.com/Infisical/infisical/pull/8991)).
