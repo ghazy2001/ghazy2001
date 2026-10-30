@@ -96,6 +96,10 @@ Alongside client and enterprise projects, I actively contribute to modern open-s
   - Prevented infinite non-advancing pagination loops and out-of-order date processing during Outlook mailbox enumeration ([PR #4402](https://github.com/elie222/inbox-zero/pull/4402) — fixes #4372).
   - Demanded active mail engine when expanding inline email previews in chat assistant ([PR #4395](https://github.com/elie222/inbox-zero/pull/4395) — fixes #4129).
 
+- **[Activepieces](https://github.com/activepieces/activepieces)** *(Open-source Zapier / Make alternative with AI Agents & MCP, 15k+ ⭐)*:
+  - Implemented canonical RFC 9728 Section 3.1 protected resource metadata endpoint /.well-known/oauth-protected-resource with `resource` query resolution and earer_methods_supported, fixing MCP OAuth discovery for AI clients like Claude Code, Cursor, and Copilot ([PR #17053](https://github.com/activepieces/activepieces/pull/17053) — fixes #16588, GIT-2009).
+  - Prevented false-positive success toasts when clipboard write rejects in builder ([PR #17033](https://github.com/activepieces/activepieces/pull/17033) — fixes #16943).
+
 - **[Umami Analytics](https://github.com/umami-software/umami)** *(Privacy Analytics, 23k ⭐)*:
   - Migrated user password changes to secure dedicated security settings ([PR #4654](https://github.com/umami-software/umami/pull/4654) — **MERGED**).
   - Resolved retention cohort date timezone drift via `parseBackendDate` ([PR #4690](https://github.com/umami-software/umami/pull/4690) — **MERGED**).
