@@ -10,7 +10,7 @@
 
 <p align="center">
   <b>Frontend / Full-Stack Engineer</b> building high-performance, polished user interfaces and architecting mission-critical logic, concurrency-safe engines, and scalable web applications.<br>
-  Active core contributor across top-tier open-source platforms (<b>PostHog, Better-Auth, Twenty CRM, Chatwoot, Cal.com, Langfuse, Cap</b>), with <b>30+ production-grade pull requests</b> solving UI state synchronization, OIDC/OAuth security, race condition remediation, and web performance optimizations.
+  Active core contributor across top-tier open-source platforms (<b>PostHog, Better-Auth, Twenty CRM, Chatwoot, Umami, Cal.com, Langfuse, Cap</b>), with <b>100+ production-grade pull requests (20 merged, 100+ active)</b> solving UI state synchronization, OIDC/OAuth security, race condition remediation, and web performance optimizations.
 </p>
 
 ---
@@ -40,10 +40,10 @@ Active contributor to venture-backed, high-scale open-source ecosystems solving 
 
 ### 🛡️ **[Better Auth](https://github.com/better-auth/better-auth)** *(The comprehensive TypeScript auth framework, 15k+ ⭐)*
 - **Organization Limit Concurrency Lock**: Architected in-process serialization and transactional boundaries (`runWithTransaction`) on organization creation endpoints, eliminating TOCTOU race condition bypasses under concurrent burst traffic ([PR #12157](https://github.com/better-auth/better-auth/pull/12157) — fixes #12149).
-- **OIDC Core §3.1.3.3 Compliance**: Enforced fail-closed validation for generic-oauth token responses missing `id_token` when discovery or ID token verification is configured, preventing unauthorized identity assumptions ([PR #12163](https://github.com/better-auth/better-auth/pull/12163) — fixes #12153).
+- **OIDC Discovery & Compliance**: Forwarded discoveryHeaders to id_token JWKS verification fetch ([PR #12179](https://github.com/better-auth/better-auth/pull/12179) — fixes #12151), and enforced fail-closed validation for generic-oauth token responses missing `id_token` ([PR #12163](https://github.com/better-auth/better-auth/pull/12163) — fixes #12153).
 - **Grant Family Refresh Token Isolation**: Restructured refresh token reuse detection to invalidate specific grant families rather than globally wiping every client session ([PR #12159](https://github.com/better-auth/better-auth/pull/12159) — fixes #12154).
 - **Delete-User Token Ownership Protection**: Prevented token burn when opened by a non-owner session, and added post-consume defense-in-depth verification ([PR #12164](https://github.com/better-auth/better-auth/pull/12164) — fixes #12139).
-- **Custom Cookie Attributes**: Added `cookieAttributes` configuration to `lastLoginMethod` plugin for multi-subdomain architectures ([PR #12161](https://github.com/better-auth/better-auth/pull/12161) — fixes #12158).
+- **SSO & Custom Cookie Attributes**: Paginated provider & candidate member reads in `listSSOProviders` ([PR #12174](https://github.com/better-auth/better-auth/pull/12174) — fixes #12167), and added `cookieAttributes` configuration to `lastLoginMethod` ([PR #12161](https://github.com/better-auth/better-auth/pull/12161) — fixes #12158).
 - **Adapter & Session Hardening**: Enabled default JSON/Array support in Drizzle ([PR #12143](https://github.com/better-auth/better-auth/pull/12143)), prevented Prisma duplicate back-relations ([PR #12137](https://github.com/better-auth/better-auth/pull/12137)), and expired session cookies on user deletion ([PR #12136](https://github.com/better-auth/better-auth/pull/12136)).
 
 ### 🦔 **[PostHog](https://github.com/PostHog/posthog)** *(Product Analytics & LLM Observability, YC / GV funded, 26k ⭐)*
@@ -57,9 +57,15 @@ Active contributor to venture-backed, high-scale open-source ecosystems solving 
 - **Apollo GraphQL Optimistic Sorting**: Extended cache manipulation to support multi-criteria secondary `orderBy` optimistic edge sorting ([PR #28744](https://github.com/twentyhq/twenty/pull/28744)).
 - **Timeline Activity Diffing**: Prevented diff value hard-truncation and enabled accessible tooltips on long field values ([PR #29198](https://github.com/twentyhq/twenty/pull/29198)).
 - **Enterprise Data Sanitation**: Sanitized trailing whitespace on IMAP/SMTP/CalDAV credentials ([PR #29163](https://github.com/twentyhq/twenty/pull/29163) — **MERGED**), and bounded HTML nesting in email imports to prevent RangeError crashes ([PR #29262](https://github.com/twentyhq/twenty/pull/29262)).
-- **Core Merges**: Code step outputs sync ([PR #28432](https://github.com/twentyhq/twenty/pull/28432) — **MERGED**), record-form error validation ([PR #28425](https://github.com/twentyhq/twenty/pull/28425) — **MERGED** by CTO Charles Bochet), and draft collection hash synchronization ([PR #28412](https://github.com/twentyhq/twenty/pull/28412) — **MERGED** by CEO Félix Malfait).
+- **Core Merges**: Slack unfurl options schema ([PR #29168](https://github.com/twentyhq/twenty/pull/29168) — **MERGED**), code step outputs sync ([PR #28432](https://github.com/twentyhq/twenty/pull/28432) — **MERGED**), record-form error validation ([PR #28425](https://github.com/twentyhq/twenty/pull/28425) — **MERGED** by CTO Charles Bochet), and draft collection hash synchronization ([PR #28412](https://github.com/twentyhq/twenty/pull/28412) — **MERGED** by CEO Félix Malfait).
+
+### 📊 **[Umami](https://github.com/umami-software/umami)** *(Privacy-focused Analytics, 25k+ ⭐)*
+- **5 Core Merged PRs**: Retention cohort date timezone shift resolution ([PR #4690](https://github.com/umami-software/umami/pull/4690) — **MERGED**), custom date range `RangeError` crash protection ([PR #4692](https://github.com/umami-software/umami/pull/4692) — **MERGED**), ComboBox controlled state in LookupField wildcard paths ([PR #4696](https://github.com/umami-software/umami/pull/4696) — **MERGED**), visitor count journey step sorting ([PR #4687](https://github.com/umami-software/umami/pull/4687) — **MERGED**), and password change security settings reorganization ([PR #4654](https://github.com/umami-software/umami/pull/4654) — **MERGED**).
+- **Tracker & UI Enhancements**: Added responsive page-size picker to data tables ([PR #4725](https://github.com/umami-software/umami/pull/4725) — fixes #4102), and discarded background tab LCP/FCP telemetry to preserve web vitals accuracy ([PR #4724](https://github.com/umami-software/umami/pull/4724) — fixes #4720).
 
 ### 💬 **[Chatwoot](https://github.com/chatwoot/chatwoot)** *(Customer Engagement Infrastructure, 23k ⭐)*
+- **WhatsApp Cloud Interactive CTA**: Implemented interactive CTA URL button messages for WhatsApp Cloud ([PR #16492](https://github.com/chatwoot/chatwoot/pull/16492) — fixes #16435).
+- **Super Admin Z-Index & Demote Option**: Raised selectize dropdown z-index and enabled empty option for demoting user types ([PR #16490](https://github.com/chatwoot/chatwoot/pull/16490) — fixes #16489).
 - **Delivery Receipt Race Condition**: Eliminated status regression where WhatsApp Cloud delivery receipts arrived before synchronous HTTP send responses resolved ([PR #16486](https://github.com/chatwoot/chatwoot/pull/16486) — fixes #16351).
 - **Snooze Midnight Interpretation**: Resolved command bar parsing for phrases like "night 12" and "midnight" ([PR #16452](https://github.com/chatwoot/chatwoot/pull/16452)).
 - **Webhook Storm Prevention**: Prevented alternating error re-send loops on failed external API inboxes ([PR #16413](https://github.com/chatwoot/chatwoot/pull/16413)).
