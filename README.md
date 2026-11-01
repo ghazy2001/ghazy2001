@@ -1,7 +1,7 @@
 <div align="center">
 
 # Hi there, I'm Mahmoud Ghazy 👋
-### Full-Stack & Systems Software Engineer | Core Open-Source Contributor
+### Frontend / Full-Stack Software Engineer | Core Open-Source Contributor
 
 [![GitHub followers](https://img.shields.io/github/followers/ghazy2001?label=Follow&style=social)](https://github.com/ghazy2001)
 [![GitHub Sponsors](https://img.shields.io/badge/Sponsor-%E2%9D%A4-ea4aaa?logo=githubsponsors&logoColor=white)](https://github.com/sponsors/ghazy2001)
@@ -9,8 +9,8 @@
 [![Status](https://img.shields.io/badge/Available%20for-Remote%20Contracts%20%26%20Retainers-2ea44f?style=for-the-badge)](#-contact--connect)
 
 <p align="center">
-  <b>Full-Stack & Systems Engineer</b> architecting mission-critical backend logic, concurrency-safe engines, and high-performance web applications.<br>
-  Active core contributor across top-tier open-source platforms (<b>PostHog, Better-Auth, Twenty CRM, Chatwoot, Cal.com, Langfuse, Cap</b>), with <b>30+ production-grade pull requests</b> solving distributed locking, OIDC/OAuth security, race condition remediation, and database optimizations.
+  <b>Frontend / Full-Stack Engineer</b> building high-performance, polished user interfaces and architecting mission-critical logic, concurrency-safe engines, and scalable web applications.<br>
+  Active core contributor across top-tier open-source platforms (<b>PostHog, Better-Auth, Twenty CRM, Chatwoot, Cal.com, Langfuse, Cap</b>), with <b>30+ production-grade pull requests</b> solving UI state synchronization, OIDC/OAuth security, race condition remediation, and web performance optimizations.
 </p>
 
 ---
@@ -24,10 +24,10 @@
 | Area | Technologies & Frameworks |
 |---|---|
 | **Languages & Core** | ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black) ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white) ![SQL](https://img.shields.io/badge/SQL-4479A1?logo=postgresql&logoColor=white) ![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white) |
+| **Frontend & UI Systems** | ![React 19](https://img.shields.io/badge/React%2019-61DAFB?logo=react&logoColor=black) ![Next.js](https://img.shields.io/badge/Next.js%20(App%20Router)-000000?logo=next.js&logoColor=white) ![TanStack Query](https://img.shields.io/badge/TanStack%20Query-FF4154?logo=react-query&logoColor=white) ![Zustand](https://img.shields.io/badge/Zustand-443e38?logo=react&logoColor=white) ![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-06B6D4?logo=tailwindcss&logoColor=white) ![shadcn/ui](https://img.shields.io/badge/shadcn%2Fui-000000?logo=shadcnui&logoColor=white) ![Core Web Vitals](https://img.shields.io/badge/Core%20Web%20Vitals-sub--1.2s%20LCP-4285F4?logo=googlechrome&logoColor=white) |
 | **Backend & Architecture** | ![Node.js](https://img.shields.io/badge/Node.js-339933?logo=node.js&logoColor=white) ![Express](https://img.shields.io/badge/Express-000000?logo=express&logoColor=white) ![NestJS](https://img.shields.io/badge/NestJS-E0234E?logo=nestjs&logoColor=white) ![Django](https://img.shields.io/badge/Django-092E20?logo=django&logoColor=white) ![GraphQL](https://img.shields.io/badge/GraphQL-E10098?logo=graphql&logoColor=white) ![REST APIs](https://img.shields.io/badge/REST%20APIs-005571?logo=postman&logoColor=white) ![JSON-RPC](https://img.shields.io/badge/JSON--RPC-blue?logo=json) ![Webhooks](https://img.shields.io/badge/Webhooks-FF6C37?logo=webhook&logoColor=white) |
 | **Auth, Security & Identity** | ![OIDC Core](https://img.shields.io/badge/OpenID%20Connect-OIDC%20Core%20§3.1.3.3-F78C40?logo=openid) ![OAuth 2.0](https://img.shields.io/badge/OAuth%202.0-PKCE%20%26%20Refresh%20Family-black?logo=oauth) ![Better-Auth](https://img.shields.io/badge/Better--Auth-Core-blue) ![JWT](https://img.shields.io/badge/JWT-000000?logo=jsonwebtokens&logoColor=white) ![WebAuthn](https://img.shields.io/badge/WebAuthn-2FA-darkgreen) |
 | **Databases & Caching** | ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white) ![ClickHouse](https://img.shields.io/badge/ClickHouse-FFCC01?logo=clickhouse&logoColor=black) ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?logo=mongodb&logoColor=white) ![Redis](https://img.shields.io/badge/Redis%20(Locks%2FCaching)-DC382D?logo=redis&logoColor=white) ![Prisma](https://img.shields.io/badge/Prisma%20ORM-2D3748?logo=prisma&logoColor=white) ![TypeORM](https://img.shields.io/badge/TypeORM-FE0803?logo=typeorm&logoColor=white) |
-| **Frontend & Systems** | ![React 19](https://img.shields.io/badge/React%2019-61DAFB?logo=react&logoColor=black) ![Next.js](https://img.shields.io/badge/Next.js%20(App%20Router)-000000?logo=next.js&logoColor=white) ![TanStack Query](https://img.shields.io/badge/TanStack%20Query-FF4154?logo=react-query&logoColor=white) ![Zustand](https://img.shields.io/badge/Zustand-443e38?logo=react&logoColor=white) ![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-06B6D4?logo=tailwindcss&logoColor=white) ![shadcn/ui](https://img.shields.io/badge/shadcn%2Fui-000000?logo=shadcnui&logoColor=white) ![Core Web Vitals](https://img.shields.io/badge/Core%20Web%20Vitals-sub--1.2s%20LCP-4285F4?logo=googlechrome&logoColor=white) |
 | **DevOps & Testing** | ![Vitest](https://img.shields.io/badge/Vitest-6E9F18?logo=vitest&logoColor=white) ![Jest](https://img.shields.io/badge/Jest-C21325?logo=jest&logoColor=white) ![PyTest](https://img.shields.io/badge/PyTest-0A9EDC?logo=pytest&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?logo=githubactions&logoColor=white) ![Git](https://img.shields.io/badge/Git%20%26%20GitHub-F05032?logo=git&logoColor=white) |
 
 </div>
