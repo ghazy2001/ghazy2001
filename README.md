@@ -10,7 +10,7 @@
 
 <p align="center">
   <b>Frontend / Full-Stack Engineer</b> building high-performance, polished user interfaces and architecting mission-critical logic, concurrency-safe engines, and scalable web applications.<br>
-  Active core contributor across top-tier open-source platforms (<b>PostHog, Better-Auth, Twenty CRM, Chatwoot, Umami, Cal.com, Langfuse, Cap</b>), with <b>100+ production-grade pull requests (20 merged, 100+ active)</b> solving UI state synchronization, OIDC/OAuth security, race condition remediation, and web performance optimizations.
+  Active core contributor across top-tier open-source platforms (<b>PostHog, Better-Auth, Twenty CRM, EVOLV, Chatwoot, Umami, Cal.com, Langfuse, Cap</b>), with <b>125+ production-grade pull requests (27 merged, 95+ active)</b> solving UI state synchronization, Go kernel evolution & agent security, OIDC/OAuth security, race condition remediation, and web performance optimizations.
 </p>
 
 ---
@@ -23,7 +23,7 @@
 
 | Area | Technologies & Frameworks |
 |---|---|
-| **Languages & Core** | ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black) ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white) ![SQL](https://img.shields.io/badge/SQL-4479A1?logo=postgresql&logoColor=white) ![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white) |
+| **Languages & Core** | ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black) ![Go](https://img.shields.io/badge/Go-00ADD8?logo=go&logoColor=white) ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white) ![SQL](https://img.shields.io/badge/SQL-4479A1?logo=postgresql&logoColor=white) ![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white) |
 | **Frontend & UI Systems** | ![React 19](https://img.shields.io/badge/React%2019-61DAFB?logo=react&logoColor=black) ![Next.js](https://img.shields.io/badge/Next.js%20(App%20Router)-000000?logo=next.js&logoColor=white) ![TanStack Query](https://img.shields.io/badge/TanStack%20Query-FF4154?logo=react-query&logoColor=white) ![Zustand](https://img.shields.io/badge/Zustand-443e38?logo=react&logoColor=white) ![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-06B6D4?logo=tailwindcss&logoColor=white) ![shadcn/ui](https://img.shields.io/badge/shadcn%2Fui-000000?logo=shadcnui&logoColor=white) ![Core Web Vitals](https://img.shields.io/badge/Core%20Web%20Vitals-sub--1.2s%20LCP-4285F4?logo=googlechrome&logoColor=white) |
 | **Backend & Architecture** | ![Node.js](https://img.shields.io/badge/Node.js-339933?logo=node.js&logoColor=white) ![Express](https://img.shields.io/badge/Express-000000?logo=express&logoColor=white) ![NestJS](https://img.shields.io/badge/NestJS-E0234E?logo=nestjs&logoColor=white) ![Django](https://img.shields.io/badge/Django-092E20?logo=django&logoColor=white) ![GraphQL](https://img.shields.io/badge/GraphQL-E10098?logo=graphql&logoColor=white) ![REST APIs](https://img.shields.io/badge/REST%20APIs-005571?logo=postman&logoColor=white) ![JSON-RPC](https://img.shields.io/badge/JSON--RPC-blue?logo=json) ![Webhooks](https://img.shields.io/badge/Webhooks-FF6C37?logo=webhook&logoColor=white) |
 | **Auth, Security & Identity** | ![OIDC Core](https://img.shields.io/badge/OpenID%20Connect-OIDC%20Core%20§3.1.3.3-F78C40?logo=openid) ![OAuth 2.0](https://img.shields.io/badge/OAuth%202.0-PKCE%20%26%20Refresh%20Family-black?logo=oauth) ![Better-Auth](https://img.shields.io/badge/Better--Auth-Core-blue) ![JWT](https://img.shields.io/badge/JWT-000000?logo=jsonwebtokens&logoColor=white) ![WebAuthn](https://img.shields.io/badge/WebAuthn-2FA-darkgreen) |
@@ -51,6 +51,15 @@ Active contributor to venture-backed, high-scale open-source ecosystems solving 
 - **Automated Inactive Inbox Sweep**: Designed team-level configurable background tasks for auto-closing stale signal reports after $N$ days under feature flag gates ([PR #126809](https://github.com/PostHog/posthog/pull/126809) — fixes #126697).
 - **AutoResearch Quotas & Limits**: Implemented live pipeline caps ([PR #126792](https://github.com/PostHog/posthog/pull/126792)), daily training run caps ([PR #126772](https://github.com/PostHog/posthog/pull/126772)), and automatic reaping of training runs stranded by lost sandboxes ([PR #126756](https://github.com/PostHog/posthog/pull/126756)).
 - **Warehouse Integrations**: Resolved dotted incremental cursor resolution ([PR #124910](https://github.com/PostHog/posthog/pull/124910)), guarded against disconnecting in-use integrations ([PR #124866](https://github.com/PostHog/posthog/pull/124866)), and locked workflow broadcasts once sending ([PR #122903](https://github.com/PostHog/posthog/pull/122903)).
+
+### 🧬 **[EVOLV](https://github.com/dxn111/EVOLV)** *(Autonomous AI Agent Operating System in Go)*
+- **7 Core Merged PRs**:
+  - **Self-Modify Kernel Evolution Engine**: Engineered staged candidate builds and atomic swap-on-green execution engine enabling autonomous runtime upgrades with rollback safeguards ([PR #15](https://github.com/dxn111/EVOLV/pull/15) — **MERGED**).
+  - **Credential Redaction Engine**: Engineered zero-leak token/secret redaction across execution ledger, memory store, and event bus ([PR #9](https://github.com/dxn111/EVOLV/pull/9) — **MERGED**).
+  - **Destructive Shell Guard (S1 Security)**: Designed interactive guard and explicit confirmation barriers for destructive CLI commands ([PR #13](https://github.com/dxn111/EVOLV/pull/13) — **MERGED**).
+  - **Plugin Runtime Ceilings & Execution Timeouts**: Enforced CPU/memory ceilings and dead-man timeouts for third-party tools ([PR #14](https://github.com/dxn111/EVOLV/pull/14) — **MERGED**).
+  - **Portable Package Format (`.evolvpack`)**: Implemented atomic export/import workspace packaging with path traversal confinement & preflight verification ([PR #8](https://github.com/dxn111/EVOLV/pull/8), [PR #17](https://github.com/dxn111/EVOLV/pull/17) — **MERGED**).
+  - **Cross-Platform OS Shell Abstraction**: Resolved Windows vs POSIX shell execution parity and isolated process spawning ([PR #6](https://github.com/dxn111/EVOLV/pull/6) — **MERGED**).
 
 ### ⚡ **[Twenty CRM](https://github.com/twentyhq/twenty)** *(Enterprise Open-Source CRM, YC funded, 25k ⭐)*
 - **Sign-in Infinite Loader Fix**: Eliminated infinite loading spinner on sign-in page during public workspace resolution ([PR #29316](https://github.com/twentyhq/twenty/pull/29316) — fixes #29254).
@@ -90,6 +99,10 @@ Active contributor to venture-backed, high-scale open-source ecosystems solving 
 - **OMI Wearable Subscription Upgrades**: Unblocked waiting audio transcription pipelines upon subscription plan upgrade and reactivation ([PR #24141](https://github.com/BasedHardware/omi/pull/24141) — **Verified & Approved by Reviewer**).
 - **Inbox-Zero Email Preview**: Demanded active mail engine when expanding inline email previews in chat assistant ([PR #4395](https://github.com/elie222/inbox-zero/pull/4395) — **MERGED** by maintainer `@elie222`).
 
+### 🌐 **[Browser-Use](https://github.com/browser-use/browser-use)** & **[Bruno](https://github.com/usebruno/bruno)**
+- **Browser-Use MCP Schema Array Support**: Enabled multi-type schema array resolution during MCP tool registration ([PR #6288](https://github.com/browser-use/browser-use/pull/6288) — fixes #6278).
+- **Bruno Safe OAuth2 Error Formatting**: Safeguarded non-string / object error payloads in OAuth2 authorization workflows against unhandled JSON rendering exceptions ([PR #9719](https://github.com/usebruno/bruno/pull/9719) — fixes #9708).
+
 ---
 
 ## 💼 Featured Enterprise & Client Systems
@@ -115,8 +128,8 @@ Active contributor to venture-backed, high-scale open-source ecosystems solving 
 ## 📈 GitHub Stats
 
 <div align="center">
-  <img src="https://github-stats-extended.vercel.app/api?username=ghazy2001&show_icons=true&theme=tokyonight&count_private=true&hide_border=true&v=20261101" alt="Mahmoud Ghazy's GitHub stats" height="165" />
-  <img src="https://github-stats-extended.vercel.app/api/top-langs/?username=ghazy2001&layout=compact&theme=tokyonight&hide_border=true&v=20261101" alt="Top Languages" height="165" />
+  <img src="https://github-stats-extended.vercel.app/api?username=ghazy2001&show_icons=true&theme=tokyonight&count_private=true&hide_border=true&v=20261102" alt="Mahmoud Ghazy's GitHub stats" height="165" />
+  <img src="https://github-stats-extended.vercel.app/api/top-langs/?username=ghazy2001&layout=compact&theme=tokyonight&hide_border=true&v=20261102" alt="Top Languages" height="165" />
 </div>
 
 ---
