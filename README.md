@@ -10,7 +10,7 @@
 
 <p align="center">
   <b>Frontend / Full-Stack Engineer</b> building high-performance, polished user interfaces and architecting mission-critical logic, concurrency-safe engines, and scalable web applications.<br>
-  Active core contributor across top-tier open-source platforms (<b>PostHog, Better-Auth, Twenty CRM, EVOLV, Chatwoot, Umami, Cal.com, Langfuse, Cap</b>), with <b>125+ production-grade pull requests (27 merged, 95+ active)</b> solving UI state synchronization, Go kernel evolution & agent security, OIDC/OAuth security, race condition remediation, and web performance optimizations.
+  Active core contributor across top-tier open-source platforms (<b>EVOLV, Umami, Cap, Chatwoot, Infisical, Inbox Zero, Plane</b>), with <b>25+ merged production-grade pull requests</b> solving Go kernel evolution & agent security, web analytics & telemetry, audio playback & video streaming synchronization, UI state management, and real-time integration workflows.
 </p>
 
 ---
@@ -34,74 +34,46 @@
 
 ---
 
-## 🌐 Featured Core Open-Source Engineering
+## 🌐 Featured Merged Open-Source Contributions
 
-Active contributor to venture-backed, high-scale open-source ecosystems solving distributed locking, security, race conditions, and architecture:
-
-### 🛡️ **[Better Auth](https://github.com/better-auth/better-auth)** *(The comprehensive TypeScript auth framework, 15k+ ⭐)*
-- **Organization Limit Concurrency Lock**: Architected in-process serialization and transactional boundaries (`runWithTransaction`) on organization creation endpoints, eliminating TOCTOU race condition bypasses under concurrent burst traffic ([PR #12157](https://github.com/better-auth/better-auth/pull/12157) — fixes #12149).
-- **OIDC Discovery & Compliance**: Forwarded discoveryHeaders to id_token JWKS verification fetch ([PR #12179](https://github.com/better-auth/better-auth/pull/12179) — fixes #12151), and enforced fail-closed validation for generic-oauth token responses missing `id_token` ([PR #12163](https://github.com/better-auth/better-auth/pull/12163) — fixes #12153).
-- **Grant Family Refresh Token Isolation**: Restructured refresh token reuse detection to invalidate specific grant families rather than globally wiping every client session ([PR #12159](https://github.com/better-auth/better-auth/pull/12159) — fixes #12154).
-- **Delete-User Token Ownership Protection**: Prevented token burn when opened by a non-owner session, and added post-consume defense-in-depth verification ([PR #12164](https://github.com/better-auth/better-auth/pull/12164) — fixes #12139).
-- **SSO & Custom Cookie Attributes**: Paginated provider & candidate member reads in `listSSOProviders` ([PR #12174](https://github.com/better-auth/better-auth/pull/12174) — fixes #12167), and added `cookieAttributes` configuration to `lastLoginMethod` ([PR #12161](https://github.com/better-auth/better-auth/pull/12161) — fixes #12158).
-- **Adapter & Session Hardening**: Enabled default JSON/Array support in Drizzle ([PR #12143](https://github.com/better-auth/better-auth/pull/12143)), prevented Prisma duplicate back-relations ([PR #12137](https://github.com/better-auth/better-auth/pull/12137)), and expired session cookies on user deletion ([PR #12136](https://github.com/better-auth/better-auth/pull/12136)).
-
-### 🦔 **[PostHog](https://github.com/PostHog/posthog)** *(Product Analytics & LLM Observability, YC / GV funded, 26k ⭐)*
-- **AutoResearch Safety Model Fallback**: Built resilient fallback handling when Signals safety model returns an empty reply or provider refusal, holding signals for review rather than dropping them ([PR #126803](https://github.com/PostHog/posthog/pull/126803) — fixes #126669).
-- **Automated Inactive Inbox Sweep**: Designed team-level configurable background tasks for auto-closing stale signal reports after $N$ days under feature flag gates ([PR #126809](https://github.com/PostHog/posthog/pull/126809) — fixes #126697).
-- **AutoResearch Quotas & Limits**: Implemented live pipeline caps ([PR #126792](https://github.com/PostHog/posthog/pull/126792)), daily training run caps ([PR #126772](https://github.com/PostHog/posthog/pull/126772)), and automatic reaping of training runs stranded by lost sandboxes ([PR #126756](https://github.com/PostHog/posthog/pull/126756)).
-- **Warehouse Integrations**: Resolved dotted incremental cursor resolution ([PR #124910](https://github.com/PostHog/posthog/pull/124910)), guarded against disconnecting in-use integrations ([PR #124866](https://github.com/PostHog/posthog/pull/124866)), and locked workflow broadcasts once sending ([PR #122903](https://github.com/PostHog/posthog/pull/122903)).
+High-impact production-grade pull requests reviewed, approved, and merged upstream across venture-backed and widely adopted open-source ecosystems:
 
 ### 🧬 **[EVOLV](https://github.com/dxn111/EVOLV)** *(Autonomous AI Agent Operating System in Go)*
-- **7 Core Merged PRs**:
-  - **Self-Modify Kernel Evolution Engine**: Engineered staged candidate builds and atomic swap-on-green execution engine enabling autonomous runtime upgrades with rollback safeguards ([PR #15](https://github.com/dxn111/EVOLV/pull/15) — **MERGED**).
-  - **Credential Redaction Engine**: Engineered zero-leak token/secret redaction across execution ledger, memory store, and event bus ([PR #9](https://github.com/dxn111/EVOLV/pull/9) — **MERGED**).
-  - **Destructive Shell Guard (S1 Security)**: Designed interactive guard and explicit confirmation barriers for destructive CLI commands ([PR #13](https://github.com/dxn111/EVOLV/pull/13) — **MERGED**).
-  - **Plugin Runtime Ceilings & Execution Timeouts**: Enforced CPU/memory ceilings and dead-man timeouts for third-party tools ([PR #14](https://github.com/dxn111/EVOLV/pull/14) — **MERGED**).
-  - **Portable Package Format (`.evolvpack`)**: Implemented atomic export/import workspace packaging with path traversal confinement & preflight verification ([PR #8](https://github.com/dxn111/EVOLV/pull/8), [PR #17](https://github.com/dxn111/EVOLV/pull/17) — **MERGED**).
-  - **Cross-Platform OS Shell Abstraction**: Resolved Windows vs POSIX shell execution parity and isolated process spawning ([PR #6](https://github.com/dxn111/EVOLV/pull/6) — **MERGED**).
-
-### ⚡ **[Twenty CRM](https://github.com/twentyhq/twenty)** *(Enterprise Open-Source CRM, YC funded, 25k ⭐)*
-- **Sign-in Infinite Loader Fix**: Eliminated infinite loading spinner on sign-in page during public workspace resolution ([PR #29316](https://github.com/twentyhq/twenty/pull/29316) — fixes #29254).
-- **Apollo GraphQL Optimistic Sorting**: Extended cache manipulation to support multi-criteria secondary `orderBy` optimistic edge sorting ([PR #28744](https://github.com/twentyhq/twenty/pull/28744)).
-- **Timeline Activity Diffing**: Prevented diff value hard-truncation and enabled accessible tooltips on long field values ([PR #29198](https://github.com/twentyhq/twenty/pull/29198)).
-- **Enterprise Data Sanitation**: Sanitized trailing whitespace on IMAP/SMTP/CalDAV credentials ([PR #29163](https://github.com/twentyhq/twenty/pull/29163) — **MERGED**), and bounded HTML nesting in email imports to prevent RangeError crashes ([PR #29262](https://github.com/twentyhq/twenty/pull/29262)).
-- **Core Merges**: Slack unfurl options schema ([PR #29168](https://github.com/twentyhq/twenty/pull/29168) — **MERGED**), code step outputs sync ([PR #28432](https://github.com/twentyhq/twenty/pull/28432) — **MERGED**), record-form error validation ([PR #28425](https://github.com/twentyhq/twenty/pull/28425) — **MERGED** by CTO Charles Bochet), and draft collection hash synchronization ([PR #28412](https://github.com/twentyhq/twenty/pull/28412) — **MERGED** by CEO Félix Malfait).
+- **Self-Modify Kernel Evolution Engine**: Engineered staged candidate builds and atomic swap-on-green execution engine enabling autonomous runtime upgrades with rollback safeguards ([PR #15](https://github.com/dxn111/EVOLV/pull/15) — **MERGED**).
+- **Security Linting for Evolved Components**: Built security linting for autonomous agent tools and runtime components ([PR #31](https://github.com/dxn111/EVOLV/pull/31) — **MERGED**).
+- **Marketplace Web Export & Import (`.evolvpack`)**: Engineered web export, inspection, and import for the .evolvpack ecosystem ([PR #30](https://github.com/dxn111/EVOLV/pull/30) — **MERGED**).
+- **Canvas Artifact Mounting**: Mounted agent-generated artifacts on canvas with direct project synchronization ([PR #29](https://github.com/dxn111/EVOLV/pull/29) — **MERGED**).
+- **Package Confinement & Security Hardening**: Hardened `.evolvpack` path traversal confinement, credential redaction, test runner, and rollback engine ([PR #17](https://github.com/dxn111/EVOLV/pull/17) — **MERGED**).
+- **Credential Redaction Engine**: Engineered zero-leak token/secret redaction across execution ledger, memory store, and event bus ([PR #9](https://github.com/dxn111/EVOLV/pull/9) — **MERGED**).
+- **Destructive Shell Guard (S1 Security)**: Designed interactive guard and explicit confirmation barriers for destructive CLI commands ([PR #13](https://github.com/dxn111/EVOLV/pull/13) — **MERGED**).
+- **Plugin Runtime Ceilings & Execution Timeouts**: Enforced CPU/memory ceilings and dead-man timeouts for third-party tools ([PR #14](https://github.com/dxn111/EVOLV/pull/14) — **MERGED**).
+- **Portable Package Format (`.evolvpack`)**: Implemented atomic export/import workspace packaging with path traversal confinement & preflight verification ([PR #8](https://github.com/dxn111/EVOLV/pull/8) — **MERGED**).
+- **Cross-Platform OS Shell Abstraction**: Resolved Windows vs POSIX shell execution parity and isolated process spawning ([PR #6](https://github.com/dxn111/EVOLV/pull/6) — **MERGED**).
 
 ### 📊 **[Umami](https://github.com/umami-software/umami)** *(Privacy-focused Analytics, 25k+ ⭐)*
-- **5 Core Merged PRs**: Retention cohort date timezone shift resolution ([PR #4690](https://github.com/umami-software/umami/pull/4690) — **MERGED**), custom date range `RangeError` crash protection ([PR #4692](https://github.com/umami-software/umami/pull/4692) — **MERGED**), ComboBox controlled state in LookupField wildcard paths ([PR #4696](https://github.com/umami-software/umami/pull/4696) — **MERGED**), visitor count journey step sorting ([PR #4687](https://github.com/umami-software/umami/pull/4687) — **MERGED**), and password change security settings reorganization ([PR #4654](https://github.com/umami-software/umami/pull/4654) — **MERGED**).
-- **Tracker & UI Enhancements**: Added responsive page-size picker to data tables ([PR #4725](https://github.com/umami-software/umami/pull/4725) — fixes #4102), and discarded background tab LCP/FCP telemetry to preserve web vitals accuracy ([PR #4724](https://github.com/umami-software/umami/pull/4724) — fixes #4720).
-
-### 💬 **[Chatwoot](https://github.com/chatwoot/chatwoot)** *(Customer Engagement Infrastructure, 23k ⭐)*
-- **WhatsApp Cloud Interactive CTA**: Implemented interactive CTA URL button messages for WhatsApp Cloud ([PR #16492](https://github.com/chatwoot/chatwoot/pull/16492) — fixes #16435).
-- **Super Admin Z-Index & Demote Option**: Raised selectize dropdown z-index and enabled empty option for demoting user types ([PR #16490](https://github.com/chatwoot/chatwoot/pull/16490) — fixes #16489).
-- **Delivery Receipt Race Condition**: Eliminated status regression where WhatsApp Cloud delivery receipts arrived before synchronous HTTP send responses resolved ([PR #16486](https://github.com/chatwoot/chatwoot/pull/16486) — fixes #16351).
-- **Snooze Midnight Interpretation**: Resolved command bar parsing for phrases like "night 12" and "midnight" ([PR #16452](https://github.com/chatwoot/chatwoot/pull/16452)).
-- **Webhook Storm Prevention**: Prevented alternating error re-send loops on failed external API inboxes ([PR #16413](https://github.com/chatwoot/chatwoot/pull/16413)).
-- **Cookie Domain Isolation**: Cleared session cookies with `baseDomain` on SDK reset ([PR #16445](https://github.com/chatwoot/chatwoot/pull/16445)).
-- **Voice Draft Persistence**: Resolved voice announcement draft toggle overwrite on unsaved forms ([PR #16428](https://github.com/chatwoot/chatwoot/pull/16428) — **MERGED**).
-
-### 📅 **[Cal.com](https://github.com/calcom/cal.diy)** *(Scheduling Infrastructure, $25M+)*
-- **Booking Concurrency & Conflicts**: Surfaced 409 conflict detection for concurrent booking attempts and eliminated millisecond UID collisions ([PR #30375](https://github.com/calcom/cal.diy/pull/30375), [PR #30376](https://github.com/calcom/cal.diy/pull/30376)).
-- **DST Boundary Shifts**: Re-evaluated timezone shifts when instant crossings cross daylight saving time boundaries in overlay calendars ([PR #30421](https://github.com/calcom/cal.diy/pull/30421)).
-- **Payment & No-Show Fees**: Remounted payments router and wired `chargeCard` mutation in ChargeCardDialog, fixing broken Stripe no-show fee collection ([Issue #30454 Solution](https://github.com/calcom/cal.diy/issues/30454#issuecomment-6531746891)).
-
-### 🔍 **[Langfuse](https://github.com/langfuse/langfuse)** *(LLM Engineering Platform, YC / Lightspeed)*
-- **MCP Error Handling Conformance**: Refactored Model Context Protocol (MCP) server tool execution to return errors as valid `isError: true` results adhering to the JSON-RPC standard specification ([PR #19533](https://github.com/langfuse/langfuse/pull/19533) — fixes #19528).
-- **Bedrock Cache Write Pricing**: Normalized Bedrock / LangChain ephemeral cache-write tokens into canonical TTL pricing, preventing 20-40% underreported LLM trace costs ([PR #19446](https://github.com/langfuse/langfuse/pull/19446)).
+- **Retention Cohort Timezone Shift**: Resolved timezone shift in retention cohort dates using `parseBackendDate` ([PR #4690](https://github.com/umami-software/umami/pull/4690) — **MERGED**).
+- **Custom Date Range Crash Prevention**: Prevented `RangeError` crashes on unselected or invalid custom date ranges ([PR #4692](https://github.com/umami-software/umami/pull/4692) — **MERGED**).
+- **LookupField Wildcard ComboBox State**: Controlled ComboBox value state in LookupField to prevent clearing custom wildcard paths ([PR #4696](https://github.com/umami-software/umami/pull/4696) — **MERGED**).
+- **Visitor Count Journey Step Sorting**: Sorted user journey steps by total visitor count ([PR #4687](https://github.com/umami-software/umami/pull/4687) — **MERGED**).
+- **Security Settings Reorganization**: Reorganized password management into dedicated security settings ([PR #4654](https://github.com/umami-software/umami/pull/4654) — **MERGED**).
 
 ### 🎥 **[Cap](https://github.com/CapSoftware/Cap)** *(High-Performance Screen Recorder, 7.5k ⭐)*
-- **Scap Direct3D Frame Pool Stall**: Fixed recording stalls at 0 seconds by comparing in-flight frames to allocated buffer pool size rather than dynamic content dimensions ([PR #3600](https://github.com/CapSoftware/Cap/pull/3600) — fixes #3594).
-- **Developer API & Pagination**: Enforced integer coercion and bounds preventing MySQL 500 syntax crashes on negative pagination inputs ([PR #3568](https://github.com/CapSoftware/Cap/pull/3568)).
-- **Toolbar Reactions Auth**: Integrated unauthenticated viewer sign-in prompt for reactions ([PR #2977](https://github.com/CapSoftware/Cap/pull/2977) — **MERGED** by founder Richie McIlroy).
+- **Playback Store Late Duration Updates**: Notified subscribers when late `fallbackDuration` updates the playback store ([PR #2988](https://github.com/CapSoftware/Cap/pull/2988) — **MERGED**).
+- **Toolbar Reactions Auth Guard**: Integrated sign-in prompt overlay when unauthenticated viewers react with emojis ([PR #2977](https://github.com/CapSoftware/Cap/pull/2977) — **MERGED** by founder Richie McIlroy).
+- **Vinxi Timestamp Sidecar Ignoring**: Ignored Vinxi timestamp sidecars in `.gitignore` tooling ([PR #2927](https://github.com/CapSoftware/Cap/pull/2927) — **MERGED**).
+- **Turbo Config Optimization**: Deduped `.env` in `turbo.json` and dropped deprecated `--no-cache` flag ([PR #2926](https://github.com/CapSoftware/Cap/pull/2926) — **MERGED**).
 
-### 🤖 **[BasedHardware / Omi](https://github.com/BasedHardware/omi)** & **[Inbox Zero](https://github.com/elie222/inbox-zero)**
-- **OMI Wearable Subscription Upgrades**: Unblocked waiting audio transcription pipelines upon subscription plan upgrade and reactivation ([PR #24141](https://github.com/BasedHardware/omi/pull/24141) — **Verified & Approved by Reviewer**).
-- **Inbox-Zero Email Preview**: Demanded active mail engine when expanding inline email previews in chat assistant ([PR #4395](https://github.com/elie222/inbox-zero/pull/4395) — **MERGED** by maintainer `@elie222`).
+### 🔐 **[Infisical](https://github.com/Infisical/infisical)** *(Secret Ops & Encryption Platform, 18k ⭐)*
+- **Cloudflare Workers Secret Sync Details**: Fixed display of plaintext and JSON sync variables in Cloudflare Workers sync details drawer ([PR #8885](https://github.com/Infisical/infisical/pull/8885) — **MERGED**).
 
-### 🌐 **[Browser-Use](https://github.com/browser-use/browser-use)** & **[Bruno](https://github.com/usebruno/bruno)**
-- **Browser-Use MCP Schema Array Support**: Enabled multi-type schema array resolution during MCP tool registration ([PR #6288](https://github.com/browser-use/browser-use/pull/6288) — fixes #6278).
-- **Bruno Safe OAuth2 Error Formatting**: Safeguarded non-string / object error payloads in OAuth2 authorization workflows against unhandled JSON rendering exceptions ([PR #9719](https://github.com/usebruno/bruno/pull/9719) — fixes #9708).
+### 💬 **[Chatwoot](https://github.com/chatwoot/chatwoot)** *(Customer Engagement Infrastructure, 23k ⭐)*
+- **Voice Announcement Draft Toggle Persistence**: Preserved unsaved announcement draft upon toggle switch and prevented empty uncheck PATCH requests ([PR #16428](https://github.com/chatwoot/chatwoot/pull/16428) — **MERGED**).
+
+### ✉️ **[Inbox Zero](https://github.com/elie222/inbox-zero)** *(AI Personal Email Assistant, 5.5k ⭐)*
+- **Inline Email Preview Engine**: Demanded active mail engine before expanding inline email previews in chat assistant ([PR #4395](https://github.com/elie222/inbox-zero/pull/4395) — **MERGED** by founder `@elie222`).
+
+### 📋 **[Plane](https://github.com/makeplane/plane)** *(Open-Source Project Tracking, 35k ⭐)*
+- **Profile Settings Validation**: Allowed saving profile settings with an empty last name ([PR #10147](https://github.com/makeplane/plane/pull/10147) — **MERGED**).
 
 ---
 
