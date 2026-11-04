@@ -10,7 +10,7 @@
 
 <p align="center">
   <b>Frontend / Full-Stack Engineer</b> building high-performance, polished user interfaces and architecting mission-critical logic, concurrency-safe engines, and scalable web applications.<br>
-  Active core contributor across top-tier open-source platforms (<b>EVOLV, Twenty, Umami, Cap, Chatwoot, Infisical, Inbox Zero, Plane</b>), with <b>33+ merged production-grade pull requests</b> solving Go kernel evolution & agent security, web analytics & telemetry, audio playback & video streaming synchronization, UI state management, and real-time integration workflows.
+  Active core contributor across top-tier open-source platforms (<b>EVOLV, Twenty, Umami, Cap, Chatwoot, Infisical, Inbox Zero, Plane</b>), with <b>34+ merged production-grade pull requests</b> solving Go kernel evolution & agent security, web analytics & telemetry, audio playback & video streaming synchronization, UI state management, and real-time integration workflows.
 </p>
 
 ---
@@ -70,6 +70,7 @@ High-impact production-grade pull requests reviewed, approved, and merged upstre
 - **Security Settings Reorganization**: Reorganized password management into dedicated security settings ([PR #4654](https://github.com/umami-software/umami/pull/4654) — **MERGED**).
 
 ### 🎥 **[Cap](https://github.com/CapSoftware/Cap)** *(High-Performance Screen Recorder, 7.5k ⭐)*
+- **Developer API Pagination Bounds**: Hardened API query validation against fractional/oversized parameters and negative offsets ([PR #3576](https://github.com/CapSoftware/Cap/pull/3576) — **MERGED**).
 - **Playback Store Late Duration Updates**: Notified subscribers when late `fallbackDuration` updates the playback store ([PR #2988](https://github.com/CapSoftware/Cap/pull/2988) — **MERGED**).
 - **Toolbar Reactions Auth Guard**: Integrated sign-in prompt overlay when unauthenticated viewers react with emojis ([PR #2977](https://github.com/CapSoftware/Cap/pull/2977) — **MERGED** by founder Richie McIlroy).
 - **Vinxi Timestamp Sidecar Ignoring**: Ignored Vinxi timestamp sidecars in `.gitignore` tooling ([PR #2927](https://github.com/CapSoftware/Cap/pull/2927) — **MERGED**).
