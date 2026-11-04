@@ -10,7 +10,7 @@
 
 <p align="center">
   <b>Frontend / Full-Stack Engineer</b> building high-performance, polished user interfaces and architecting mission-critical logic, concurrency-safe engines, and scalable web applications.<br>
-  Active core contributor across top-tier open-source platforms (<b>EVOLV, Twenty, Umami, Cap, Chatwoot, Infisical, Inbox Zero, Plane</b>), with <b>28+ merged production-grade pull requests</b> solving Go kernel evolution & agent security, web analytics & telemetry, audio playback & video streaming synchronization, UI state management, and real-time integration workflows.
+  Active core contributor across top-tier open-source platforms (<b>EVOLV, Twenty, Umami, Cap, Chatwoot, Infisical, Inbox Zero, Plane</b>), with <b>33+ merged production-grade pull requests</b> solving Go kernel evolution & agent security, web analytics & telemetry, audio playback & video streaming synchronization, UI state management, and real-time integration workflows.
 </p>
 
 ---
@@ -39,6 +39,11 @@
 High-impact production-grade pull requests reviewed, approved, and merged upstream across venture-backed and widely adopted open-source ecosystems:
 
 ### 🧬 **[EVOLV](https://github.com/dxn111/EVOLV)** *(Autonomous AI Agent Operating System in Go)*
+- **Interactive Run Detail Inspector & Journal Drawer**: Engineered interactive UI drawer for real-time engineering run inspection, execution timelines, and live agent journal streaming ([PR #41](https://github.com/dxn111/EVOLV/pull/41) — **MERGED**).
+- **Native Code Search & Grep Protocol Actions**: Built protocol-level regex grep and structural code search actions directly into the agent runtime for ultra-fast repository exploration ([PR #40](https://github.com/dxn111/EVOLV/pull/40) — **MERGED**).
+- **Git Worktree Isolation for Engineering Runs**: Engineered isolated Git worktree execution sandboxes for engineering runs, ensuring zero branch pollution and safe concurrent multi-agent executions ([PR #39](https://github.com/dxn111/EVOLV/pull/39) — **MERGED**).
+- **BM25 Lexical Relevance Search for Playbooks**: Implemented high-speed BM25 lexical relevance search engine for agent playbooks and historical run lessons in genome memory ([PR #38](https://github.com/dxn111/EVOLV/pull/38) — **MERGED**).
+- **Run Cancel & Retry Lifecycle, Tool Security Linting & Teardown**: Engineered deterministic run cancellation and retry lifecycles, store teardown mechanics, and security linting for evolved components ([PR #37](https://github.com/dxn111/EVOLV/pull/37) — **MERGED**).
 - **Self-Modify Kernel Evolution Engine**: Engineered staged candidate builds and atomic swap-on-green execution engine enabling autonomous runtime upgrades with rollback safeguards ([PR #15](https://github.com/dxn111/EVOLV/pull/15) — **MERGED**).
 - **Security Linting for Evolved Components**: Built security linting for autonomous agent tools and runtime components ([PR #31](https://github.com/dxn111/EVOLV/pull/31) — **MERGED**).
 - **Marketplace Web Export & Import (`.evolvpack`)**: Engineered web export, inspection, and import for the .evolvpack ecosystem ([PR #30](https://github.com/dxn111/EVOLV/pull/30) — **MERGED**).
@@ -107,8 +112,8 @@ High-impact production-grade pull requests reviewed, approved, and merged upstre
 ## 📈 GitHub Stats
 
 <div align="center">
-  <img src="https://github-stats-extended.vercel.app/api?username=ghazy2001&show_icons=true&theme=tokyonight&count_private=true&hide_border=true&v=20261103" alt="Mahmoud Ghazy's GitHub stats" height="165" />
-  <img src="https://github-stats-extended.vercel.app/api/top-langs/?username=ghazy2001&layout=compact&theme=tokyonight&hide_border=true&v=20261103" alt="Top Languages" height="165" />
+  <img src="https://github-stats-extended.vercel.app/api?username=ghazy2001&show_icons=true&theme=tokyonight&count_private=true&hide_border=true&v=20261104" alt="Mahmoud Ghazy's GitHub stats" height="165" />
+  <img src="https://github-stats-extended.vercel.app/api/top-langs/?username=ghazy2001&layout=compact&theme=tokyonight&hide_border=true&v=20261104" alt="Top Languages" height="165" />
 </div>
 
 ---
