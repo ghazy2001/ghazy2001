@@ -10,7 +10,7 @@
 
 <p align="center">
   <b>Frontend / Full-Stack Engineer</b> building high-performance, polished user interfaces and architecting mission-critical logic, concurrency-safe engines, and scalable web applications.<br>
-  Active core contributor across top-tier open-source platforms (<b>EVOLV, Twenty, Umami, Cap, Chatwoot, Infisical, Inbox Zero, Plane</b>), with <b>34+ merged production-grade pull requests</b> solving Go kernel evolution & agent security, web analytics & telemetry, audio playback & video streaming synchronization, UI state management, and real-time integration workflows.
+  Active core contributor across top-tier open-source platforms (<b>EVOLV, Twenty, Umami, Cap, Chatwoot, Infisical, Inbox Zero, Plane, Codex AutoRunner</b>), with <b>38+ merged production-grade pull requests</b> solving Go kernel evolution & agent security, web analytics & telemetry, audio playback & video streaming synchronization, UI state management, and real-time integration workflows.
 </p>
 
 ---
@@ -56,6 +56,7 @@ High-impact production-grade pull requests reviewed, approved, and merged upstre
 - **Cross-Platform OS Shell Abstraction**: Resolved Windows vs POSIX shell execution parity and isolated process spawning ([PR #6](https://github.com/dxn111/EVOLV/pull/6) — **MERGED**).
 
 ### 💼 **[Twenty CRM](https://github.com/twentyhq/twenty)** *(Enterprise Open-Source CRM, 20k+ ⭐)*
+- **Sign-in Infinite Loader Fix**: Prevented indefinite spinner freeze during sign-in when public workspace metadata is present by deriving active query loading state ([PR #29316](https://github.com/twentyhq/twenty/pull/29316) — **MERGED**).
 - **Slack Message Unfurl Inputs**: Exposed `unfurlLinks` and `unfurlMedia` in `slack-post-message` input schema ([PR #29168](https://github.com/twentyhq/twenty/pull/29168) — **MERGED**).
 - **IMAP / SMTP Credential Sanitization**: Trimmed and sanitized whitespace in mail server and username fields ([PR #29163](https://github.com/twentyhq/twenty/pull/29163) — **MERGED**).
 - **Workflow Step Output Preservation**: Preserved code step outputs on save and cleaned legacy link output schema ([PR #28432](https://github.com/twentyhq/twenty/pull/28432) — **MERGED**).
@@ -63,6 +64,7 @@ High-impact production-grade pull requests reviewed, approved, and merged upstre
 - **Metadata Store Hash Synchronization**: Adopted new collection hash on replaceDraft when data remains unchanged ([PR #28412](https://github.com/twentyhq/twenty/pull/28412) — **MERGED**).
 
 ### 📊 **[Umami](https://github.com/umami-software/umami)** *(Privacy-focused Analytics, 25k+ ⭐)*
+- **Background Tab Core Web Vitals Discard**: Prevented distorted Core Web Vitals (LCP/FCP) metrics by tracking `firstHiddenTime` and discarding background tab loads per Chrome Web Vitals standards ([PR #4724](https://github.com/umami-software/umami/pull/4724) — **MERGED**).
 - **Retention Cohort Timezone Shift**: Resolved timezone shift in retention cohort dates using `parseBackendDate` ([PR #4690](https://github.com/umami-software/umami/pull/4690) — **MERGED**).
 - **Custom Date Range Crash Prevention**: Prevented `RangeError` crashes on unselected or invalid custom date ranges ([PR #4692](https://github.com/umami-software/umami/pull/4692) — **MERGED**).
 - **LookupField Wildcard ComboBox State**: Controlled ComboBox value state in LookupField to prevent clearing custom wildcard paths ([PR #4696](https://github.com/umami-software/umami/pull/4696) — **MERGED**).
@@ -84,6 +86,9 @@ High-impact production-grade pull requests reviewed, approved, and merged upstre
 
 ### ✉️ **[Inbox Zero](https://github.com/elie222/inbox-zero)** *(AI Personal Email Assistant, 5.5k ⭐)*
 - **Inline Email Preview Engine**: Demanded active mail engine before expanding inline email previews in chat assistant ([PR #4395](https://github.com/elie222/inbox-zero/pull/4395) — **MERGED** by founder `@elie222`).
+
+### 🤖 **[Codex AutoRunner](https://github.com/Git-on-my-level/codex-autorunner)** *(Multi-Agent Autonomous Execution Engine)*
+- **Hosted Mode Launch Capability Previews**: Issued and injected scoped launch capability URLs (`/preview/p/<token>/`) for managed dev servers to eliminate 401s on unauthenticated public previews and HMR assets ([PR #2116](https://github.com/Git-on-my-level/codex-autorunner/pull/2116) — **MERGED**).
 
 ### 📋 **[Plane](https://github.com/makeplane/plane)** *(Open-Source Project Tracking, 35k ⭐)*
 - **Profile Settings Validation**: Allowed saving profile settings with an empty last name ([PR #10147](https://github.com/makeplane/plane/pull/10147) — **MERGED**).
@@ -113,8 +118,8 @@ High-impact production-grade pull requests reviewed, approved, and merged upstre
 ## 📈 GitHub Stats
 
 <div align="center">
-  <img src="https://github-stats-extended.vercel.app/api?username=ghazy2001&show_icons=true&theme=tokyonight&count_private=true&hide_border=true&v=20261104" alt="Mahmoud Ghazy's GitHub stats" height="165" />
-  <img src="https://github-stats-extended.vercel.app/api/top-langs/?username=ghazy2001&layout=compact&theme=tokyonight&hide_border=true&v=20261104" alt="Top Languages" height="165" />
+  <img src="https://github-stats-extended.vercel.app/api?username=ghazy2001&show_icons=true&theme=tokyonight&count_private=true&hide_border=true&v=20261107" alt="Mahmoud Ghazy's GitHub stats" height="165" />
+  <img src="https://github-stats-extended.vercel.app/api/top-langs/?username=ghazy2001&layout=compact&theme=tokyonight&hide_border=true&v=20261107" alt="Top Languages" height="165" />
 </div>
 
 ---
