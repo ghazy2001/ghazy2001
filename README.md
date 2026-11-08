@@ -10,7 +10,7 @@
 
 <p align="center">
   <b>Frontend / Full-Stack Engineer</b> building high-performance, polished user interfaces and architecting mission-critical logic, concurrency-safe engines, and scalable web applications.<br>
-  Active core contributor across top-tier open-source platforms (<b>EVOLV, Twenty, Umami, Cap, Chatwoot, Infisical, Inbox Zero, Plane, Codex AutoRunner</b>), with <b>38+ merged production-grade pull requests</b> solving Go kernel evolution & agent security, web analytics & telemetry, audio playback & video streaming synchronization, UI state management, and real-time integration workflows.
+  Active core contributor across top-tier open-source platforms (<b>Twenty, Snitch, EVOLV, Umami, Cap, Chatwoot, Infisical, Inbox Zero, Codex AutoRunner, Plane</b>), with <b>40+ merged production-grade pull requests</b> solving Go kernel evolution & agent security, web analytics & telemetry, audio playback & video streaming synchronization, UI state management, and real-time integration workflows.
 </p>
 
 ---
@@ -38,6 +38,18 @@
 
 High-impact production-grade pull requests reviewed, approved, and merged upstream across venture-backed and widely adopted open-source ecosystems:
 
+### 💼 **[Twenty CRM](https://github.com/twentyhq/twenty)** *(Enterprise Open-Source CRM, 20k+ ⭐)*
+- **Timeline Activity Field Diff Tooltip & Truncation**: Prevented timeline diff value hard-truncation on long field changes and enabled full-text tooltip previews across activity feeds ([PR #29198](https://github.com/twentyhq/twenty/pull/29198) — **MERGED** by founder Charles Bochet).
+- **Sign-in Infinite Loader Fix**: Prevented indefinite spinner freeze during sign-in when public workspace metadata is present by deriving active query loading state ([PR #29316](https://github.com/twentyhq/twenty/pull/29316) — **MERGED**).
+- **Slack Message Unfurl Inputs**: Exposed `unfurlLinks` and `unfurlMedia` in `slack-post-message` input schema ([PR #29168](https://github.com/twentyhq/twenty/pull/29168) — **MERGED**).
+- **IMAP / SMTP Credential Sanitization**: Trimmed and sanitized whitespace in mail server and username fields ([PR #29163](https://github.com/twentyhq/twenty/pull/29163) — **MERGED**).
+- **Workflow Step Output Preservation**: Preserved code step outputs on save and cleaned legacy link output schema ([PR #28432](https://github.com/twentyhq/twenty/pull/28432) — **MERGED**).
+- **Form Submission Validation Block**: Blocked record form submissions on active field validation errors ([PR #28425](https://github.com/twentyhq/twenty/pull/28425) — **MERGED**).
+- **Metadata Store Hash Synchronization**: Adopted new collection hash on replaceDraft when data remains unchanged ([PR #28412](https://github.com/twentyhq/twenty/pull/28412) — **MERGED**).
+
+### 🛡️ **[Snitch](https://github.com/aixisstudio/Snitch)** *(Process Firewall & Security Inspection Agent)*
+- **Parent/Cmdline Firewall Blocking & Netsh Lifecycle Fix**: Added command-line and parent-process blocking rules, enriched agent event ingestion, and eliminated Windows firewall orphan rules by fixing netsh rule naming mismatches ([PR #84](https://github.com/aixisstudio/Snitch/pull/84) — **MERGED** with founder commendation: *"three real bugs caught and cleanly fixed"*).
+
 ### 🧬 **[EVOLV](https://github.com/dxn111/EVOLV)** *(Autonomous AI Agent Operating System in Go)*
 - **Interactive Run Detail Inspector & Journal Drawer**: Engineered interactive UI drawer for real-time engineering run inspection, execution timelines, and live agent journal streaming ([PR #41](https://github.com/dxn111/EVOLV/pull/41) — **MERGED**).
 - **Native Code Search & Grep Protocol Actions**: Built protocol-level regex grep and structural code search actions directly into the agent runtime for ultra-fast repository exploration ([PR #40](https://github.com/dxn111/EVOLV/pull/40) — **MERGED**).
@@ -54,14 +66,6 @@ High-impact production-grade pull requests reviewed, approved, and merged upstre
 - **Plugin Runtime Ceilings & Execution Timeouts**: Enforced CPU/memory ceilings and dead-man timeouts for third-party tools ([PR #14](https://github.com/dxn111/EVOLV/pull/14) — **MERGED**).
 - **Portable Package Format (`.evolvpack`)**: Implemented atomic export/import workspace packaging with path traversal confinement & preflight verification ([PR #8](https://github.com/dxn111/EVOLV/pull/8) — **MERGED**).
 - **Cross-Platform OS Shell Abstraction**: Resolved Windows vs POSIX shell execution parity and isolated process spawning ([PR #6](https://github.com/dxn111/EVOLV/pull/6) — **MERGED**).
-
-### 💼 **[Twenty CRM](https://github.com/twentyhq/twenty)** *(Enterprise Open-Source CRM, 20k+ ⭐)*
-- **Sign-in Infinite Loader Fix**: Prevented indefinite spinner freeze during sign-in when public workspace metadata is present by deriving active query loading state ([PR #29316](https://github.com/twentyhq/twenty/pull/29316) — **MERGED**).
-- **Slack Message Unfurl Inputs**: Exposed `unfurlLinks` and `unfurlMedia` in `slack-post-message` input schema ([PR #29168](https://github.com/twentyhq/twenty/pull/29168) — **MERGED**).
-- **IMAP / SMTP Credential Sanitization**: Trimmed and sanitized whitespace in mail server and username fields ([PR #29163](https://github.com/twentyhq/twenty/pull/29163) — **MERGED**).
-- **Workflow Step Output Preservation**: Preserved code step outputs on save and cleaned legacy link output schema ([PR #28432](https://github.com/twentyhq/twenty/pull/28432) — **MERGED**).
-- **Form Submission Validation Block**: Blocked record form submissions on active field validation errors ([PR #28425](https://github.com/twentyhq/twenty/pull/28425) — **MERGED**).
-- **Metadata Store Hash Synchronization**: Adopted new collection hash on replaceDraft when data remains unchanged ([PR #28412](https://github.com/twentyhq/twenty/pull/28412) — **MERGED**).
 
 ### 📊 **[Umami](https://github.com/umami-software/umami)** *(Privacy-focused Analytics, 25k+ ⭐)*
 - **Background Tab Core Web Vitals Discard**: Prevented distorted Core Web Vitals (LCP/FCP) metrics by tracking `firstHiddenTime` and discarding background tab loads per Chrome Web Vitals standards ([PR #4724](https://github.com/umami-software/umami/pull/4724) — **MERGED**).
@@ -118,8 +122,8 @@ High-impact production-grade pull requests reviewed, approved, and merged upstre
 ## 📈 GitHub Stats
 
 <div align="center">
-  <img src="https://github-stats-extended.vercel.app/api?username=ghazy2001&show_icons=true&theme=tokyonight&count_private=true&hide_border=true&v=20261107" alt="Mahmoud Ghazy's GitHub stats" height="165" />
-  <img src="https://github-stats-extended.vercel.app/api/top-langs/?username=ghazy2001&layout=compact&theme=tokyonight&hide_border=true&v=20261107" alt="Top Languages" height="165" />
+  <img src="https://github-stats-extended.vercel.app/api?username=ghazy2001&show_icons=true&theme=tokyonight&count_private=true&hide_border=true&v=20261108" alt="Mahmoud Ghazy's GitHub stats" height="165" />
+  <img src="https://github-stats-extended.vercel.app/api/top-langs/?username=ghazy2001&layout=compact&theme=tokyonight&hide_border=true&v=20261108" alt="Top Languages" height="165" />
 </div>
 
 ---
