@@ -135,8 +135,9 @@ High-impact production-grade pull requests reviewed, approved, and merged upstre
 | Platform / Asset | Network | Link / Address |
 |:---:|:---:|---|
 | **GitHub Sponsors** | **Official** | [sponsor/@ghazy2001](https://github.com/sponsors/ghazy2001) |
-| **USDC** | **Solana (SOL)** | `BaCN1xstTz6ikNi6spW72dHTicDbjZvg82iCpEd2RkSN` |
-| **USDT** | **TRON (TRC20)** | `TLXtXNgUQx2mbV2rBRVPrWfgXKLMxvfxYS` |
+| **USDC** | **Solana (SOL)** | `2Vuqg98hhs7zyzp5YDn2mrhMKagnwvZ9iUDa5PhCgLhF` |
+| **USDT** | **Solana (SOL)** | `2Vuqg98hhs7zyzp5YDn2mrhMKagnwvZ9iUDa5PhCgLhF` |
+| **SOL** | **Solana (Native)** | `2Vuqg98hhs7zyzp5YDn2mrhMKagnwvZ9iUDa5PhCgLhF` |
 
 ---
 
