@@ -48,6 +48,7 @@ High-impact production-grade pull requests reviewed, approved, and merged upstre
 - **Metadata Store Hash Synchronization**: Adopted new collection hash on replaceDraft when data remains unchanged ([PR #28412](https://github.com/twentyhq/twenty/pull/28412) — **MERGED**).
 
 ### 🛡️ **[Snitch](https://github.com/aixisstudio/Snitch)** *(Process Firewall & Security Inspection Agent)*
+- **ThreatFox C2 Threat-Feed Ingestion (Parser & Presets)**: Engineered native parser for abuse.ch ThreatFox C2 indicators (CC0), public IP & domain sanitization, malware family filtering, and scheduled threat-feed presets ([PR #85](https://github.com/aixisstudio/Snitch/pull/85)).
 - **Parent/Cmdline Firewall Blocking & Netsh Lifecycle Fix**: Added command-line and parent-process blocking rules, enriched agent event ingestion, and eliminated Windows firewall orphan rules by fixing netsh rule naming mismatches ([PR #84](https://github.com/aixisstudio/Snitch/pull/84) — **MERGED** with founder commendation: *"three real bugs caught and cleanly fixed"*).
 
 ### 🧬 **[EVOLV](https://github.com/dxn111/EVOLV)** *(Autonomous AI Agent Operating System in Go)*
