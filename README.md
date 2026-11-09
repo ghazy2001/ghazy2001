@@ -10,7 +10,7 @@
 
 <p align="center">
   <b>Frontend / Full-Stack Engineer</b> building high-performance, polished user interfaces and architecting mission-critical logic, concurrency-safe engines, and scalable web applications.<br>
-  Active core contributor across top-tier open-source platforms (<b>Twenty, Snitch, EVOLV, Umami, Cap, Chatwoot, Infisical, Inbox Zero, Codex AutoRunner, Plane</b>), with <b>40+ merged production-grade pull requests</b> solving Go kernel evolution & agent security, web analytics & telemetry, audio playback & video streaming synchronization, UI state management, and real-time integration workflows.
+  Active core contributor across top-tier open-source platforms (<b>Twenty, Snitch, EVOLV, Umami, Cap, Chatwoot, Infisical, Inbox Zero, Codex AutoRunner, Plane</b>), with <b>45+ merged production-grade pull requests</b> solving Go kernel evolution & agent security, web analytics & telemetry, audio playback & video streaming synchronization, UI state management, and real-time integration workflows.
 </p>
 
 ---
@@ -48,7 +48,7 @@ High-impact production-grade pull requests reviewed, approved, and merged upstre
 - **Metadata Store Hash Synchronization**: Adopted new collection hash on replaceDraft when data remains unchanged ([PR #28412](https://github.com/twentyhq/twenty/pull/28412) — **MERGED**).
 
 ### 🛡️ **[Snitch](https://github.com/aixisstudio/Snitch)** *(Process Firewall & Security Inspection Agent)*
-- **Native Passive TLS ClientHello Fingerprinting (JA3 / JA4) & C2 Detection**: Engineered zero-dependency wire-level ClientHello parser, RFC 8701 GREASE filtering, canonical JA3 MD5 & JA4 hashing, offline C2 fingerprint database (Cobalt Strike, Sliver, Havoc, Metasploit, Mythic, AsyncRAT), real-time `C2_SUSPECT` alerting, and custom rules engine integration ([PR #86](https://github.com/aixisstudio/Snitch/pull/86) — Priority 2 addressing issue [#83](https://github.com/aixisstudio/Snitch/issues/83)).
+- **Native Passive TLS ClientHello Fingerprinting (JA3 / JA4) & C2 Detection**: Engineered zero-dependency wire-level ClientHello parser, RFC 8701 GREASE filtering, canonical JA3 MD5 & JA4 hashing, offline C2 fingerprint database (Cobalt Strike, Sliver, Havoc, Metasploit, Mythic, AsyncRAT), real-time `C2_SUSPECT` alerting, and custom rules engine integration ([PR #86](https://github.com/aixisstudio/Snitch/pull/86) — **MERGED** with maintainer commendation: *"Merged — and this revision is exactly what a security DB should look like: verifiable JA3s only, every entry carrying source + provenance... Snitch now ships real, passive C2 detection. 🤝"*).
 - **ThreatFox C2 Threat-Feed Ingestion (Parser & Presets)**: Engineered native parser for abuse.ch ThreatFox C2 indicators (CC0), public IP & domain sanitization, malware family filtering, and scheduled threat-feed presets ([PR #85](https://github.com/aixisstudio/Snitch/pull/85) — **MERGED** with maintainer commendation: *"The parser handles both ThreatFox CSV and JSON with proper IP sanitization... Ready for Priority 2 (JA3/JA4) whenever you are"*).
 - **Parent/Cmdline Firewall Blocking & Netsh Lifecycle Fix**: Added command-line and parent-process blocking rules, enriched agent event ingestion, and eliminated Windows firewall orphan rules by fixing netsh rule naming mismatches ([PR #84](https://github.com/aixisstudio/Snitch/pull/84) — **MERGED** with founder commendation: *"three real bugs caught and cleanly fixed"*).
 
@@ -124,8 +124,8 @@ High-impact production-grade pull requests reviewed, approved, and merged upstre
 ## 📈 GitHub Stats
 
 <div align="center">
-  <img src="https://github-stats-extended.vercel.app/api?username=ghazy2001&show_icons=true&theme=tokyonight&count_private=true&hide_border=true&v=20261108" alt="Mahmoud Ghazy's GitHub stats" height="165" />
-  <img src="https://github-stats-extended.vercel.app/api/top-langs/?username=ghazy2001&layout=compact&theme=tokyonight&hide_border=true&v=20261108" alt="Top Languages" height="165" />
+  <img src="https://github-stats-extended.vercel.app/api?username=ghazy2001&show_icons=true&theme=tokyonight&count_private=true&hide_border=true&v=20261109" alt="Mahmoud Ghazy's GitHub stats" height="165" />
+  <img src="https://github-stats-extended.vercel.app/api/top-langs/?username=ghazy2001&layout=compact&theme=tokyonight&hide_border=true&v=20261109" alt="Top Languages" height="165" />
 </div>
 
 ---
