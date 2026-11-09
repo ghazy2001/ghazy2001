@@ -77,6 +77,10 @@ High-impact production-grade pull requests reviewed, approved, and merged upstre
 - **Visitor Count Journey Step Sorting**: Sorted user journey steps by total visitor count ([PR #4687](https://github.com/umami-software/umami/pull/4687) — **MERGED**).
 - **Security Settings Reorganization**: Reorganized password management into dedicated security settings ([PR #4654](https://github.com/umami-software/umami/pull/4654) — **MERGED**).
 
+### 🏢 **[Twenty](https://github.com/twentyhq/twenty)** *(Open-Source CRM Platform, 25k+ ⭐)*
+- **Sign-in Infinite Loader & Public Workspace Hydration**: Fixed infinite loader on sign-in page by evaluating public workspace data availability and completing authentication state transitions ([PR #29316](https://github.com/twentyhq/twenty/pull/29316) — **MERGED**).
+- **Timeline Activity Field Diff Tooltips & Truncation Guard**: Prevented destructive hard-truncation on long activity diffs, introducing interactive hover tooltips and readable formatting for long text changes ([PR #29198](https://github.com/twentyhq/twenty/pull/29198) — **MERGED**).
+
 ### 🎥 **[Cap](https://github.com/CapSoftware/Cap)** *(High-Performance Screen Recorder, 7.5k ⭐)*
 - **Developer API Pagination Bounds**: Hardened API query validation against fractional/oversized parameters and negative offsets ([PR #3576](https://github.com/CapSoftware/Cap/pull/3576) — **MERGED**).
 - **Playback Store Late Duration Updates**: Notified subscribers when late `fallbackDuration` updates the playback store ([PR #2988](https://github.com/CapSoftware/Cap/pull/2988) — **MERGED**).
