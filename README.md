@@ -10,7 +10,7 @@
 
 <p align="center">
   <b>Frontend / Full-Stack Engineer</b> building high-performance, polished user interfaces and architecting mission-critical logic, concurrency-safe engines, and scalable web applications.<br>
-  Active core contributor across top-tier open-source platforms (<b>Twenty, Snitch, EVOLV, Umami, Cap, Chatwoot, Infisical, Inbox Zero, Codex AutoRunner, Plane</b>), with <b>50+ merged production-grade pull requests</b> solving Go kernel evolution & agent security, web analytics & telemetry, audio playback & video streaming synchronization, UI state management, and real-time integration workflows.
+  Active core contributor across top-tier open-source platforms (<b>Twenty, Better-Auth, Snitch, EVOLV, Umami, Cap, Chatwoot, Infisical, Inbox Zero, Codex AutoRunner, Plane</b>), with <b>50+ merged production-grade pull requests</b> solving Go kernel evolution & agent security, modern OAuth & identity revalidation, web analytics & telemetry, audio playback & video streaming synchronization, UI state management, and real-time integration workflows.
 </p>
 
 ---
@@ -38,7 +38,8 @@
 
 High-impact production-grade pull requests reviewed, approved, and merged upstream across venture-backed and widely adopted open-source ecosystems:
 
-### 💼 **[Twenty CRM](https://github.com/twentyhq/twenty)** *(Enterprise Open-Source CRM, 20k+ ⭐)*
+### 💼 **[Twenty CRM](https://github.com/twentyhq/twenty)** *(Enterprise Open-Source CRM, 25k+ ⭐)*
+- **AI Chat Reasoning Signature Drift Prevention**: Omitted historical reasoning parts across browsing contexts to prevent Gemini thinking signature drift and context corruption in multi-turn AI interactions ([PR #30183](https://github.com/twentyhq/twenty/pull/30183) — **MERGED**).
 - **Timeline Activity Field Diff Tooltip & Truncation**: Prevented timeline diff value hard-truncation on long field changes and enabled full-text tooltip previews across activity feeds ([PR #29198](https://github.com/twentyhq/twenty/pull/29198) — **MERGED** by founder Charles Bochet).
 - **Sign-in Infinite Loader Fix**: Prevented indefinite spinner freeze during sign-in when public workspace metadata is present by deriving active query loading state ([PR #29316](https://github.com/twentyhq/twenty/pull/29316) — **MERGED**).
 - **Slack Message Unfurl Inputs**: Exposed `unfurlLinks` and `unfurlMedia` in `slack-post-message` input schema ([PR #29168](https://github.com/twentyhq/twenty/pull/29168) — **MERGED**).
@@ -83,6 +84,9 @@ High-impact production-grade pull requests reviewed, approved, and merged upstre
 - **LookupField Wildcard ComboBox State**: Controlled ComboBox value state in LookupField to prevent clearing custom wildcard paths ([PR #4696](https://github.com/umami-software/umami/pull/4696) — **MERGED**).
 - **Visitor Count Journey Step Sorting**: Sorted user journey steps by total visitor count ([PR #4687](https://github.com/umami-software/umami/pull/4687) — **MERGED**).
 - **Security Settings Reorganization**: Reorganized password management into dedicated security settings ([PR #4654](https://github.com/umami-software/umami/pull/4654) — **MERGED**).
+
+### 🔑 **[Better-Auth](https://github.com/better-auth/better-auth)** *(Comprehensive TypeScript Authentication Framework, 16k+ ⭐)*
+- **Discovery Headers Same-Origin Preservation**: Preserved `discoveryHeaders` during discovery revalidation and sent them exclusively to same-origin JWKS endpoints ([PR #12179](https://github.com/better-auth/better-auth/pull/12179) — **MERGED**).
 
 ### 🎥 **[Cap](https://github.com/CapSoftware/Cap)** *(High-Performance Screen Recorder, 7.5k ⭐)*
 - **Developer API Pagination Bounds**: Hardened API query validation against fractional/oversized parameters and negative offsets ([PR #3576](https://github.com/CapSoftware/Cap/pull/3576) — **MERGED**).
@@ -131,8 +135,8 @@ High-impact production-grade pull requests reviewed, approved, and merged upstre
 ## 📈 GitHub Stats
 
 <div align="center">
-  <img src="https://github-stats-extended.vercel.app/api?username=ghazy2001&show_icons=true&theme=tokyonight&count_private=true&hide_border=true&v=20261109" alt="Mahmoud Ghazy's GitHub stats" height="165" />
-  <img src="https://github-stats-extended.vercel.app/api/top-langs/?username=ghazy2001&layout=compact&theme=tokyonight&hide_border=true&v=20261109" alt="Top Languages" height="165" />
+  <img src="https://github-stats-extended.vercel.app/api?username=ghazy2001&show_icons=true&theme=tokyonight&count_private=true&hide_border=true&v=20261114" alt="Mahmoud Ghazy's GitHub stats" height="165" />
+  <img src="https://github-stats-extended.vercel.app/api/top-langs/?username=ghazy2001&layout=compact&theme=tokyonight&hide_border=true&v=20261114" alt="Top Languages" height="165" />
 </div>
 
 ---
