@@ -1,7 +1,7 @@
 <div align="center">
 
 # Hi there, I'm Mahmoud Ghazy 👋
-### Frontend / Full-Stack Software Engineer | Core Open-Source Contributor
+### Senior Frontend / Full-Stack Engineer | Core Open-Source Contributor
 
 [![GitHub followers](https://img.shields.io/github/followers/ghazy2001?label=Follow&style=social)](https://github.com/ghazy2001)
 [![GitHub Sponsors](https://img.shields.io/badge/Sponsor-%E2%9D%A4-ea4aaa?logo=githubsponsors&logoColor=white)](https://github.com/sponsors/ghazy2001)
@@ -9,8 +9,9 @@
 [![Status](https://img.shields.io/badge/Available%20for-Remote%20Contracts%20%26%20Retainers-2ea44f?style=for-the-badge)](#-contact--connect)
 
 <p align="center">
-  <b>Frontend / Full-Stack Engineer</b> building high-performance, polished user interfaces and architecting mission-critical logic, concurrency-safe engines, and scalable web applications.<br>
-  Active core contributor across top-tier open-source platforms (<b>Twenty, Better-Auth, Snitch, EVOLV, Umami, Cap, Chatwoot, Infisical, Inbox Zero, Codex AutoRunner, Plane</b>), with <b>50+ merged production-grade pull requests</b> solving Go kernel evolution & agent security, modern OAuth & identity revalidation, web analytics & telemetry, audio playback & video streaming synchronization, UI state management, and real-time integration workflows.
+  <b>Senior Frontend / Full-Stack Engineer</b> building high-performance, polished user interfaces and architecting mission-critical logic, concurrency-safe engines, and scalable B2B SaaS applications.<br>
+  Bridging <b>4 years of operational cash flow and accounting domain expertise</b> (B.Com in Accounting & Finance) with deep engineering across <b>React 19, TypeScript, Next.js, Node.js, and PostgreSQL</b>.<br>
+  Active core contributor across top-tier open-source platforms (<b>Twenty CRM, Better-Auth, Snitch, EVOLV, Umami, Cap, Chatwoot, Infisical, Inbox Zero, Codex AutoRunner, Plane</b>), with <b>25+ merged production-grade pull requests</b> solving Go kernel evolution & agent security, modern OAuth & identity revalidation, web analytics & telemetry, audio playback & video streaming synchronization, UI state management, and real-time integration workflows.
 </p>
 
 ---
@@ -114,16 +115,20 @@ High-impact production-grade pull requests reviewed, approved, and merged upstre
 
 ## 💼 Featured Enterprise & Client Systems
 
-### 🏢 [TAMAYOZ — Enterprise ERP Web Platform (Crevisoft)](https://github.com/ghazy2001)
+### 🏢 [TAMAYOZ — Enterprise ERP Web Platform (Crevisoft)](https://tamayoz-alpha.vercel.app)
 *Modular enterprise web client integrated with the Odoo ERP ecosystem.*
+- **Repository**: [github.com/ghazy2001/Tamayoz](https://github.com/ghazy2001/Tamayoz)
+- **Live Platform**: [tamayoz.crevisoft.com](https://tamayoz.crevisoft.com/) | [Preview Demo](https://tamayoz-alpha.vercel.app)
 - **Tech Stack**: React 19, TypeScript, Vite, Tailwind CSS, Zustand, Framer Motion, Recharts, REST APIs, JSON-RPC.
 - **Impact**:
   - Slashed initial page load times by **45% (sub-1.2s LCP)** and achieved **100% WCAG 2.1 AA** compliance via virtualized data grids and keyboard-navigable ARIA primitives.
   - Boosted data visualization render speeds by **50% for 10,000+ records** with a dynamic multi-view rendering engine (Kanban, Gantt, editable tables).
   - Reduced component re-renders by **65%** across nested views with scalable Zustand state slices.
 
-### 🛍️ [STORIA — Full-Stack E-Commerce Engine](https://github.com/ghazy2001)
+### 🛍️ [STORIA — Full-Stack E-Commerce Engine](https://storia-salla.vercel.app)
 *Custom commercial e-commerce solution with automated Salla merchant platform integration.*
+- **Repository**: [github.com/ghazy2001/storia-salla](https://github.com/ghazy2001/storia-salla)
+- **Live Platform**: [storiasa.com](https://storiasa.com/) | [Preview Demo](https://storia-salla.vercel.app)
 - **Tech Stack**: React, Node.js, Express.js, MongoDB, REST APIs, Salla Webhooks.
 - **Impact**:
   - Increased online checkout completion by **25%** and reduced sync latency by **70%** via automated real-time webhooks.
@@ -154,11 +159,12 @@ High-impact production-grade pull requests reviewed, approved, and merged upstre
 
 ## 📬 Contact & Connect
 
+- 🌐 **Portfolio**: [mahmoudghazy-portfolio.vercel.app](https://mahmoudghazy-portfolio.vercel.app/)
 - 📧 **Email**: [mahmoudghazy2001@gmail.com](mailto:mahmoudghazy2001@gmail.com)
-- 💼 **LinkedIn**: [linkedin.com/in/mahmoud-ghazy](https://www.linkedin.com/in/mahmoud-ghazy/)
+- 💼 **LinkedIn**: [linkedin.com/in/mahmoud-ghazy](https://www.linkedin.com/in/mahmoud-ghazy-dev/) (or [mahmoud-ghazy-48a19924a](https://www.linkedin.com/in/mahmoud-ghazy-48a19924a/))
 - 🐙 **GitHub**: [@ghazy2001](https://github.com/ghazy2001)
 - 💬 **Discord**: `mahmoudghazy6884`
 
 <div align="center">
-  <sub>Full-Stack & Systems Software Engineer • Open for Remote Retainers, Contracts, and Global Engineering Roles</sub>
+  <sub>Senior Frontend / Full-Stack Engineer • Open for Remote Contracts, Retainers, and Engineering Roles</sub>
 </div>
