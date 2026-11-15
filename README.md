@@ -1,8 +1,16 @@
 <div align="center">
 
-# Hi there, I'm Mahmoud Ghazy 👋
-### Senior Frontend / Full-Stack Engineer | Core Open-Source Contributor
+<!-- ==================== ANIMATED HEADER ==================== -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=1,11,20,30&height=220&section=header&text=Mahmoud%20Ghazy&fontSize=42&fontAlignY=35&animation=fadeIn&desc=Senior%20Frontend%20%2F%20Full-Stack%20Engineer%20%E2%80%A2%20Core%20Open-Source%20Contributor&descSize=17&descAlignY=62" width="100%" />
 
+<!-- ==================== DYNAMIC TYPING SVG ==================== -->
+<a href="https://github.com/ghazy2001">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1200&color=38BDF8&center=true&vCenter=true&width=850&height=46&lines=Senior+Frontend+%2F+Full-Stack+Engineer+🚀;Core+Contributor%3A+Twenty+CRM+%7C+Snitch+%7C+EVOLV+%7C+Umami+🛡️;25%2B+Production-Grade+Upstream+Merged+PRs+⚡;Go+Kernels+%E2%80%A2+C2+Detection+%E2%80%A2+OAuth+2.0+%E2%80%A2+React+19+💻;Available+for+Remote+Contracts+%26+Retainers+💼" alt="Typing SVG" />
+</a>
+
+<br/>
+
+<!-- ==================== QUICK BADGES ==================== -->
 [![GitHub followers](https://img.shields.io/github/followers/ghazy2001?label=Follow&style=social)](https://github.com/ghazy2001)
 [![GitHub Sponsors](https://img.shields.io/badge/Sponsor-%E2%9D%A4-ea4aaa?logo=githubsponsors&logoColor=white)](https://github.com/sponsors/ghazy2001)
 [![Email](https://img.shields.io/badge/Email-mahmoudghazy2001%40gmail.com-0078D4?logo=gmail&logoColor=white)](mailto:mahmoudghazy2001@gmail.com)
@@ -14,13 +22,37 @@
   Active core contributor across top-tier open-source platforms (<b>Twenty CRM, Better-Auth, Snitch, EVOLV, Umami, Cap, Chatwoot, Infisical, Inbox Zero, Codex AutoRunner, Plane</b>), with <b>25+ merged production-grade pull requests</b> solving Go kernel evolution & agent security, modern OAuth & identity revalidation, web analytics & telemetry, audio playback & video streaming synchronization, UI state management, and real-time integration workflows.
 </p>
 
----
+<!-- ==================== NEON DIVIDER ==================== -->
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4380-a447-11eb-908a-139a6edaec5c.gif" width="100%" height="25px" />
 
 </div>
 
-## 🛠️ Technical Skills
+<!-- ==================== ANIMATED SNAKE SECTION ==================== -->
+## 🐍 Contribution Graph Arcade
 
 <div align="center">
+  <p><i>The retro arcade snake eating through my production commits and open-source contributions:</i></p>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ghazy2001/ghazy2001/output/github-contribution-grid-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ghazy2001/ghazy2001/output/github-contribution-grid-snake.svg" />
+    <img alt="GitHub Contribution Snake" src="https://raw.githubusercontent.com/ghazy2001/ghazy2001/output/github-contribution-grid-snake-dark.svg" width="100%" />
+  </picture>
+</div>
+
+<div align="center">
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4380-a447-11eb-908a-139a6edaec5c.gif" width="100%" height="25px" />
+</div>
+
+<!-- ==================== TECHNICAL SKILLS ==================== -->
+## 🛠️ Tech Stack & Systems
+
+<div align="center">
+
+<a href="https://skillicons.dev">
+  <img src="https://skillicons.dev/icons?i=ts,js,go,py,react,nextjs,tailwind,postgres,clickhouse,redis,docker,githubactions,graphql,vitest,jest&perline=15&theme=dark" alt="Skill Icons" />
+</a>
+
+<br/><br/>
 
 | Area | Technologies & Frameworks |
 |---|---|
@@ -33,8 +65,35 @@
 
 </div>
 
----
+<div align="center">
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4380-a447-11eb-908a-139a6edaec5c.gif" width="100%" height="25px" />
+</div>
 
+<!-- ==================== GITHUB STATS & STREAK ==================== -->
+## 📊 Activity & Telemetry
+
+<div align="center">
+  <table border="0">
+    <tr>
+      <td valign="top">
+        <img src="https://github-stats-extended.vercel.app/api?username=ghazy2001&show_icons=true&theme=tokyonight&count_private=true&hide_border=true&border_radius=10" height="175" alt="Mahmoud Ghazy's GitHub Stats" />
+      </td>
+      <td valign="top">
+        <img src="https://streak-stats.demolab.com/?user=ghazy2001&theme=tokyonight&hide_border=true&border_radius=10&date_format=M%20j%5B%2C%20Y%5D" height="175" alt="GitHub Streak Stats" />
+      </td>
+    </tr>
+  </table>
+
+  <br/>
+
+  <img src="https://github-stats-extended.vercel.app/api/top-langs/?username=ghazy2001&layout=compact&theme=tokyonight&hide_border=true&border_radius=10" height="160" alt="Top Languages" />
+</div>
+
+<div align="center">
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4380-a447-11eb-908a-139a6edaec5c.gif" width="100%" height="25px" />
+</div>
+
+<!-- ==================== MERGED CONTRIBUTIONS ==================== -->
 ## 🌐 Featured Merged Open-Source Contributions
 
 High-impact production-grade pull requests reviewed, approved, and merged upstream across venture-backed and widely adopted open-source ecosystems:
@@ -111,8 +170,11 @@ High-impact production-grade pull requests reviewed, approved, and merged upstre
 ### 📋 **[Plane](https://github.com/makeplane/plane)** *(Open-Source Project Tracking, 35k ⭐)*
 - **Profile Settings Validation**: Allowed saving profile settings with an empty last name ([PR #10147](https://github.com/makeplane/plane/pull/10147) — **MERGED**).
 
----
+<div align="center">
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4380-a447-11eb-908a-139a6edaec5c.gif" width="100%" height="25px" />
+</div>
 
+<!-- ==================== FEATURED ENTERPRISE SYSTEMS ==================== -->
 ## 💼 Featured Enterprise & Client Systems
 
 ### 🏢 [TAMAYOZ — Enterprise ERP Web Platform (Crevisoft)](https://tamayoz-alpha.vercel.app)
@@ -135,17 +197,11 @@ High-impact production-grade pull requests reviewed, approved, and merged upstre
   - Saved 15+ hours/week of manual operations through automated catalog and inventory synchronization.
   - Achieved sub-200ms API response times and 99.9% uptime with structured MongoDB indexing.
 
----
-
-## 📈 GitHub Stats
-
 <div align="center">
-  <img src="https://github-stats-extended.vercel.app/api?username=ghazy2001&show_icons=true&theme=tokyonight&count_private=true&hide_border=true&v=20261114" alt="Mahmoud Ghazy's GitHub stats" height="165" />
-  <img src="https://github-stats-extended.vercel.app/api/top-langs/?username=ghazy2001&layout=compact&theme=tokyonight&hide_border=true&v=20261114" alt="Top Languages" height="165" />
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4380-a447-11eb-908a-139a6edaec5c.gif" width="100%" height="25px" />
 </div>
 
----
-
+<!-- ==================== SPONSORS & BOUNTIES ==================== -->
 ## 🪙 Bounties, Grants & GitHub Sponsors
 
 | Platform / Asset | Network | Link / Address |
@@ -155,8 +211,11 @@ High-impact production-grade pull requests reviewed, approved, and merged upstre
 | **USDT** | **Solana (SOL)** | `2Vuqg98hhs7zyzp5YDn2mrhMKagnwvZ9iUDa5PhCgLhF` |
 | **SOL** | **Solana (Native)** | `2Vuqg98hhs7zyzp5YDn2mrhMKagnwvZ9iUDa5PhCgLhF` |
 
----
+<div align="center">
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4380-a447-11eb-908a-139a6edaec5c.gif" width="100%" height="25px" />
+</div>
 
+<!-- ==================== CONTACT & CONNECT ==================== -->
 ## 📬 Contact & Connect
 
 - 🌐 **Portfolio**: [mahmoudghazy-portfolio.vercel.app](https://mahmoudghazy-portfolio.vercel.app/)
@@ -164,6 +223,11 @@ High-impact production-grade pull requests reviewed, approved, and merged upstre
 - 💼 **LinkedIn**: [linkedin.com/in/mahmoud-ghazy](https://www.linkedin.com/in/mahmoud-ghazy-dev/) (or [mahmoud-ghazy-48a19924a](https://www.linkedin.com/in/mahmoud-ghazy-48a19924a/))
 - 🐙 **GitHub**: [@ghazy2001](https://github.com/ghazy2001)
 - 💬 **Discord**: `mahmoudghazy6884`
+
+<br/>
+
+<!-- ==================== ANIMATED FOOTER ==================== -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=1,11,20,30&height=120&section=footer" width="100%" />
 
 <div align="center">
   <sub>Senior Frontend / Full-Stack Engineer • Open for Remote Contracts, Retainers, and Engineering Roles</sub>
