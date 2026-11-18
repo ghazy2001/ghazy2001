@@ -1,7 +1,7 @@
 <div align="center">
 
 <!-- ==================== ANIMATED WAVING HEADER ==================== -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=1,11,20,30&height=220&section=header&text=Mahmoud%20Ghazy&fontSize=42&fontAlignY=35&animation=fadeIn&desc=Senior%20Frontend%20%2F%20Full-Stack%20Engineer%20%E2%80%A2%20Core%20Open-Source%20Contributor&descSize=17&descAlignY=62" width="100%" alt="Mahmoud Ghazy Header" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f172a,30:1e293b,65:c2410c,100:f59e0b&height=220&section=header&text=Mahmoud%20Ghazy&fontSize=42&fontAlignY=35&animation=fadeIn&desc=Senior%20Frontend%20%2F%20Full-Stack%20Engineer%20%E2%80%A2%20Core%20Open-Source%20Contributor&descSize=17&descAlignY=62" width="100%" alt="Mahmoud Ghazy Header" />
 
 <!-- ==================== DYNAMIC TYPING SVG ==================== -->
 <a href="https://github.com/ghazy2001">
@@ -329,7 +329,7 @@ High-impact production-grade pull requests reviewed, approved, and merged upstre
 <br/>
 
 <!-- ==================== ANIMATED WAVING FOOTER ==================== -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=1,11,20,30&height=120&section=footer" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f172a,30:1e293b,65:c2410c,100:f59e0b&height=120&section=footer" width="100%" />
 
 <div align="center">
   <sub>Senior Frontend / Full-Stack Engineer • Open for Remote Contracts, Retainers, and Engineering Roles</sub>
