@@ -3,11 +3,6 @@
 <!-- ==================== ANIMATED WAVING HEADER ==================== -->
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f172a,30:1e293b,65:c2410c,100:f59e0b&height=220&section=header&text=Mahmoud%20Ghazy&fontSize=42&fontAlignY=35&animation=fadeIn&desc=Senior%20Frontend%20%2F%20Full-Stack%20Engineer%20%E2%80%A2%20Core%20Open-Source%20Contributor&descSize=17&descAlignY=62" width="100%" alt="Mahmoud Ghazy Header" />
 
-<!-- ==================== DYNAMIC TYPING SVG ==================== -->
-<a href="https://github.com/ghazy2001">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1200&color=38BDF8&center=true&vCenter=true&width=850&height=46&lines=Senior+Frontend+%2F+Full-Stack+Engineer;Core+Contributor%3A+Twenty+CRM+%E2%80%A2+Better-Auth+%E2%80%A2+Umami+%E2%80%A2+Snitch;25%2B+Production-Grade+Upstream+Merged+PRs;React+19+%E2%80%A2+TypeScript+%E2%80%A2+Next.js+%E2%80%A2+Node.js;Available+for+Remote+Contracts+%26+Retainers" alt="Typing SVG" />
-</a>
-
 <br/>
 
 <!-- ==================== QUICK BADGES ==================== -->
