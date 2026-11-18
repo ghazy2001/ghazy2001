@@ -28,14 +28,6 @@
     <source media="(prefers-color-scheme: light)" srcset="profile-3d-contrib/profile-gitblock.svg" />
     <img src="profile-3d-contrib/profile-night-view.svg" alt="3D Contribution Graph" width="100%" />
   </picture>
-
-  <br/><br/>
-
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ghazy2001/ghazy2001/output/pacman-contribution-graph-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ghazy2001/ghazy2001/output/pacman-contribution-graph.svg" />
-    <img alt="Pacman Contribution Animation" src="https://raw.githubusercontent.com/ghazy2001/ghazy2001/output/pacman-contribution-graph-dark.svg" width="100%" />
-  </picture>
 </div>
 
 ---
@@ -320,6 +312,16 @@ High-impact production-grade pull requests reviewed, approved, and merged upstre
 - 💼 **LinkedIn**: [linkedin.com/in/mahmoud-ghazy](https://www.linkedin.com/in/mahmoud-ghazy-dev/) (or [mahmoud-ghazy-48a19924a](https://www.linkedin.com/in/mahmoud-ghazy-48a19924a/))
 - 🐙 **GitHub**: [@ghazy2001](https://github.com/ghazy2001)
 - 💬 **Discord**: `mahmoudghazy6884`
+
+<br/>
+
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ghazy2001/ghazy2001/output/pacman-contribution-graph-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ghazy2001/ghazy2001/output/pacman-contribution-graph.svg" />
+    <img alt="Pacman Contribution Animation" src="https://raw.githubusercontent.com/ghazy2001/ghazy2001/output/pacman-contribution-graph-dark.svg" width="100%" />
+  </picture>
+</div>
 
 <br/>
 
