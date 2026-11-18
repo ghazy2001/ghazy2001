@@ -11,7 +11,6 @@
 <br/>
 
 <!-- ==================== QUICK BADGES ==================== -->
-<a href="https://github.com/ghazy2001?tab=followers"><img src="https://img.shields.io/github/followers/ghazy2001?label=Followers&style=for-the-badge&color=24292e" alt="GitHub followers" /></a>
 <a href="https://github.com/sponsors/ghazy2001"><img src="https://img.shields.io/badge/Sponsor-%E2%9D%A4-ea4aaa?style=for-the-badge&logo=githubsponsors&logoColor=white" alt="Sponsor" /></a>
 <a href="mailto:mahmoudghazy2001@gmail.com"><img src="https://img.shields.io/badge/Email-mahmoudghazy2001%40gmail.com-0078D4?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
 <a href="#-contact--connect"><img src="https://img.shields.io/badge/Status-Available%20for%20Contracts-2ea44f?style=for-the-badge" alt="Status" /></a>
