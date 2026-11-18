@@ -5,13 +5,12 @@
 
 <!-- ==================== DYNAMIC TYPING SVG ==================== -->
 <a href="https://github.com/ghazy2001">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1200&color=38BDF8&center=true&vCenter=true&width=850&height=46&lines=Senior+Frontend+%2F+Full-Stack+Engineer+🚀;Core+Contributor%3A+Twenty+CRM+%E2%80%A2+Snitch+%E2%80%A2+Umami+%E2%80%A2+Better-Auth+🛡️;25%2B+Production-Grade+Upstream+Merged+PRs+⚡;React+19+%E2%80%A2+TypeScript+%E2%80%A2+Next.js+%E2%80%A2+Node.js+💻;Available+for+Remote+Contracts+%26+Retainers+💼" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1200&color=38BDF8&center=true&vCenter=true&width=850&height=46&lines=Senior+Frontend+%2F+Full-Stack+Engineer;Core+Contributor%3A+Twenty+CRM+%E2%80%A2+Better-Auth+%E2%80%A2+Umami+%E2%80%A2+Snitch;25%2B+Production-Grade+Upstream+Merged+PRs;React+19+%E2%80%A2+TypeScript+%E2%80%A2+Next.js+%E2%80%A2+Node.js;Available+for+Remote+Contracts+%26+Retainers" alt="Typing SVG" />
 </a>
 
 <br/>
 
-<!-- ==================== QUICK BADGES & VISITOR COUNTER ==================== -->
-<a href="https://github.com/ghazy2001"><img src="https://komarev.com/ghpvc/?username=ghazy2001&label=PROFILE+VIEWS&color=0078D4&style=for-the-badge" alt="Profile Views" /></a>
+<!-- ==================== QUICK BADGES ==================== -->
 <a href="https://github.com/ghazy2001?tab=followers"><img src="https://img.shields.io/github/followers/ghazy2001?label=Followers&style=for-the-badge&color=24292e" alt="GitHub followers" /></a>
 <a href="https://github.com/sponsors/ghazy2001"><img src="https://img.shields.io/badge/Sponsor-%E2%9D%A4-ea4aaa?style=for-the-badge&logo=githubsponsors&logoColor=white" alt="Sponsor" /></a>
 <a href="mailto:mahmoudghazy2001@gmail.com"><img src="https://img.shields.io/badge/Email-mahmoudghazy2001%40gmail.com-0078D4?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
@@ -29,23 +28,15 @@
 
 </div>
 
-<!-- ==================== 3D CONTRIBUTION CALENDAR ==================== -->
-## 🖥️ GitHub Activity & 3D Telemetry
-
 <div align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="profile-3d-contrib/profile-night-rainbow.svg" />
     <source media="(prefers-color-scheme: light)" srcset="profile-3d-contrib/profile-gitblock.svg" />
     <img src="profile-3d-contrib/profile-night-rainbow.svg" alt="3D Contribution Graph" width="100%" />
   </picture>
-</div>
 
----
+  <br/><br/>
 
-<!-- ==================== PACMAN CONTRIBUTION ANIMATION ==================== -->
-## 🕹️ Pacman Contribution Animation
-
-<div align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ghazy2001/ghazy2001/output/pacman-contribution-graph-dark.svg" />
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ghazy2001/ghazy2001/output/pacman-contribution-graph.svg" />
@@ -59,11 +50,6 @@
 ## 💻 My Favorite Tools & Technologies
 
 <div align="center">
-
-<!-- Smooth Animated Marquee Tape -->
-<img src="assets/skills-marquee.svg" alt="Moving Tech Stack Marquee" width="100%" />
-
-<br/><br/>
 
 <table align="center">
   <tr>
@@ -303,13 +289,6 @@ High-impact production-grade pull requests reviewed, approved, and merged upstre
 ## 📊 Activity & Telemetry
 
 <div align="center">
-
-<!-- ==================== GITHUB PROFILE TROPHIES ==================== -->
-<a href="https://github.com/ghazy2001">
-  <img src="https://github-profile-trophy.vercel.app/?username=ghazy2001&theme=tokyonight&no-frame=true&no-bg=true&margin_w=8&row=1&column=7" alt="GitHub Profile Trophies" />
-</a>
-
-<br/><br/>
 
 <table border="0">
   <tr>
