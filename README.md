@@ -184,6 +184,30 @@
 
 ---
 
+## 💼 Featured Enterprise & Client Systems
+
+### 🏢 [TAMAYOZ — Enterprise ERP Web Platform (Crevisoft)](https://tamayoz-alpha.vercel.app)
+*Modular enterprise web client integrated with the Odoo ERP ecosystem.*
+- **Repository**: [github.com/ghazy2001/Tamayoz](https://github.com/ghazy2001/Tamayoz)
+- **Live Platform**: [tamayoz.crevisoft.com](https://tamayoz.crevisoft.com/) | [Preview Demo](https://tamayoz-alpha.vercel.app)
+- **Tech Stack**: React 19, TypeScript, Vite, Tailwind CSS, Zustand, Framer Motion, Recharts, REST APIs, JSON-RPC.
+- **Impact**:
+  - Slashed initial page load times by **45% (sub-1.2s LCP)** and achieved **100% WCAG 2.1 AA** compliance via virtualized data grids and keyboard-navigable ARIA primitives.
+  - Boosted data visualization render speeds by **50% for 10,000+ records** with a dynamic multi-view rendering engine (Kanban, Gantt, editable tables).
+  - Reduced component re-renders by **65%** across nested views with scalable Zustand state slices.
+
+### 🛍️ [STORIA — Full-Stack E-Commerce Engine](https://storia-salla.vercel.app)
+*Custom commercial e-commerce solution with automated Salla merchant platform integration.*
+- **Repository**: [github.com/ghazy2001/storia-salla](https://github.com/ghazy2001/storia-salla)
+- **Live Platform**: [storiasa.com](https://storiasa.com/) | [Preview Demo](https://storia-salla.vercel.app)
+- **Tech Stack**: React, Node.js, Express.js, MongoDB, REST APIs, Salla Webhooks.
+- **Impact**:
+  - Increased online checkout completion by **25%** and reduced sync latency by **70%** via automated real-time webhooks.
+  - Saved 15+ hours/week of manual operations through automated catalog and inventory synchronization.
+  - Achieved sub-200ms API response times and 99.9% uptime with structured MongoDB indexing.
+
+---
+
 ## 🌐 Featured Merged Open-Source Contributions
 
 High-impact production-grade pull requests reviewed, approved, and merged upstream across venture-backed and widely adopted open-source ecosystems:
@@ -235,30 +259,6 @@ High-impact production-grade pull requests reviewed, approved, and merged upstre
 
 ### 📋 **[Plane](https://github.com/makeplane/plane)** *(Open-Source Project Tracking, 35k ⭐)*
 - **Profile Settings Validation**: Allowed saving profile settings with an empty last name ([PR #10147](https://github.com/makeplane/plane/pull/10147) — **MERGED**).
-
----
-
-## 💼 Featured Enterprise & Client Systems
-
-### 🏢 [TAMAYOZ — Enterprise ERP Web Platform (Crevisoft)](https://tamayoz-alpha.vercel.app)
-*Modular enterprise web client integrated with the Odoo ERP ecosystem.*
-- **Repository**: [github.com/ghazy2001/Tamayoz](https://github.com/ghazy2001/Tamayoz)
-- **Live Platform**: [tamayoz.crevisoft.com](https://tamayoz.crevisoft.com/) | [Preview Demo](https://tamayoz-alpha.vercel.app)
-- **Tech Stack**: React 19, TypeScript, Vite, Tailwind CSS, Zustand, Framer Motion, Recharts, REST APIs, JSON-RPC.
-- **Impact**:
-  - Slashed initial page load times by **45% (sub-1.2s LCP)** and achieved **100% WCAG 2.1 AA** compliance via virtualized data grids and keyboard-navigable ARIA primitives.
-  - Boosted data visualization render speeds by **50% for 10,000+ records** with a dynamic multi-view rendering engine (Kanban, Gantt, editable tables).
-  - Reduced component re-renders by **65%** across nested views with scalable Zustand state slices.
-
-### 🛍️ [STORIA — Full-Stack E-Commerce Engine](https://storia-salla.vercel.app)
-*Custom commercial e-commerce solution with automated Salla merchant platform integration.*
-- **Repository**: [github.com/ghazy2001/storia-salla](https://github.com/ghazy2001/storia-salla)
-- **Live Platform**: [storiasa.com](https://storiasa.com/) | [Preview Demo](https://storia-salla.vercel.app)
-- **Tech Stack**: React, Node.js, Express.js, MongoDB, REST APIs, Salla Webhooks.
-- **Impact**:
-  - Increased online checkout completion by **25%** and reduced sync latency by **70%** via automated real-time webhooks.
-  - Saved 15+ hours/week of manual operations through automated catalog and inventory synchronization.
-  - Achieved sub-200ms API response times and 99.9% uptime with structured MongoDB indexing.
 
 ---
 
