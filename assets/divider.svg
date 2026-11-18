@@ -1,0 +1,58 @@
+<svg width="850" height="30" viewBox="0 0 850 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="trackGrad" x1="0" y1="0" x2="850" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#9e5246" stop-opacity="0" />
+      <stop offset="15%" stop-color="#9e5246" stop-opacity="0.6" />
+      <stop offset="35%" stop-color="#daab7e" stop-opacity="0.9" />
+      <stop offset="50%" stop-color="#ffe4c4" stop-opacity="1" />
+      <stop offset="65%" stop-color="#daab7e" stop-opacity="0.9" />
+      <stop offset="85%" stop-color="#9e5246" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#9e5246" stop-opacity="0" />
+    </linearGradient>
+
+    <linearGradient id="laserHead" x1="0" y1="0" x2="160" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#daab7e" stop-opacity="0" />
+      <stop offset="30%" stop-color="#daab7e" stop-opacity="0.7" />
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="1" />
+      <stop offset="70%" stop-color="#ffe4c4" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#daab7e" stop-opacity="0" />
+    </linearGradient>
+
+    <radialGradient id="coreGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="1" />
+      <stop offset="35%" stop-color="#ffe4c4" stop-opacity="0.9" />
+      <stop offset="70%" stop-color="#daab7e" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#daab7e" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <!-- Ambient Glow Background Track -->
+  <rect x="30" y="13.5" width="790" height="3" rx="1.5" fill="url(#trackGrad)" opacity="0.4" filter="blur(1px)" />
+
+  <!-- Sharp Core Track -->
+  <rect x="30" y="14" width="790" height="2" rx="1" fill="url(#trackGrad)" />
+
+  <!-- Animated Traveling Laser Pulse (left to right) -->
+  <g>
+    <rect x="0" y="12.5" width="160" height="5" rx="2.5" fill="url(#laserHead)">
+      <animate attributeName="x" values="-160;850" dur="3.5s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0;0.9;1;0.9;0" keyTimes="0;0.1;0.5;0.9;1" dur="3.5s" repeatCount="indefinite" />
+    </rect>
+  </g>
+
+  <!-- Center Decorative Diamond and Glow -->
+  <circle cx="425" cy="15" r="11" fill="url(#coreGlow)">
+    <animate attributeName="r" values="8;13;8" dur="2.4s" repeatCount="indefinite" />
+    <animate attributeName="opacity" values="0.5;0.95;0.5" dur="2.4s" repeatCount="indefinite" />
+  </circle>
+  <rect x="421" y="11" width="8" height="8" rx="1.5" transform="rotate(45 425 15)" fill="#ffe4c4" stroke="#9e5246" stroke-width="1.5" />
+  <circle cx="425" cy="15" r="1.8" fill="#24141e" />
+
+  <!-- Satellite Accents -->
+  <circle cx="390" cy="15" r="2.5" fill="#daab7e" opacity="0.9" />
+  <circle cx="460" cy="15" r="2.5" fill="#daab7e" opacity="0.9" />
+  <circle cx="360" cy="15" r="1.8" fill="#9e5246" opacity="0.8" />
+  <circle cx="490" cy="15" r="1.8" fill="#9e5246" opacity="0.8" />
+  <circle cx="330" cy="15" r="1.2" fill="#9e5246" opacity="0.6" />
+  <circle cx="520" cy="15" r="1.2" fill="#9e5246" opacity="0.6" />
+</svg>

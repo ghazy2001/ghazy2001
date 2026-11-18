@@ -20,7 +20,9 @@
 
 </div>
 
----
+<p align="center">
+  <img src="assets/divider.svg" width="100%" alt="Section Divider" />
+</p>
 
 <!-- ==================== FAVORITE TOOLS & TECHNOLOGIES ==================== -->
 ## 💻 My Favorite Tools & Technologies
@@ -182,7 +184,9 @@
 
 </div>
 
----
+<p align="center">
+  <img src="assets/divider.svg" width="100%" alt="Section Divider" />
+</p>
 
 ## 💼 Featured Enterprise & Client Systems
 
@@ -206,7 +210,9 @@
   - Saved 15+ hours/week of manual operations through automated catalog and inventory synchronization.
   - Achieved sub-200ms API response times and 99.9% uptime with structured MongoDB indexing.
 
----
+<p align="center">
+  <img src="assets/divider.svg" width="100%" alt="Section Divider" />
+</p>
 
 ## 🌐 Featured Merged Open-Source Contributions
 
@@ -260,7 +266,9 @@ High-impact production-grade pull requests reviewed, approved, and merged upstre
 ### 📋 **[Plane](https://github.com/makeplane/plane)** *(Open-Source Project Tracking, 35k ⭐)*
 - **Profile Settings Validation**: Allowed saving profile settings with an empty last name ([PR #10147](https://github.com/makeplane/plane/pull/10147) — **MERGED**).
 
----
+<p align="center">
+  <img src="assets/divider.svg" width="100%" alt="Section Divider" />
+</p>
 
 <div align="center">
   <picture>
@@ -270,7 +278,9 @@ High-impact production-grade pull requests reviewed, approved, and merged upstre
   </picture>
 </div>
 
----
+<p align="center">
+  <img src="assets/divider.svg" width="100%" alt="Section Divider" />
+</p>
 
 ## 📊 Activity & Telemetry
 
@@ -292,7 +302,9 @@ High-impact production-grade pull requests reviewed, approved, and merged upstre
 <img src="https://github-stats-extended.vercel.app/api/top-langs/?username=ghazy2001&layout=compact&bg_color=161b22&title_color=daab7e&text_color=ffffff&hide_border=true&border_radius=10&hide=Go&exclude_repo=EVOLV" height="160" alt="Top Languages" />
 </div>
 
----
+<p align="center">
+  <img src="assets/divider.svg" width="100%" alt="Section Divider" />
+</p>
 
 ## 🪙 Bounties, Grants & GitHub Sponsors
 
@@ -303,7 +315,9 @@ High-impact production-grade pull requests reviewed, approved, and merged upstre
 | **USDT** | **Solana (SOL)** | `2Vuqg98hhs7zyzp5YDn2mrhMKagnwvZ9iUDa5PhCgLhF` |
 | **SOL** | **Solana (Native)** | `2Vuqg98hhs7zyzp5YDn2mrhMKagnwvZ9iUDa5PhCgLhF` |
 
----
+<p align="center">
+  <img src="assets/divider.svg" width="100%" alt="Section Divider" />
+</p>
 
 ## 📬 Contact & Connect
 
