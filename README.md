@@ -31,49 +31,49 @@
   <tr>
     <td align="center" width="105">
       <a href="https://www.typescriptlang.org/">
-        <img src="https://skillicons.dev/icons?i=ts" width="48" height="48" alt="TypeScript" />
+        <img src="https://thanhnguyxnorg.github.io/Techstack-Studio/icons/animated/typescript.svg" width="48" height="48" alt="TypeScript" />
       </a>
       <br/><b>TypeScript</b>
     </td>
     <td align="center" width="105">
       <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
-        <img src="https://skillicons.dev/icons?i=js" width="48" height="48" alt="JavaScript" />
+        <img src="https://thanhnguyxnorg.github.io/Techstack-Studio/icons/animated/javascript.svg" width="48" height="48" alt="JavaScript" />
       </a>
       <br/><b>JavaScript</b>
     </td>
     <td align="center" width="105">
       <a href="https://react.dev/">
-        <img src="https://skillicons.dev/icons?i=react" width="48" height="48" alt="React 19" />
+        <img src="https://thanhnguyxnorg.github.io/Techstack-Studio/icons/animated/react.svg" width="48" height="48" alt="React 19" />
       </a>
       <br/><b>React 19</b>
     </td>
     <td align="center" width="105">
       <a href="https://nextjs.org/">
-        <img src="https://skillicons.dev/icons?i=nextjs" width="48" height="48" alt="Next.js" />
+        <img src="https://thanhnguyxnorg.github.io/Techstack-Studio/icons/animated/nextdotjs.svg" width="48" height="48" alt="Next.js" />
       </a>
       <br/><b>Next.js</b>
     </td>
     <td align="center" width="105">
       <a href="https://tailwindcss.com/">
-        <img src="https://skillicons.dev/icons?i=tailwind" width="48" height="48" alt="Tailwind CSS" />
+        <img src="https://thanhnguyxnorg.github.io/Techstack-Studio/icons/animated/tailwindcss.svg" width="48" height="48" alt="Tailwind CSS" />
       </a>
       <br/><b>Tailwind CSS</b>
     </td>
     <td align="center" width="105">
       <a href="https://nodejs.org/">
-        <img src="https://skillicons.dev/icons?i=nodejs" width="48" height="48" alt="Node.js" />
+        <img src="https://thanhnguyxnorg.github.io/Techstack-Studio/icons/animated/nodedotjs.svg" width="48" height="48" alt="Node.js" />
       </a>
       <br/><b>Node.js</b>
     </td>
     <td align="center" width="105">
       <a href="https://nestjs.com/">
-        <img src="https://skillicons.dev/icons?i=nestjs" width="48" height="48" alt="NestJS" />
+        <img src="https://thanhnguyxnorg.github.io/Techstack-Studio/icons/animated/nestjs.svg" width="48" height="48" alt="NestJS" />
       </a>
       <br/><b>NestJS</b>
     </td>
     <td align="center" width="105">
       <a href="https://www.postgresql.org/">
-        <img src="https://skillicons.dev/icons?i=postgres" width="48" height="48" alt="PostgreSQL" />
+        <img src="https://thanhnguyxnorg.github.io/Techstack-Studio/icons/animated/postgresql.svg" width="48" height="48" alt="PostgreSQL" />
       </a>
       <br/><b>PostgreSQL</b>
     </td>
@@ -81,49 +81,49 @@
   <tr>
     <td align="center" width="105">
       <a href="https://redis.io/">
-        <img src="https://skillicons.dev/icons?i=redis" width="48" height="48" alt="Redis" />
+        <img src="https://thanhnguyxnorg.github.io/Techstack-Studio/icons/animated/redis.svg" width="48" height="48" alt="Redis" />
       </a>
       <br/><b>Redis</b>
     </td>
     <td align="center" width="105">
       <a href="https://www.prisma.io/">
-        <img src="https://skillicons.dev/icons?i=prisma" width="48" height="48" alt="Prisma" />
+        <img src="https://thanhnguyxnorg.github.io/Techstack-Studio/icons/animated/prisma.svg" width="48" height="48" alt="Prisma" />
       </a>
       <br/><b>Prisma</b>
     </td>
     <td align="center" width="105">
       <a href="https://graphql.org/">
-        <img src="https://skillicons.dev/icons?i=graphql" width="48" height="48" alt="GraphQL" />
+        <img src="https://thanhnguyxnorg.github.io/Techstack-Studio/icons/animated/graphql.svg" width="48" height="48" alt="GraphQL" />
       </a>
       <br/><b>GraphQL</b>
     </td>
     <td align="center" width="105">
       <a href="https://www.docker.com/">
-        <img src="https://skillicons.dev/icons?i=docker" width="48" height="48" alt="Docker" />
+        <img src="https://thanhnguyxnorg.github.io/Techstack-Studio/icons/animated/docker.svg" width="48" height="48" alt="Docker" />
       </a>
       <br/><b>Docker</b>
     </td>
     <td align="center" width="105">
       <a href="https://github.com/features/actions">
-        <img src="https://skillicons.dev/icons?i=githubactions" width="48" height="48" alt="CI/CD" />
+        <img src="https://thanhnguyxnorg.github.io/Techstack-Studio/icons/animated/githubactions.svg" width="48" height="48" alt="CI/CD" />
       </a>
       <br/><b>Actions</b>
     </td>
     <td align="center" width="105">
       <a href="https://git-scm.com/">
-        <img src="https://skillicons.dev/icons?i=git" width="48" height="48" alt="Git" />
+        <img src="https://thanhnguyxnorg.github.io/Techstack-Studio/icons/animated/git.svg" width="48" height="48" alt="Git" />
       </a>
       <br/><b>Git</b>
     </td>
     <td align="center" width="105">
       <a href="https://vitejs.dev/">
-        <img src="https://skillicons.dev/icons?i=vite" width="48" height="48" alt="Vite" />
+        <img src="https://thanhnguyxnorg.github.io/Techstack-Studio/icons/animated/vite.svg" width="48" height="48" alt="Vite" />
       </a>
       <br/><b>Vite</b>
     </td>
     <td align="center" width="105">
       <a href="https://code.visualstudio.com/">
-        <img src="https://skillicons.dev/icons?i=vscode" width="48" height="48" alt="VS Code" />
+        <img src="https://thanhnguyxnorg.github.io/Techstack-Studio/icons/animated/vscode.svg" width="48" height="48" alt="VS Code" />
       </a>
       <br/><b>VS Code</b>
     </td>
@@ -131,49 +131,49 @@
   <tr>
     <td align="center" width="105">
       <a href="https://www.python.org/">
-        <img src="https://skillicons.dev/icons?i=python" width="48" height="48" alt="Python" />
+        <img src="https://thanhnguyxnorg.github.io/Techstack-Studio/icons/animated/python.svg" width="48" height="48" alt="Python" />
       </a>
       <br/><b>Python</b>
     </td>
     <td align="center" width="105">
       <a href="https://www.mongodb.com/">
-        <img src="https://skillicons.dev/icons?i=mongodb" width="48" height="48" alt="MongoDB" />
+        <img src="https://thanhnguyxnorg.github.io/Techstack-Studio/icons/animated/mongodb.svg" width="48" height="48" alt="MongoDB" />
       </a>
       <br/><b>MongoDB</b>
     </td>
     <td align="center" width="105">
       <a href="https://vitest.dev/">
-        <img src="https://skillicons.dev/icons?i=vitest" width="48" height="48" alt="Vitest" />
+        <img src="https://thanhnguyxnorg.github.io/Techstack-Studio/icons/animated/vitest.svg" width="48" height="48" alt="Vitest" />
       </a>
       <br/><b>Vitest</b>
     </td>
     <td align="center" width="105">
       <a href="https://jestjs.io/">
-        <img src="https://skillicons.dev/icons?i=jest" width="48" height="48" alt="Jest" />
+        <img src="https://thanhnguyxnorg.github.io/Techstack-Studio/icons/animated/jest.svg" width="48" height="48" alt="Jest" />
       </a>
       <br/><b>Jest</b>
     </td>
     <td align="center" width="105">
       <a href="https://html.spec.whatwg.org/">
-        <img src="https://skillicons.dev/icons?i=html" width="48" height="48" alt="HTML5" />
+        <img src="https://thanhnguyxnorg.github.io/Techstack-Studio/icons/animated/html5.svg" width="48" height="48" alt="HTML5" />
       </a>
       <br/><b>HTML5</b>
     </td>
     <td align="center" width="105">
       <a href="https://www.w3.org/Style/CSS/">
-        <img src="https://skillicons.dev/icons?i=css" width="48" height="48" alt="CSS3" />
+        <img src="https://thanhnguyxnorg.github.io/Techstack-Studio/icons/animated/css3.svg" width="48" height="48" alt="CSS3" />
       </a>
       <br/><b>CSS3</b>
     </td>
     <td align="center" width="105">
       <a href="https://www.postman.com/">
-        <img src="https://skillicons.dev/icons?i=postman" width="48" height="48" alt="REST APIs" />
+        <img src="https://thanhnguyxnorg.github.io/Techstack-Studio/icons/animated/postman.svg" width="48" height="48" alt="REST APIs" />
       </a>
       <br/><b>REST APIs</b>
     </td>
     <td align="center" width="105">
       <a href="https://github.com/">
-        <img src="https://skillicons.dev/icons?i=github" width="48" height="48" alt="GitHub" />
+        <img src="https://thanhnguyxnorg.github.io/Techstack-Studio/icons/animated/github.svg" width="48" height="48" alt="GitHub" />
       </a>
       <br/><b>GitHub</b>
     </td>
