@@ -1,12 +1,23 @@
 <div align="center">
 
-# Hi there, I'm Mahmoud Ghazy 👋
-### Senior Frontend / Full-Stack Engineer | Core Open-Source Contributor
+<!-- ==================== ANIMATED WAVING HEADER ==================== -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=1,11,20,30&height=220&section=header&text=Mahmoud%20Ghazy&fontSize=42&fontAlignY=35&animation=fadeIn&desc=Senior%20Frontend%20%2F%20Full-Stack%20Engineer%20%E2%80%A2%20Core%20Open-Source%20Contributor&descSize=17&descAlignY=62" width="100%" alt="Mahmoud Ghazy Header" />
 
-[![GitHub followers](https://img.shields.io/github/followers/ghazy2001?label=Follow&style=social)](https://github.com/ghazy2001)
-[![GitHub Sponsors](https://img.shields.io/badge/Sponsor-%E2%9D%A4-ea4aaa?logo=githubsponsors&logoColor=white)](https://github.com/sponsors/ghazy2001)
-[![Email](https://img.shields.io/badge/Email-mahmoudghazy2001%40gmail.com-0078D4?logo=gmail&logoColor=white)](mailto:mahmoudghazy2001@gmail.com)
-[![Status](https://img.shields.io/badge/Available%20for-Remote%20Contracts%20%26%20Retainers-2ea44f?style=for-the-badge)](#-contact--connect)
+<!-- ==================== DYNAMIC TYPING SVG ==================== -->
+<a href="https://github.com/ghazy2001">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1200&color=38BDF8&center=true&vCenter=true&width=850&height=46&lines=Senior+Frontend+%2F+Full-Stack+Engineer+🚀;Core+Contributor%3A+Twenty+CRM+%E2%80%A2+Snitch+%E2%80%A2+Umami+%E2%80%A2+Better-Auth+🛡️;25%2B+Production-Grade+Upstream+Merged+PRs+⚡;React+19+%E2%80%A2+TypeScript+%E2%80%A2+Next.js+%E2%80%A2+Node.js+💻;Available+for+Remote+Contracts+%26+Retainers+💼" alt="Typing SVG" />
+</a>
+
+<br/>
+
+<!-- ==================== QUICK BADGES & VISITOR COUNTER ==================== -->
+<a href="https://github.com/ghazy2001"><img src="https://komarev.com/ghpvc/?username=ghazy2001&label=PROFILE+VIEWS&color=0078D4&style=for-the-badge" alt="Profile Views" /></a>
+<a href="https://github.com/ghazy2001?tab=followers"><img src="https://img.shields.io/github/followers/ghazy2001?label=Followers&style=for-the-badge&color=24292e" alt="GitHub followers" /></a>
+<a href="https://github.com/sponsors/ghazy2001"><img src="https://img.shields.io/badge/Sponsor-%E2%9D%A4-ea4aaa?style=for-the-badge&logo=githubsponsors&logoColor=white" alt="Sponsor" /></a>
+<a href="mailto:mahmoudghazy2001@gmail.com"><img src="https://img.shields.io/badge/Email-mahmoudghazy2001%40gmail.com-0078D4?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
+<a href="#-contact--connect"><img src="https://img.shields.io/badge/Status-Available%20for%20Contracts-2ea44f?style=for-the-badge" alt="Status" /></a>
+
+<br/><br/>
 
 <p align="center">
   <b>Senior Frontend / Full-Stack Engineer</b> building high-performance, polished user interfaces and architecting mission-critical logic, concurrency-safe engines, and scalable B2B SaaS applications.<br>
@@ -18,18 +29,194 @@
 
 </div>
 
-## 🛠️ Technical Skills
+<!-- ==================== 3D CONTRIBUTION CALENDAR ==================== -->
+## 🖥️ GitHub Activity & 3D Telemetry
+
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="profile-3d-contrib/profile-night-rainbow.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="profile-3d-contrib/profile-gitblock.svg" />
+    <img src="profile-3d-contrib/profile-night-rainbow.svg" alt="3D Contribution Graph" width="100%" />
+  </picture>
+</div>
+
+---
+
+<!-- ==================== PACMAN CONTRIBUTION ANIMATION ==================== -->
+## 🕹️ Pacman Contribution Animation
+
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ghazy2001/ghazy2001/output/pacman-contribution-graph-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ghazy2001/ghazy2001/output/pacman-contribution-graph.svg" />
+    <img alt="Pacman Contribution Animation" src="https://raw.githubusercontent.com/ghazy2001/ghazy2001/output/pacman-contribution-graph-dark.svg" width="100%" />
+  </picture>
+</div>
+
+---
+
+<!-- ==================== FAVORITE TOOLS & TECHNOLOGIES ==================== -->
+## 💻 My Favorite Tools & Technologies
 
 <div align="center">
 
-| Area | Technologies & Frameworks |
-|---|---|
-| **Languages & Core** | ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black) ![Go](https://img.shields.io/badge/Go-00ADD8?logo=go&logoColor=white) ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white) ![SQL](https://img.shields.io/badge/SQL-4479A1?logo=postgresql&logoColor=white) ![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white) |
-| **Frontend & UI Systems** | ![React 19](https://img.shields.io/badge/React%2019-61DAFB?logo=react&logoColor=black) ![Next.js](https://img.shields.io/badge/Next.js%20(App%20Router)-000000?logo=next.js&logoColor=white) ![TanStack Query](https://img.shields.io/badge/TanStack%20Query-FF4154?logo=react-query&logoColor=white) ![Zustand](https://img.shields.io/badge/Zustand-443e38?logo=react&logoColor=white) ![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-06B6D4?logo=tailwindcss&logoColor=white) ![shadcn/ui](https://img.shields.io/badge/shadcn%2Fui-000000?logo=shadcnui&logoColor=white) ![Core Web Vitals](https://img.shields.io/badge/Core%20Web%20Vitals-sub--1.2s%20LCP-4285F4?logo=googlechrome&logoColor=white) |
-| **Backend & Architecture** | ![Node.js](https://img.shields.io/badge/Node.js-339933?logo=node.js&logoColor=white) ![Express](https://img.shields.io/badge/Express-000000?logo=express&logoColor=white) ![NestJS](https://img.shields.io/badge/NestJS-E0234E?logo=nestjs&logoColor=white) ![Django](https://img.shields.io/badge/Django-092E20?logo=django&logoColor=white) ![GraphQL](https://img.shields.io/badge/GraphQL-E10098?logo=graphql&logoColor=white) ![REST APIs](https://img.shields.io/badge/REST%20APIs-005571?logo=postman&logoColor=white) ![JSON-RPC](https://img.shields.io/badge/JSON--RPC-blue?logo=json) ![Webhooks](https://img.shields.io/badge/Webhooks-FF6C37?logo=webhook&logoColor=white) |
-| **Auth, Security & Identity** | ![OIDC Core](https://img.shields.io/badge/OpenID%20Connect-OIDC%20Core%20§3.1.3.3-F78C40?logo=openid) ![OAuth 2.0](https://img.shields.io/badge/OAuth%202.0-PKCE%20%26%20Refresh%20Family-black?logo=oauth) ![Better-Auth](https://img.shields.io/badge/Better--Auth-Core-blue) ![JWT](https://img.shields.io/badge/JWT-000000?logo=jsonwebtokens&logoColor=white) ![WebAuthn](https://img.shields.io/badge/WebAuthn-2FA-darkgreen) |
-| **Databases & Caching** | ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white) ![ClickHouse](https://img.shields.io/badge/ClickHouse-FFCC01?logo=clickhouse&logoColor=black) ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?logo=mongodb&logoColor=white) ![Redis](https://img.shields.io/badge/Redis%20(Locks%2FCaching)-DC382D?logo=redis&logoColor=white) ![Prisma](https://img.shields.io/badge/Prisma%20ORM-2D3748?logo=prisma&logoColor=white) ![TypeORM](https://img.shields.io/badge/TypeORM-FE0803?logo=typeorm&logoColor=white) |
-| **DevOps & Testing** | ![Vitest](https://img.shields.io/badge/Vitest-6E9F18?logo=vitest&logoColor=white) ![Jest](https://img.shields.io/badge/Jest-C21325?logo=jest&logoColor=white) ![PyTest](https://img.shields.io/badge/PyTest-0A9EDC?logo=pytest&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?logo=githubactions&logoColor=white) ![Git](https://img.shields.io/badge/Git%20%26%20GitHub-F05032?logo=git&logoColor=white) |
+<!-- Smooth Animated Marquee Tape -->
+<img src="assets/skills-marquee.svg" alt="Moving Tech Stack Marquee" width="100%" />
+
+<br/><br/>
+
+<table align="center">
+  <tr>
+    <td align="center" width="105">
+      <a href="https://www.typescriptlang.org/">
+        <img src="https://skillicons.dev/icons?i=ts" width="48" height="48" alt="TypeScript" />
+      </a>
+      <br/><b>TypeScript</b>
+    </td>
+    <td align="center" width="105">
+      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
+        <img src="https://skillicons.dev/icons?i=js" width="48" height="48" alt="JavaScript" />
+      </a>
+      <br/><b>JavaScript</b>
+    </td>
+    <td align="center" width="105">
+      <a href="https://react.dev/">
+        <img src="https://skillicons.dev/icons?i=react" width="48" height="48" alt="React 19" />
+      </a>
+      <br/><b>React 19</b>
+    </td>
+    <td align="center" width="105">
+      <a href="https://nextjs.org/">
+        <img src="https://skillicons.dev/icons?i=nextjs" width="48" height="48" alt="Next.js" />
+      </a>
+      <br/><b>Next.js</b>
+    </td>
+    <td align="center" width="105">
+      <a href="https://tailwindcss.com/">
+        <img src="https://skillicons.dev/icons?i=tailwind" width="48" height="48" alt="Tailwind CSS" />
+      </a>
+      <br/><b>Tailwind CSS</b>
+    </td>
+    <td align="center" width="105">
+      <a href="https://nodejs.org/">
+        <img src="https://skillicons.dev/icons?i=nodejs" width="48" height="48" alt="Node.js" />
+      </a>
+      <br/><b>Node.js</b>
+    </td>
+    <td align="center" width="105">
+      <a href="https://nestjs.com/">
+        <img src="https://skillicons.dev/icons?i=nestjs" width="48" height="48" alt="NestJS" />
+      </a>
+      <br/><b>NestJS</b>
+    </td>
+    <td align="center" width="105">
+      <a href="https://www.postgresql.org/">
+        <img src="https://skillicons.dev/icons?i=postgres" width="48" height="48" alt="PostgreSQL" />
+      </a>
+      <br/><b>PostgreSQL</b>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="105">
+      <a href="https://redis.io/">
+        <img src="https://skillicons.dev/icons?i=redis" width="48" height="48" alt="Redis" />
+      </a>
+      <br/><b>Redis</b>
+    </td>
+    <td align="center" width="105">
+      <a href="https://www.prisma.io/">
+        <img src="https://skillicons.dev/icons?i=prisma" width="48" height="48" alt="Prisma" />
+      </a>
+      <br/><b>Prisma</b>
+    </td>
+    <td align="center" width="105">
+      <a href="https://graphql.org/">
+        <img src="https://skillicons.dev/icons?i=graphql" width="48" height="48" alt="GraphQL" />
+      </a>
+      <br/><b>GraphQL</b>
+    </td>
+    <td align="center" width="105">
+      <a href="https://www.docker.com/">
+        <img src="https://skillicons.dev/icons?i=docker" width="48" height="48" alt="Docker" />
+      </a>
+      <br/><b>Docker</b>
+    </td>
+    <td align="center" width="105">
+      <a href="https://github.com/features/actions">
+        <img src="https://skillicons.dev/icons?i=githubactions" width="48" height="48" alt="CI/CD" />
+      </a>
+      <br/><b>Actions</b>
+    </td>
+    <td align="center" width="105">
+      <a href="https://git-scm.com/">
+        <img src="https://skillicons.dev/icons?i=git" width="48" height="48" alt="Git" />
+      </a>
+      <br/><b>Git</b>
+    </td>
+    <td align="center" width="105">
+      <a href="https://vitejs.dev/">
+        <img src="https://skillicons.dev/icons?i=vite" width="48" height="48" alt="Vite" />
+      </a>
+      <br/><b>Vite</b>
+    </td>
+    <td align="center" width="105">
+      <a href="https://code.visualstudio.com/">
+        <img src="https://skillicons.dev/icons?i=vscode" width="48" height="48" alt="VS Code" />
+      </a>
+      <br/><b>VS Code</b>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="105">
+      <a href="https://www.python.org/">
+        <img src="https://skillicons.dev/icons?i=python" width="48" height="48" alt="Python" />
+      </a>
+      <br/><b>Python</b>
+    </td>
+    <td align="center" width="105">
+      <a href="https://www.mongodb.com/">
+        <img src="https://skillicons.dev/icons?i=mongodb" width="48" height="48" alt="MongoDB" />
+      </a>
+      <br/><b>MongoDB</b>
+    </td>
+    <td align="center" width="105">
+      <a href="https://vitest.dev/">
+        <img src="https://skillicons.dev/icons?i=vitest" width="48" height="48" alt="Vitest" />
+      </a>
+      <br/><b>Vitest</b>
+    </td>
+    <td align="center" width="105">
+      <a href="https://jestjs.io/">
+        <img src="https://skillicons.dev/icons?i=jest" width="48" height="48" alt="Jest" />
+      </a>
+      <br/><b>Jest</b>
+    </td>
+    <td align="center" width="105">
+      <a href="https://html.spec.whatwg.org/">
+        <img src="https://skillicons.dev/icons?i=html" width="48" height="48" alt="HTML5" />
+      </a>
+      <br/><b>HTML5</b>
+    </td>
+    <td align="center" width="105">
+      <a href="https://www.w3.org/Style/CSS/">
+        <img src="https://skillicons.dev/icons?i=css" width="48" height="48" alt="CSS3" />
+      </a>
+      <br/><b>CSS3</b>
+    </td>
+    <td align="center" width="105">
+      <a href="https://www.postman.com/">
+        <img src="https://skillicons.dev/icons?i=postman" width="48" height="48" alt="REST APIs" />
+      </a>
+      <br/><b>REST APIs</b>
+    </td>
+    <td align="center" width="105">
+      <a href="https://github.com/">
+        <img src="https://skillicons.dev/icons?i=github" width="48" height="48" alt="GitHub" />
+      </a>
+      <br/><b>GitHub</b>
+    </td>
+  </tr>
+</table>
 
 </div>
 
@@ -53,7 +240,6 @@ High-impact production-grade pull requests reviewed, approved, and merged upstre
 - **Native Passive TLS ClientHello Fingerprinting (JA3 / JA4) & C2 Detection**: Engineered zero-dependency wire-level ClientHello parser, RFC 8701 GREASE filtering, canonical JA3 MD5 & JA4 hashing, offline C2 fingerprint database (Cobalt Strike, Sliver, Havoc, Metasploit, Mythic, AsyncRAT), real-time `C2_SUSPECT` alerting, and custom rules engine integration ([PR #86](https://github.com/aixisstudio/Snitch/pull/86) — **MERGED** with maintainer commendation: *"Merged — and this revision is exactly what a security DB should look like: verifiable JA3s only, every entry carrying source + provenance... Snitch now ships real, passive C2 detection. 🤝"*).
 - **ThreatFox C2 Threat-Feed Ingestion (Parser & Presets)**: Engineered native parser for abuse.ch ThreatFox C2 indicators (CC0), public IP & domain sanitization, malware family filtering, and scheduled threat-feed presets ([PR #85](https://github.com/aixisstudio/Snitch/pull/85) — **MERGED** with maintainer commendation: *"The parser handles both ThreatFox CSV and JSON with proper IP sanitization... Ready for Priority 2 (JA3/JA4) whenever you are"*).
 - **Parent/Cmdline Firewall Blocking & Netsh Lifecycle Fix**: Added command-line and parent-process blocking rules, enriched agent event ingestion, and eliminated Windows firewall orphan rules by fixing netsh rule naming mismatches ([PR #84](https://github.com/aixisstudio/Snitch/pull/84) — **MERGED** with founder commendation: *"three real bugs caught and cleanly fixed"*).
-
 
 ### 📊 **[Umami](https://github.com/umami-software/umami)** *(Privacy-focused Analytics, 25k+ ⭐)*
 - **Background Tab Core Web Vitals Discard**: Prevented distorted Core Web Vitals (LCP/FCP) metrics by tracking `firstHiddenTime` and discarding background tab loads per Chrome Web Vitals standards ([PR #4724](https://github.com/umami-software/umami/pull/4724) — **MERGED**).
@@ -117,20 +303,28 @@ High-impact production-grade pull requests reviewed, approved, and merged upstre
 ## 📊 Activity & Telemetry
 
 <div align="center">
-  <table border="0">
-    <tr>
-      <td valign="top">
-        <img src="https://github-stats-extended.vercel.app/api?username=ghazy2001&show_icons=true&theme=tokyonight&count_private=true&include_all_commits=true&hide_border=true&border_radius=10" height="175" alt="Mahmoud Ghazy's GitHub Stats" />
-      </td>
-      <td valign="top">
-        <img src="https://streak-stats.demolab.com/?user=ghazy2001&theme=tokyonight&hide_border=true&border_radius=10&date_format=M%20j%5B%2C%20Y%5D" height="175" alt="GitHub Streak Stats" />
-      </td>
-    </tr>
-  </table>
 
-  <br/>
+<!-- ==================== GITHUB PROFILE TROPHIES ==================== -->
+<a href="https://github.com/ghazy2001">
+  <img src="https://github-profile-trophy.vercel.app/?username=ghazy2001&theme=tokyonight&no-frame=true&no-bg=true&margin_w=8&row=1&column=7" alt="GitHub Profile Trophies" />
+</a>
 
-  <img src="https://github-stats-extended.vercel.app/api/top-langs/?username=ghazy2001&layout=compact&theme=tokyonight&hide_border=true&border_radius=10&hide=Go&exclude_repo=EVOLV" height="160" alt="Top Languages" />
+<br/><br/>
+
+<table border="0">
+  <tr>
+    <td valign="top">
+      <img src="https://github-stats-extended.vercel.app/api?username=ghazy2001&show_icons=true&theme=tokyonight&count_private=true&include_all_commits=true&hide_border=true&border_radius=10" height="175" alt="Mahmoud Ghazy's GitHub Stats" />
+    </td>
+    <td valign="top">
+      <img src="https://streak-stats.demolab.com/?user=ghazy2001&theme=tokyonight&hide_border=true&border_radius=10&date_format=M%20j%5B%2C%20Y%5D" height="175" alt="GitHub Streak Stats" />
+    </td>
+  </tr>
+</table>
+
+<br/>
+
+<img src="https://github-stats-extended.vercel.app/api/top-langs/?username=ghazy2001&layout=compact&theme=tokyonight&hide_border=true&border_radius=10&hide=Go&exclude_repo=EVOLV" height="160" alt="Top Languages" />
 </div>
 
 ---
@@ -153,6 +347,11 @@ High-impact production-grade pull requests reviewed, approved, and merged upstre
 - 💼 **LinkedIn**: [linkedin.com/in/mahmoud-ghazy](https://www.linkedin.com/in/mahmoud-ghazy-dev/) (or [mahmoud-ghazy-48a19924a](https://www.linkedin.com/in/mahmoud-ghazy-48a19924a/))
 - 🐙 **GitHub**: [@ghazy2001](https://github.com/ghazy2001)
 - 💬 **Discord**: `mahmoudghazy6884`
+
+<br/>
+
+<!-- ==================== ANIMATED WAVING FOOTER ==================== -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=1,11,20,30&height=120&section=footer" width="100%" />
 
 <div align="center">
   <sub>Senior Frontend / Full-Stack Engineer • Open for Remote Contracts, Retainers, and Engineering Roles</sub>
