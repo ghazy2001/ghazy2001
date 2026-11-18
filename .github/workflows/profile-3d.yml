@@ -25,6 +25,10 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ghazy2001
 
+      - name: Apply Sunset Palette to 3D Graph
+        run: |
+          python scripts/apply_sunset_to_3d.py
+
       - name: Commit & Push changes
         run: |
           git config user.name "github-actions[bot]"

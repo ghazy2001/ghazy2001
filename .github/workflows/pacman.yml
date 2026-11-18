@@ -31,7 +31,11 @@ jobs:
           github_user_name: ghazy2001
           outputs: |
             dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+            dist/github-contribution-grid-snake-dark.svg?color_snake=#daab7e&color_dots=#161b22,#452636,#9e5246,#da8a4d,#e8be89
+
+      - name: Apply Sunset Palette to Pacman Graph
+        run: |
+          python scripts/apply_sunset_to_pacman.py
 
       - name: Publish graphs to output branch
         uses: crazy-max/ghaction-github-pages@v4

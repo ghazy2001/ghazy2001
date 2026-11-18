@@ -279,17 +279,17 @@ High-impact production-grade pull requests reviewed, approved, and merged upstre
 <table border="0">
   <tr>
     <td valign="top">
-      <img src="https://github-stats-extended.vercel.app/api?username=ghazy2001&show_icons=true&theme=tokyonight&count_private=true&include_all_commits=true&hide_border=true&border_radius=10" height="175" alt="Mahmoud Ghazy's GitHub Stats" />
+      <img src="https://github-stats-extended.vercel.app/api?username=ghazy2001&show_icons=true&bg_color=161b22&title_color=daab7e&text_color=ffffff&icon_color=e8be89&count_private=true&include_all_commits=true&hide_border=true&border_radius=10" height="175" alt="Mahmoud Ghazy's GitHub Stats" />
     </td>
     <td valign="top">
-      <img src="https://streak-stats.demolab.com/?user=ghazy2001&theme=tokyonight&hide_border=true&border_radius=10&date_format=M%20j%5B%2C%20Y%5D" height="175" alt="GitHub Streak Stats" />
+      <img src="https://streak-stats.demolab.com/?user=ghazy2001&background=161b22&ring=daab7e&fire=e8be89&currStreakNum=ffffff&sideNums=daab7e&currStreakLabel=e8be89&sideLabels=8b949e&dates=8b949e&hide_border=true&border_radius=10&date_format=M%20j%5B%2C%20Y%5D" height="175" alt="GitHub Streak Stats" />
     </td>
   </tr>
 </table>
 
 <br/>
 
-<img src="https://github-stats-extended.vercel.app/api/top-langs/?username=ghazy2001&layout=compact&theme=tokyonight&hide_border=true&border_radius=10&hide=Go&exclude_repo=EVOLV" height="160" alt="Top Languages" />
+<img src="https://github-stats-extended.vercel.app/api/top-langs/?username=ghazy2001&layout=compact&bg_color=161b22&title_color=daab7e&text_color=ffffff&hide_border=true&border_radius=10&hide=Go&exclude_repo=EVOLV" height="160" alt="Top Languages" />
 </div>
 
 ---
