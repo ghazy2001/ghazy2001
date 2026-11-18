@@ -18,16 +18,6 @@
   Active core contributor across top-tier open-source platforms (<b>Twenty CRM, Better-Auth, Snitch, Umami, Cap, Chatwoot, Infisical, Inbox Zero, Codex AutoRunner, Plane</b>), with <b>25+ merged production-grade pull requests</b> solving passive TLS C2 security & process firewalling, modern OAuth & identity revalidation, web analytics & telemetry, audio playback & video streaming synchronization, UI state management, and real-time integration workflows.
 </p>
 
----
-
-</div>
-
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="profile-3d-contrib/profile-night-view.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="profile-3d-contrib/profile-gitblock.svg" />
-    <img src="profile-3d-contrib/profile-night-view.svg" alt="3D Contribution Graph" width="100%" />
-  </picture>
 </div>
 
 ---
@@ -269,6 +259,16 @@ High-impact production-grade pull requests reviewed, approved, and merged upstre
   - Increased online checkout completion by **25%** and reduced sync latency by **70%** via automated real-time webhooks.
   - Saved 15+ hours/week of manual operations through automated catalog and inventory synchronization.
   - Achieved sub-200ms API response times and 99.9% uptime with structured MongoDB indexing.
+
+---
+
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="profile-3d-contrib/profile-night-view.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="profile-3d-contrib/profile-gitblock.svg" />
+    <img src="profile-3d-contrib/profile-night-view.svg" alt="3D Contribution Graph" width="100%" />
+  </picture>
+</div>
 
 ---
 
