@@ -15,7 +15,7 @@
 <p align="center">
   <b>Senior Frontend / Full-Stack Engineer</b> building high-performance, polished user interfaces and architecting mission-critical logic, concurrency-safe engines, and scalable B2B SaaS applications.<br>
   Bridging <b>4 years of operational cash flow and accounting domain expertise</b> (B.Com in Accounting & Finance) with deep engineering across <b>React 19, TypeScript, Next.js, Node.js, and PostgreSQL</b>.<br>
-  Active core contributor across top-tier open-source platforms (<b>Twenty CRM, Better-Auth, Snitch, Umami, Cap, Chatwoot, Infisical, Inbox Zero, Codex AutoRunner, Plane</b>), with <b>25+ merged production-grade pull requests</b> solving passive TLS C2 security & process firewalling, modern OAuth & identity revalidation, web analytics & telemetry, audio playback & video streaming synchronization, UI state management, and real-time integration workflows.
+  Active core contributor across top-tier open-source platforms (<b>Twenty CRM, Better-Auth, Snitch, Umami, Cap, Chatwoot, Infisical, Inbox Zero, Codex AutoRunner, Plane, Instatic</b>), with <b>33+ merged production-grade pull requests</b> solving passive TLS C2 security & process firewalling, modern OAuth & identity revalidation, LLM context drift & prompt alternation, web analytics & telemetry, audio playback & video streaming synchronization, UI state management, and real-time integration workflows.
 </p>
 
 </div>
@@ -95,7 +95,7 @@
     </td>
     <td align="center" width="105">
       <a href="https://graphql.org/">
-        <img src="https://thanhnguyxnorg.github.io/Techstack-Studio/icons/animated/graphql.svg" width="48" height="48" alt="GraphQL" />
+        <img src="assets/icons/graphql.svg" width="48" height="48" alt="GraphQL" />
       </a>
       <br/><b>GraphQL</b>
     </td>
@@ -113,7 +113,7 @@
     </td>
     <td align="center" width="105">
       <a href="https://git-scm.com/">
-        <img src="https://thanhnguyxnorg.github.io/Techstack-Studio/icons/animated/git.svg" width="48" height="48" alt="Git" />
+        <img src="assets/icons/git.svg" width="48" height="48" alt="Git" />
       </a>
       <br/><b>Git</b>
     </td>
@@ -258,7 +258,13 @@ High-impact production-grade pull requests reviewed, approved, and merged upstre
 - **Voice Announcement Draft Toggle Persistence**: Preserved unsaved announcement draft upon toggle switch and prevented empty uncheck PATCH requests ([PR #16428](https://github.com/chatwoot/chatwoot/pull/16428) — **MERGED**).
 
 ### ✉️ **[Inbox Zero](https://github.com/elie222/inbox-zero)** *(AI Personal Email Assistant, 5.5k ⭐)*
+- **LLM Consecutive Role Alternation & Jinja Template Guard**: Coalesced consecutive same-role messages in conversational history to prevent strict provider role alternation failures and Jinja template compilation crashes ([PR #4649](https://github.com/elie222/inbox-zero/pull/4649) — **MERGED**).
+- **Outlook Mailbox Infinite Pagination Loop Termination**: Terminated non-advancing pagination loops during Microsoft Graph delta synchronization to eliminate infinite worker loops ([PR #4411](https://github.com/elie222/inbox-zero/pull/4411) — **MERGED**).
 - **Inline Email Preview Engine**: Demanded active mail engine before expanding inline email previews in chat assistant ([PR #4395](https://github.com/elie222/inbox-zero/pull/4395) — **MERGED** by founder `@elie222`).
+
+### 🌐 **[Instatic](https://github.com/CoreBunch/Instatic)** *(Open-Source Web Builder & Static Site Generator)*
+- **Anti-Bot Form Challenge & Min-Submit Refresh**: Auto-refreshed stale cryptographic challenges and enforced `minSubmitSeconds` on form submit to prevent false-positive spam blocks ([PR #694](https://github.com/CoreBunch/Instatic/pull/694) — **MERGED**).
+- **URL Property Protocol Expansion**: Permitted `tel:` and `sms:` URI schemes in the visual editor URL property control for mobile contact actions ([PR #691](https://github.com/CoreBunch/Instatic/pull/691) — **MERGED**).
 
 ### 🤖 **[Codex AutoRunner](https://github.com/Git-on-my-level/codex-autorunner)** *(Multi-Agent Autonomous Execution Engine)*
 - **Hosted Mode Launch Capability Previews**: Issued and injected scoped launch capability URLs (`/preview/p/<token>/`) for managed dev servers to eliminate 401s on unauthenticated public previews and HMR assets ([PR #2116](https://github.com/Git-on-my-level/codex-autorunner/pull/2116) — **MERGED**).
